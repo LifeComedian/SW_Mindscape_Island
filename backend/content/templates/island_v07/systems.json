@@ -1,0 +1,116 @@
+{
+  "action_definitions": [],
+  "affordances": [],
+  "activity_recipes": [],
+  "emergence_policy": {
+    "policy_id": "bounded-emergence-v1",
+    "policy_version": "v1",
+    "max_agent_actions_per_tick": 1,
+    "max_invitations_per_tick": 1,
+    "max_activity_creations_per_tick": 1,
+    "max_event_chain_depth": 3,
+    "max_new_player_facing_events_per_day": 3,
+    "max_new_major_events_per_day": 1,
+    "max_concurrent_player_facing_events": 2,
+    "max_direct_agent_invitations_to_player_per_day": 2,
+    "max_open_commitments_per_actor": 3,
+    "same_recipe_daily_limit": 1,
+    "declined_pair_cooldown_minutes": 120
+  },
+  "contract_version": "modular-emergence-authoring-v1",
+  "stage_recipes": [],
+  "plan_policy": {
+    "policy_id": "modular-plans-v1",
+    "policy_version": "v1",
+    "states": [
+      "proposed",
+      "accepted",
+      "rejected",
+      "cancelled",
+      "expired",
+      "in_progress",
+      "completed",
+      "failed"
+    ],
+    "actor_availability_checks": [
+      "schedule",
+      "location_open",
+      "route_reachable",
+      "actor_state",
+      "active_conversation",
+      "commitment"
+    ],
+    "conflict_checks": [
+      "actor_overlap",
+      "location_capacity",
+      "object_reservation",
+      "travel_time"
+    ],
+    "travel_time_required": true,
+    "explicit_change_required": true,
+    "release_reservation_on_terminal": true
+  },
+  "knowledge_policy": {
+    "policy_id": "modular-knowledge-v1",
+    "policy_version": "v1",
+    "allowed_source_types": [
+      "experienced",
+      "public_post",
+      "direct_message",
+      "explicitly_told",
+      "system_public_fact"
+    ],
+    "visibility_levels": [
+      "private",
+      "targeted",
+      "island_public"
+    ],
+    "require_provenance": true,
+    "prevent_omniscient_propagation": true
+  },
+  "candidate_policy": {
+    "policy_id": "modular-candidates-v1",
+    "policy_version": "v1",
+    "allowed_source_types": [
+      "actor_goal",
+      "memory",
+      "relationship",
+      "public_knowledge",
+      "affordance",
+      "commitment",
+      "plan_conflict",
+      "activity_recipe",
+      "world_outcome"
+    ],
+    "allowed_complexities": [
+      "ordinary",
+      "coordinated",
+      "major"
+    ],
+    "llm_candidate_only": true,
+    "fail_closed_unknown_ids": true,
+    "max_candidates_per_evaluation": 8
+  },
+  "llm_policy": {
+    "policy_version": "modular-llm-policy-v1",
+    "enabled": false,
+    "decision_types": [
+      "atomic_action",
+      "stage_action",
+      "invitation_response",
+      "reschedule",
+      "event_preference",
+      "dialogue",
+      "invitation_expression",
+      "record_expression"
+    ],
+    "timeout_ms": 3000,
+    "max_retries": 1,
+    "max_calls_per_day": 32,
+    "max_calls_per_session": 256,
+    "max_units_per_day": 131072,
+    "max_units_per_session": 1048576,
+    "max_prompt_units": 8192,
+    "max_output_units": 1024
+  }
+}

@@ -1,0 +1,54 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+**/server.env
+**/review.env
+**/qa.env
+**/local.env
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials.json
+secrets.json
+# Dependencies, environments, and build outputs
+node_modules/
+.next/
+.next*/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage/
+playwright-report/
+test-results/
+# Runtime/research data and private operator artifacts
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.log
+*.pem.*
+deploy/local-data/
+research-private/
+local-private/
+outputs/
+正式测试数据/
+sw_final/
+*.tar
+*.tar.gz
+*.zip
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

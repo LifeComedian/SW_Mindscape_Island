@@ -1,0 +1,51 @@
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.backend
+    env_file: server.env
+    environment:
+      DATABASE_URL: sqlite:////data/game.sqlite
+    volumes:
+      - game-data:/data
+      - research-private:/research-private
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/', timeout=5)"]
+      interval: 20s
+      timeout: 6s
+      retries: 3
+      start_period: 40s
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.frontend
+    environment:
+      API_BASE_URL: http://backend:8000
+      STUDY_RUNTIME_ENV: production
+      STUDY_INVITATION_REQUIRED: "true"
+      STUDY_TEST_FIXTURES_ENABLED: "false"
+      STUDY_PUBLIC_ORIGIN: ${STUDY_PUBLIC_ORIGIN:?Set the approved HTTPS origin with --env-file server.env}
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/study/start').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 20s
+      timeout: 8s
+      retries: 3
+      start_period: 40s
+  gateway:
+    image: nginx:stable-alpine@sha256:47928bf67eb62a1863cb08d9ecb52d3e704304ba614eaee17884204677702951
+    ports:
+      - "127.0.0.1:8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      frontend:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  game-data:
+  research-private:

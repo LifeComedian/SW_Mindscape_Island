@@ -1,0 +1,30 @@
+{
+  "content_pack_version": "island-content-v0.5",
+  "world_version": "island-v0.5",
+  "event_pack_version": "island-events-v0.5",
+  "schema_version": "content-pack-v1",
+  "default_language": "en",
+  "supported_languages": ["en", "zh-CN"],
+  "start_location_id": "participant_home",
+  "calendar": {
+    "total_days": 3,
+    "day_start_minute": 540,
+    "day_end_minute": 1200,
+    "rollover": "next_day"
+  },
+  "action_minutes": {
+    "move": 15,
+    "observe": 5,
+    "approach": 5,
+    "wait": 15,
+    "conversation_message": 5,
+    "end_conversation": 0,
+    "end_day": 0
+  },
+  "files": {
+    "map": "map.json",
+    "locations": "locations.json",
+    "residents": "residents.json",
+    "events": "events.json"
+  }
+}

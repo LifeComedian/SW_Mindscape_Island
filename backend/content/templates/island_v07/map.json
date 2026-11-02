@@ -1,0 +1,15 @@
+{
+  "map_id": "island_v07_blank_canvas",
+  "version": "island-map-v0.7",
+  "width": 1000,
+  "height": 700,
+  "background": {
+    "style_key": "minimal",
+    "sea_color_key": "sea_teal",
+    "land_color_key": "land_sand"
+  },
+  "land_polygon": [],
+  "paths": [],
+  "location_nodes": [],
+  "scene_layouts": []
+}

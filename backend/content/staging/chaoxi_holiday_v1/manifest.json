@@ -1,0 +1,49 @@
+{
+  "content_pack_version": "chaoxi-holiday-v1-content",
+  "world_version": "chaoxi-holiday-v1",
+  "event_pack_version": "chaoxi-holiday-v1-events",
+  "schema_version": "content-pack-v5",
+  "authoring_only": false,
+  "default_language": "zh-CN",
+  "supported_languages": [
+    "en",
+    "zh-CN"
+  ],
+  "start_location_id": "loc_01",
+  "calendar": {
+    "total_days": 7,
+    "day_start_minute": 540,
+    "day_end_minute": 1200,
+    "rollover": "next_day"
+  },
+  "experience": {
+    "mode": "open_exploration",
+    "recommended_total_days": 7,
+    "final_day_departure_required": true,
+    "departure_prompt": {
+      "en": "Your seven-day stay is complete. Leave the island when you are ready.",
+      "zh-CN": "七日假期已经结束，准备好后即可离岛。"
+    },
+    "behavior_audit_version": "behavior-process-v1",
+    "rest_location_id": "loc_02"
+  },
+  "action_minutes": {
+    "move": 5,
+    "observe": 5,
+    "approach": 0,
+    "wait": 15,
+    "conversation_message": 0,
+    "end_conversation": 0,
+    "end_day": 0,
+    "event_action": 0,
+    "object_action": 0
+  },
+  "files": {
+    "map": "map.json",
+    "locations": "locations.json",
+    "residents": "residents.json",
+    "events": "events.json",
+    "visuals": "visuals.json",
+    "systems": "systems.json"
+  }
+}

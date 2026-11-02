@@ -1,0 +1,5 @@
+FROM chaoxidao-backend:20261026-island-life-v4
+USER root
+COPY --chown=app:app backend/ /app/backend/
+RUN mkdir -p /review-data /review-private && chown app:app /review-data /review-private && chmod 700 /review-private
+USER app

@@ -1,0 +1,108 @@
+{
+  "locations": [
+    {
+      "location_id": "participant_home",
+      "name": {"en": "Guest Cottage", "zh-CN": "访客小屋"},
+      "description": {"en": "A small cottage reserved for the visiting islander.", "zh-CN": "为来访岛民准备的一间小屋。"},
+      "scene_type": "home", "version": "island-v0.6",
+      "connected_location_ids": ["residential_lane"],
+      "opening_hours": {"always_open": true},
+      "interaction_points": [
+        {"object_id": "cottage_desk", "type": "writing_spot", "name": {"en": "Writing desk", "zh-CN": "书桌"}, "description": {"en": "A quiet place for notes.", "zh-CN": "适合安静写笔记的地方。"}, "renderer_key": "desk"},
+        {"object_id": "day_planner", "type": "schedule_note", "name": {"en": "Day planner", "zh-CN": "日程本"}, "description": {"en": "A simple planner for island days.", "zh-CN": "记录岛屿日程的简易本子。"}, "renderer_key": "notice"}
+      ],
+      "allowed_actions": ["move", "observe", "approach", "wait", "end_day", "end_conversation"],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "residential_lane",
+      "name": {"en": "Residential Lane", "zh-CN": "住宅巷"},
+      "description": {"en": "A quiet lane with small homes and shared planters.", "zh-CN": "一条有小屋和共享花箱的安静小巷。"},
+      "scene_type": "residential", "version": "island-v0.6",
+      "connected_location_ids": ["participant_home", "square", "beach_lighthouse"],
+      "opening_hours": {"always_open": true},
+      "interaction_points": [
+        {"object_id": "shared_planters", "type": "garden", "name": {"en": "Shared planters", "zh-CN": "共享花箱"}, "description": {"en": "Residents take turns caring for these plants.", "zh-CN": "居民轮流照看这些植物。"}, "renderer_key": "garden"},
+        {"object_id": "courtyard_table", "type": "rest_spot", "name": {"en": "Courtyard table", "zh-CN": "庭院桌"}, "description": {"en": "A common place for short conversations.", "zh-CN": "一个适合短暂交谈的公共位置。"}, "renderer_key": "table"}
+      ],
+      "allowed_actions": ["move", "observe", "approach", "wait", "end_conversation"],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "square",
+      "name": {"en": "Community Square", "zh-CN": "社区广场"},
+      "description": {"en": "The island's central meeting place and route hub.", "zh-CN": "岛上的中心会面地点和道路枢纽。"},
+      "scene_type": "community", "version": "island-v0.6",
+      "connected_location_ids": ["residential_lane", "harbor", "restaurant", "shop"],
+      "opening_hours": {"always_open": true},
+      "interaction_points": [
+        {"object_id": "community_board", "type": "notice_board", "name": {"en": "Community board", "zh-CN": "社区公告栏"}, "description": {"en": "Local notes and ordinary announcements are pinned here.", "zh-CN": "这里贴着本地便条和日常公告。"}, "renderer_key": "notice"},
+        {"object_id": "book_shelf", "type": "shared_library", "name": {"en": "Shared shelf", "zh-CN": "共享书架"}, "description": {"en": "A small shelf for borrowed books.", "zh-CN": "摆放借阅书籍的小书架。"}, "renderer_key": "books"},
+        {"object_id": "square_bench", "type": "seat", "name": {"en": "Square bench", "zh-CN": "广场长椅"}, "description": {"en": "A bench facing the main paths.", "zh-CN": "一张面向主要道路的长椅。"}, "renderer_key": "bench"}
+      ],
+      "allowed_actions": ["move", "observe", "approach", "wait", "end_conversation", "event_action"],
+      "event_pool_ids": ["square_daily"]
+    },
+    {
+      "location_id": "harbor",
+      "name": {"en": "Ferry Harbor", "zh-CN": "渡口"},
+      "description": {"en": "A modest ferry landing overlooking the route to the square.", "zh-CN": "一处能望见广场道路的朴素渡船停靠点。"},
+      "scene_type": "arrival", "version": "island-v0.6",
+      "connected_location_ids": ["square"],
+      "opening_hours": {"always_open": true},
+      "interaction_points": [
+        {"object_id": "tide_chart", "type": "notice", "name": {"en": "Tide chart", "zh-CN": "潮汐表"}, "description": {"en": "Today's tide times are marked clearly.", "zh-CN": "上面清楚标出了今天的潮汐时间。"}, "renderer_key": "notice"},
+        {"object_id": "ferry_railing", "type": "scenery", "name": {"en": "Harbor railing", "zh-CN": "渡口栏杆"}, "description": {"en": "A safe viewpoint across the water.", "zh-CN": "一个可以安全眺望水面的地方。"}, "renderer_key": "railing"},
+        {"object_id": "harbor_route_map", "type": "display", "name": {"en": "Ferry route map", "zh-CN": "渡船路线图"}, "description": {"en": "A public map shows the regular ferry route and nearby main-island paths.", "zh-CN": "公共地图标出了正常渡船路线和主岛附近道路。"}, "renderer_key": "display"}
+      ],
+      "allowed_actions": ["move", "observe", "approach", "wait", "end_conversation", "event_action"],
+      "event_pool_ids": ["harbor_daily"]
+    },
+    {
+      "location_id": "restaurant",
+      "name": {"en": "Harborlight Restaurant", "zh-CN": "港灯餐厅"},
+      "description": {"en": "A calm restaurant for meals, tea, and ordinary conversation.", "zh-CN": "适合用餐、喝茶和日常聊天的安静餐厅。"},
+      "scene_type": "restaurant", "version": "island-v0.6",
+      "connected_location_ids": ["square"],
+      "opening_hours": {"always_open": true},
+      "interaction_points": [
+        {"object_id": "tea_counter", "type": "counter", "name": {"en": "Tea counter", "zh-CN": "茶饮柜台"}, "description": {"en": "Tea and water are available here.", "zh-CN": "这里提供茶和水。"}, "renderer_key": "counter"},
+        {"object_id": "group_table", "type": "table", "name": {"en": "Lively shared table", "zh-CN": "热闹的多人桌"}, "description": {"en": "Leo, Mira, and Anna are sharing lunch and chatting lightly.", "zh-CN": "Leo、Mira 和 Anna 正在一起吃午饭，轻松聊天。"}, "renderer_key": "table"},
+        {"object_id": "single_npc_table", "type": "table", "name": {"en": "Quiet two-seat table", "zh-CN": "安静的双人桌"}, "description": {"en": "Chen is eating quietly; the other seat is free.", "zh-CN": "Chen 正在安静用餐，旁边的座位空着。"}, "renderer_key": "table"},
+        {"object_id": "central_empty_table", "type": "table", "name": {"en": "Open central table", "zh-CN": "中央空桌"}, "description": {"en": "An empty table in the middle of the room, within view of other diners.", "zh-CN": "餐厅中央的一张空桌，可以看到周围的客人。"}, "renderer_key": "table"},
+        {"object_id": "corner_table", "type": "table", "name": {"en": "Window corner table", "zh-CN": "窗边角落桌"}, "description": {"en": "An empty table by the wall, farther from the occupied tables.", "zh-CN": "靠墙的一张空桌，离有人用餐的桌子更远。"}, "renderer_key": "table"},
+        {"object_id": "takeaway_counter", "type": "counter", "name": {"en": "Takeaway counter", "zh-CN": "外带柜台"}, "description": {"en": "Meals can be packed to take outside or to a waterfront bench.", "zh-CN": "可以把餐点打包，带到室外或海边长椅。"}, "renderer_key": "counter"}
+      ],
+      "allowed_actions": ["move", "observe", "approach", "wait", "end_conversation", "event_action"],
+      "event_pool_ids": ["restaurant_lunch", "restaurant_social"]
+    },
+    {
+      "location_id": "shop",
+      "name": {"en": "Corner Shop", "zh-CN": "街角小店"},
+      "description": {"en": "A practical shop with supplies, postcards, and shared tools.", "zh-CN": "一间提供补给、明信片和共享工具的实用小店。"},
+      "scene_type": "shop", "version": "island-v0.6",
+      "connected_location_ids": ["square"],
+      "opening_hours": {"always_open": true},
+      "interaction_points": [
+        {"object_id": "supply_shelf", "type": "shelf", "name": {"en": "Supply shelf", "zh-CN": "补给架"}, "description": {"en": "Everyday supplies are arranged by use.", "zh-CN": "日常用品按用途整齐摆放。"}, "renderer_key": "shelf"},
+        {"object_id": "postcard_rack", "type": "display", "name": {"en": "Postcard rack", "zh-CN": "明信片架"}, "description": {"en": "Small island scenes are printed on the cards.", "zh-CN": "卡片上印着岛上的小景色。"}, "renderer_key": "display"}
+      ],
+      "allowed_actions": ["move", "observe", "approach", "wait", "end_conversation", "event_action"],
+      "event_pool_ids": ["shop_daily"]
+    },
+    {
+      "location_id": "beach_lighthouse",
+      "name": {"en": "Beach And Lighthouse", "zh-CN": "海滩与灯塔"},
+      "description": {"en": "A quiet beach below the lighthouse, suited to walks and unhurried talks.", "zh-CN": "灯塔下方安静的海滩，适合散步和慢慢聊天。"},
+      "scene_type": "shore", "version": "island-v0.6",
+      "connected_location_ids": ["residential_lane"],
+      "opening_hours": {"always_open": true},
+      "interaction_points": [
+        {"object_id": "lighthouse_steps", "type": "landmark", "name": {"en": "Lighthouse steps", "zh-CN": "灯塔台阶"}, "description": {"en": "Stone steps lead toward the lighthouse door.", "zh-CN": "石阶通向灯塔门口。"}, "renderer_key": "landmark"},
+        {"object_id": "driftwood_log", "type": "seat", "name": {"en": "Driftwood log", "zh-CN": "漂木长凳"}, "description": {"en": "A smooth piece of driftwood used as a seat.", "zh-CN": "一截被当作座位使用的光滑漂木。"}, "renderer_key": "seat"}
+      ],
+      "allowed_actions": ["move", "observe", "approach", "wait", "end_conversation", "event_action"],
+      "event_pool_ids": ["beach_activity"]
+    }
+  ]
+}

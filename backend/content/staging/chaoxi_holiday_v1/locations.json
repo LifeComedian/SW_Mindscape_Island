@@ -1,0 +1,610 @@
+{
+  "locations": [
+    {
+      "location_id": "loc_01",
+      "name": {
+        "en": "潮汐港口与海边",
+        "zh-CN": "潮汐港口与海边"
+      },
+      "description": {
+        "en": "抵达小岛后的第一处开阔空间：停泊的小船、木栏杆和一段可以慢慢走的海边。码头工作区有边界；只有开放练习台上的材料可以使用。海边区不预设为固定邀请的举办地。",
+        "zh-CN": "抵达小岛后的第一处开阔空间：停泊的小船、木栏杆和一段可以慢慢走的海边。码头工作区有边界；只有开放练习台上的材料可以使用。海边区不预设为固定邀请的举办地。"
+      },
+      "scene_type": "harbor",
+      "version": "chaoxi-holiday-v1",
+      "connected_location_ids": [
+        "loc_05"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "obj_01",
+          "type": "display",
+          "name": {
+            "en": "海岸观察牌",
+            "zh-CN": "海岸观察牌"
+          },
+          "description": {
+            "en": "提供可核对的海岸方向与本岛固定地标，不生成实时潮汐预报。",
+            "zh-CN": "提供可核对的海岸方向与本岛固定地标，不生成实时潮汐预报。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_02",
+          "type": "display",
+          "name": {
+            "en": "绳结练习台",
+            "zh-CN": "绳结练习台"
+          },
+          "description": {
+            "en": "用示意图和预制步骤体验两种简单绳结。",
+            "zh-CN": "用示意图和预制步骤体验两种简单绳结。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_03",
+          "type": "display",
+          "name": {
+            "en": "港边速写桌",
+            "zh-CN": "港边速写桌"
+          },
+          "description": {
+            "en": "从固定构图与笔触选项制作一张港口速写记录。",
+            "zh-CN": "从固定构图与笔触选项制作一张港口速写记录。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_04",
+          "type": "display",
+          "name": {
+            "en": "贝壳观察盘",
+            "zh-CN": "贝壳观察盘"
+          },
+          "description": {
+            "en": "观察展示用贝壳，再把它们摆成一个小图案。",
+            "zh-CN": "观察展示用贝壳，再把它们摆成一个小图案。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_05",
+          "type": "display",
+          "name": {
+            "en": "观海长凳",
+            "zh-CN": "观海长凳"
+          },
+          "description": {
+            "en": "提供短暂休息和可选择的观察焦点。",
+            "zh-CN": "提供短暂休息和可选择的观察焦点。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "bonfire_table",
+          "type": "table",
+          "name": {
+            "en": "篝火晚会专用桌",
+            "zh-CN": "篝火晚会专用桌"
+          },
+          "description": {
+            "en": "预设的活动物件。只记录实际选择；合作、交谈与公开分享均另行确认。",
+            "zh-CN": "预设的活动物件。只记录实际选择；合作、交谈与公开分享均另行确认。"
+          },
+          "renderer_key": "table"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "loc_02",
+      "name": {
+        "en": "邻里巷与花坊",
+        "zh-CN": "邻里巷与花坊"
+      },
+      "description": {
+        "en": "窄巷串起花坊、木作展示角和玩家客房，花盆与旧木器让这里像有人长期生活的地方。花材只在指定桌面使用；玩家客房仅玩家可进入，私人记录不自动成为居民知识。",
+        "zh-CN": "窄巷串起花坊、木作展示角和玩家客房，花盆与旧木器让这里像有人长期生活的地方。花材只在指定桌面使用；玩家客房仅玩家可进入，私人记录不自动成为居民知识。"
+      },
+      "scene_type": "homes",
+      "version": "chaoxi-holiday-v1",
+      "connected_location_ids": [
+        "loc_05"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "obj_06",
+          "type": "display",
+          "name": {
+            "en": "花与香草展示台",
+            "zh-CN": "花与香草展示台"
+          },
+          "description": {
+            "en": "比较固定花材与香草的外观、颜色和描述。",
+            "zh-CN": "比较固定花材与香草的外观、颜色和描述。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_07",
+          "type": "display",
+          "name": {
+            "en": "插花工作桌",
+            "zh-CN": "插花工作桌"
+          },
+          "description": {
+            "en": "用开放材料完成一小束桌面花艺，成品留在花坊展示。",
+            "zh-CN": "用开放材料完成一小束桌面花艺，成品留在花坊展示。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_08",
+          "type": "display",
+          "name": {
+            "en": "木作小展示架",
+            "zh-CN": "木作小展示架"
+          },
+          "description": {
+            "en": "看木纹、选择表面色样，再拼一组已经磨好的木片。",
+            "zh-CN": "看木纹、选择表面色样，再拼一组已经磨好的木片。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_09",
+          "type": "display",
+          "name": {
+            "en": "巷口长椅",
+            "zh-CN": "巷口长椅"
+          },
+          "description": {
+            "en": "休息并观察巷子里实际可见的花盆和装饰。",
+            "zh-CN": "休息并观察巷子里实际可见的花盆和装饰。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_10",
+          "type": "display",
+          "name": {
+            "en": "客房床头度假册",
+            "zh-CN": "客房床头度假册"
+          },
+          "description": {
+            "en": "整理玩家亲历事件和自主填写的感想。",
+            "zh-CN": "整理玩家亲历事件和自主填写的感想。"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "loc_03",
+      "name": {
+        "en": "岛角便利店",
+        "zh-CN": "岛角便利店"
+      },
+      "description": {
+        "en": "货架不多，零食、地方包装与手写小卡让逛店也像一次小型发现。本轮不引入购物、货币和背包；品尝使用明确标示的免费体验份。林予安工作时只进行短交流，18:00 下班后才能参加较长休闲活动。",
+        "zh-CN": "货架不多，零食、地方包装与手写小卡让逛店也像一次小型发现。本轮不引入购物、货币和背包；品尝使用明确标示的免费体验份。林予安工作时只进行短交流，18:00 下班后才能参加较长休闲活动。"
+      },
+      "scene_type": "shop",
+      "version": "chaoxi-holiday-v1",
+      "connected_location_ids": [
+        "loc_05"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "obj_11",
+          "type": "display",
+          "name": {
+            "en": "旅行零食架",
+            "zh-CN": "旅行零食架"
+          },
+          "description": {
+            "en": "用明确开放的免费体验份，比较轻量口味偏好。",
+            "zh-CN": "用明确开放的免费体验份，比较轻量口味偏好。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_12",
+          "type": "display",
+          "name": {
+            "en": "本地包装与老广告桌",
+            "zh-CN": "本地包装与老广告桌"
+          },
+          "description": {
+            "en": "看看有设计来历的包装与虚构岛史广告。",
+            "zh-CN": "看看有设计来历的包装与虚构岛史广告。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_13",
+          "type": "notice_board",
+          "name": {
+            "en": "店内公开留言板",
+            "zh-CN": "店内公开留言板"
+          },
+          "description": {
+            "en": "查看或发表简短、可选的度假提示。",
+            "zh-CN": "查看或发表简短、可选的度假提示。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_14",
+          "type": "display",
+          "name": {
+            "en": "包装配色台",
+            "zh-CN": "包装配色台"
+          },
+          "description": {
+            "en": "为兴趣体验用纸套选择配色，不用于商业陈列或店务，也不制作可带走商品。",
+            "zh-CN": "为兴趣体验用纸套选择配色，不用于商业陈列或店务，也不制作可带走商品。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_15",
+          "type": "display",
+          "name": {
+            "en": "店门取景框",
+            "zh-CN": "店门取景框"
+          },
+          "description": {
+            "en": "通过取景与姿势选择形成预制纪念画面。",
+            "zh-CN": "通过取景与姿势选择形成预制纪念画面。"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "loc_04",
+      "name": {
+        "en": "岸边餐馆",
+        "zh-CN": "岸边餐馆"
+      },
+      "description": {
+        "en": "可以看见海的一间家常餐馆，菜单简洁，厨房有节奏，门外留着小块饭后活动空间。客人不进入正在工作的厨房；品鉴与软球活动由空闲时段开放，不要求玩家承担餐馆工作。",
+        "zh-CN": "可以看见海的一间家常餐馆，菜单简洁，厨房有节奏，门外留着小块饭后活动空间。客人不进入正在工作的厨房；品鉴与软球活动由空闲时段开放，不要求玩家承担餐馆工作。"
+      },
+      "scene_type": "restaurant",
+      "version": "chaoxi-holiday-v1",
+      "connected_location_ids": [
+        "loc_05"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "obj_16",
+          "type": "display",
+          "name": {
+            "en": "今日菜单牌",
+            "zh-CN": "今日菜单牌"
+          },
+          "description": {
+            "en": "展示内容包确定的菜单和搭配理由。",
+            "zh-CN": "展示内容包确定的菜单和搭配理由。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_17",
+          "type": "display",
+          "name": {
+            "en": "小份品鉴台",
+            "zh-CN": "小份品鉴台"
+          },
+          "description": {
+            "en": "在厨师开放体验时比较两种明确标示的口味。",
+            "zh-CN": "在厨师开放体验时比较两种明确标示的口味。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_18",
+          "type": "display",
+          "name": {
+            "en": "临窗餐桌",
+            "zh-CN": "临窗餐桌"
+          },
+          "description": {
+            "en": "选择桌垫和小摆件位置，让桌面产生小变化。",
+            "zh-CN": "选择桌垫和小摆件位置，让桌面产生小变化。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_19",
+          "type": "display",
+          "name": {
+            "en": "食材香气盒",
+            "zh-CN": "食材香气盒"
+          },
+          "description": {
+            "en": "用香气描述卡体验辨认与搭配。",
+            "zh-CN": "用香气描述卡体验辨认与搭配。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_20",
+          "type": "display",
+          "name": {
+            "en": "饭后软球圈",
+            "zh-CN": "饭后软球圈"
+          },
+          "description": {
+            "en": "在门外安全角落玩短轮次软球投掷。",
+            "zh-CN": "在门外安全角落玩短轮次软球投掷。"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "loc_05",
+      "name": {
+        "en": "公共广场与活动室",
+        "zh-CN": "公共广场与活动室"
+      },
+      "description": {
+        "en": "室外有树荫和软球区域，室内有小桌游、唱片与可以调整的休闲角。广场用途开放；本草案不指定欢迎派对或篝火晚会的场地、主持人和时刻。",
+        "zh-CN": "室外有树荫和软球区域，室内有小桌游、唱片与可以调整的休闲角。广场用途开放；本草案不指定欢迎派对或篝火晚会的场地、主持人和时刻。"
+      },
+      "scene_type": "square",
+      "version": "chaoxi-holiday-v1",
+      "connected_location_ids": [
+        "loc_01",
+        "loc_02",
+        "loc_03",
+        "loc_04",
+        "loc_06"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "obj_21",
+          "type": "display",
+          "name": {
+            "en": "轻桌游桌",
+            "zh-CN": "轻桌游桌"
+          },
+          "description": {
+            "en": "支持单人图形拼题与短局合作桌游。",
+            "zh-CN": "支持单人图形拼题与短局合作桌游。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_22",
+          "type": "display",
+          "name": {
+            "en": "广场软球区",
+            "zh-CN": "广场软球区"
+          },
+          "description": {
+            "en": "用固定回合模拟轻量抛接和传球。",
+            "zh-CN": "用固定回合模拟轻量抛接和传球。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_23",
+          "type": "display",
+          "name": {
+            "en": "唱片点播机",
+            "zh-CN": "唱片点播机"
+          },
+          "description": {
+            "en": "选择已配置曲目卡并分享联想；接入音频后再提供真实点播。",
+            "zh-CN": "选择已配置曲目卡并分享联想；接入音频后再提供真实点播。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_24",
+          "type": "display",
+          "name": {
+            "en": "休闲角布置板",
+            "zh-CN": "休闲角布置板"
+          },
+          "description": {
+            "en": "选择预制布置方案，调整活动室一个小角落。",
+            "zh-CN": "选择预制布置方案，调整活动室一个小角落。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_25",
+          "type": "notice_board",
+          "name": {
+            "en": "公共活动信息板",
+            "zh-CN": "公共活动信息板"
+          },
+          "description": {
+            "en": "查看实际创建的邀请及已公开的活动记录。",
+            "zh-CN": "查看实际创建的邀请及已公开的活动记录。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "welcome_table",
+          "type": "table",
+          "name": {
+            "en": "欢迎派对专用桌",
+            "zh-CN": "欢迎派对专用桌"
+          },
+          "description": {
+            "en": "预设的活动物件。只记录实际选择；合作、交谈与公开分享均另行确认。",
+            "zh-CN": "预设的活动物件。只记录实际选择；合作、交谈与公开分享均另行确认。"
+          },
+          "renderer_key": "table"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "loc_06",
+      "name": {
+        "en": "临海咖啡馆",
+        "zh-CN": "临海咖啡馆"
+      },
+      "description": {
+        "en": "海景窗、短篇读物和安静的桌面活动让这里适合坐一会儿，不用持续说话。共同活动需先征求在场居民同意；作品默认私存为会话记录，只有玩家主动公开才进入公开展示。",
+        "zh-CN": "海景窗、短篇读物和安静的桌面活动让这里适合坐一会儿，不用持续说话。共同活动需先征求在场居民同意；作品默认私存为会话记录，只有玩家主动公开才进入公开展示。"
+      },
+      "scene_type": "restaurant",
+      "version": "chaoxi-holiday-v1",
+      "connected_location_ids": [
+        "loc_05"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "obj_26",
+          "type": "display",
+          "name": {
+            "en": "饮品风味卡",
+            "zh-CN": "饮品风味卡"
+          },
+          "description": {
+            "en": "用固定风味描述比较饮品特点。",
+            "zh-CN": "用固定风味描述比较饮品特点。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_27",
+          "type": "display",
+          "name": {
+            "en": "短读书架",
+            "zh-CN": "短读书架"
+          },
+          "description": {
+            "en": "提供原创短文和片段，适合短时间阅读与分享。",
+            "zh-CN": "提供原创短文和片段，适合短时间阅读与分享。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_28",
+          "type": "display",
+          "name": {
+            "en": "海景明信片桌",
+            "zh-CN": "海景明信片桌"
+          },
+          "description": {
+            "en": "用预制底图、短句和小装饰制作纪念记录。",
+            "zh-CN": "用预制底图、短句和小装饰制作纪念记录。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_29",
+          "type": "display",
+          "name": {
+            "en": "窗边取景座",
+            "zh-CN": "窗边取景座"
+          },
+          "description": {
+            "en": "从有限取景方案中选择海景纪念画面。",
+            "zh-CN": "从有限取景方案中选择海景纪念画面。"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "obj_30",
+          "type": "notice_board",
+          "name": {
+            "en": "窗边留言册",
+            "zh-CN": "窗边留言册"
+          },
+          "description": {
+            "en": "记录可公开的短句，或阅读明确公开的旧留言。",
+            "zh-CN": "记录可公开的短句，或阅读明确公开的旧留言。"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7f7f4;
+  --foreground: #1f2933;
+  --muted: #667085;
+  --surface: #ffffff;
+  --border: #d9ded8;
+  --accent: #147d7e;
+  --accent-dark: #0f5f60;
+  --warm: #c7563f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--foreground);
+  background:
+    linear-gradient(180deg, rgba(20, 125, 126, 0.08), rgba(247, 247, 244, 0) 320px),
+    var(--background);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.focus-ring {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2;
+}
+
+@keyframes game-stage-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes game-overlay-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes game-panel-enter {
+  from { opacity: 0; transform: translateY(12px) scale(0.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes game-drawer-enter {
+  from { transform: translateX(24px); }
+  to { transform: translateX(0); }
+}
+
+@keyframes game-bubble-enter {
+  from { opacity: 0; transform: translateY(5px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.game-stage-enter { animation: game-stage-enter 180ms ease-out both; }
+.game-overlay-enter { animation: game-overlay-enter 150ms ease-out both; }
+.game-panel-enter { animation: game-panel-enter 180ms ease-out both; }
+.game-drawer-enter { animation: game-drawer-enter 190ms ease-out both; }
+.game-bubble-enter { animation: game-bubble-enter 180ms ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .game-stage-enter,
+  .game-overlay-enter,
+  .game-panel-enter,
+  .game-drawer-enter,
+  .game-bubble-enter {
+    animation: none;
+  }
+}

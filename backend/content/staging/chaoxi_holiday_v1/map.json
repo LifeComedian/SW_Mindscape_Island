@@ -1,0 +1,598 @@
+{
+  "map_id": "chaoxi_map",
+  "version": "chaoxi-holiday-v1-map",
+  "width": 1000,
+  "height": 700,
+  "background": {
+    "style_key": "island_day",
+    "sea_color_key": "sea_blue",
+    "land_color_key": "land_green"
+  },
+  "land_polygon": [
+    [
+      110,
+      150
+    ],
+    [
+      250,
+      70
+    ],
+    [
+      500,
+      55
+    ],
+    [
+      760,
+      100
+    ],
+    [
+      900,
+      250
+    ],
+    [
+      870,
+      470
+    ],
+    [
+      690,
+      620
+    ],
+    [
+      410,
+      650
+    ],
+    [
+      160,
+      560
+    ],
+    [
+      75,
+      350
+    ]
+  ],
+  "paths": [
+    {
+      "path_id": "loc_01_to_square",
+      "from_location_id": "loc_01",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          740,
+          220
+        ],
+        [
+          480,
+          320
+        ]
+      ]
+    },
+    {
+      "path_id": "loc_02_to_square",
+      "from_location_id": "loc_02",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          250,
+          190
+        ],
+        [
+          480,
+          320
+        ]
+      ]
+    },
+    {
+      "path_id": "loc_03_to_square",
+      "from_location_id": "loc_03",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          260,
+          450
+        ],
+        [
+          480,
+          320
+        ]
+      ]
+    },
+    {
+      "path_id": "loc_04_to_square",
+      "from_location_id": "loc_04",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          700,
+          450
+        ],
+        [
+          480,
+          320
+        ]
+      ]
+    },
+    {
+      "path_id": "loc_06_to_square",
+      "from_location_id": "loc_06",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          500,
+          560
+        ],
+        [
+          480,
+          320
+        ]
+      ]
+    }
+  ],
+  "location_nodes": [
+    {
+      "location_id": "loc_01",
+      "x": 740,
+      "y": 220,
+      "click_radius": 30,
+      "icon_key": "harbor",
+      "label_offset": [
+        0,
+        40
+      ]
+    },
+    {
+      "location_id": "loc_02",
+      "x": 250,
+      "y": 190,
+      "click_radius": 30,
+      "icon_key": "homes",
+      "label_offset": [
+        0,
+        40
+      ]
+    },
+    {
+      "location_id": "loc_03",
+      "x": 260,
+      "y": 450,
+      "click_radius": 30,
+      "icon_key": "shop",
+      "label_offset": [
+        0,
+        40
+      ]
+    },
+    {
+      "location_id": "loc_04",
+      "x": 700,
+      "y": 450,
+      "click_radius": 30,
+      "icon_key": "restaurant",
+      "label_offset": [
+        0,
+        40
+      ]
+    },
+    {
+      "location_id": "loc_05",
+      "x": 480,
+      "y": 320,
+      "click_radius": 30,
+      "icon_key": "square",
+      "label_offset": [
+        0,
+        40
+      ]
+    },
+    {
+      "location_id": "loc_06",
+      "x": 500,
+      "y": 560,
+      "click_radius": 30,
+      "icon_key": "restaurant",
+      "label_offset": [
+        0,
+        40
+      ]
+    }
+  ],
+  "scene_layouts": [
+    {
+      "location_id": "loc_01",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        80,
+        380
+      ],
+      "resident_slots": [
+        [
+          160,
+          280
+        ],
+        [
+          235,
+          320
+        ],
+        [
+          310,
+          280
+        ],
+        [
+          385,
+          320
+        ],
+        [
+          460,
+          280
+        ],
+        [
+          535,
+          320
+        ],
+        [
+          610,
+          280
+        ],
+        [
+          685,
+          320
+        ]
+      ],
+      "interaction_point_positions": {
+        "obj_01": [
+          90,
+          120
+        ],
+        "obj_02": [
+          210,
+          120
+        ],
+        "obj_03": [
+          330,
+          120
+        ],
+        "obj_04": [
+          450,
+          120
+        ],
+        "obj_05": [
+          570,
+          120
+        ],
+        "bonfire_table": [
+          690,
+          120
+        ]
+      }
+    },
+    {
+      "location_id": "loc_02",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        80,
+        380
+      ],
+      "resident_slots": [
+        [
+          160,
+          280
+        ],
+        [
+          235,
+          320
+        ],
+        [
+          310,
+          280
+        ],
+        [
+          385,
+          320
+        ],
+        [
+          460,
+          280
+        ],
+        [
+          535,
+          320
+        ],
+        [
+          610,
+          280
+        ],
+        [
+          685,
+          320
+        ]
+      ],
+      "interaction_point_positions": {
+        "obj_06": [
+          90,
+          120
+        ],
+        "obj_07": [
+          210,
+          120
+        ],
+        "obj_08": [
+          330,
+          120
+        ],
+        "obj_09": [
+          450,
+          120
+        ],
+        "obj_10": [
+          570,
+          120
+        ]
+      }
+    },
+    {
+      "location_id": "loc_03",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        80,
+        380
+      ],
+      "resident_slots": [
+        [
+          160,
+          280
+        ],
+        [
+          235,
+          320
+        ],
+        [
+          310,
+          280
+        ],
+        [
+          385,
+          320
+        ],
+        [
+          460,
+          280
+        ],
+        [
+          535,
+          320
+        ],
+        [
+          610,
+          280
+        ],
+        [
+          685,
+          320
+        ]
+      ],
+      "interaction_point_positions": {
+        "obj_11": [
+          90,
+          120
+        ],
+        "obj_12": [
+          210,
+          120
+        ],
+        "obj_13": [
+          330,
+          120
+        ],
+        "obj_14": [
+          450,
+          120
+        ],
+        "obj_15": [
+          570,
+          120
+        ]
+      }
+    },
+    {
+      "location_id": "loc_04",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        80,
+        380
+      ],
+      "resident_slots": [
+        [
+          160,
+          280
+        ],
+        [
+          235,
+          320
+        ],
+        [
+          310,
+          280
+        ],
+        [
+          385,
+          320
+        ],
+        [
+          460,
+          280
+        ],
+        [
+          535,
+          320
+        ],
+        [
+          610,
+          280
+        ],
+        [
+          685,
+          320
+        ]
+      ],
+      "interaction_point_positions": {
+        "obj_16": [
+          90,
+          120
+        ],
+        "obj_17": [
+          210,
+          120
+        ],
+        "obj_18": [
+          330,
+          120
+        ],
+        "obj_19": [
+          450,
+          120
+        ],
+        "obj_20": [
+          570,
+          120
+        ]
+      }
+    },
+    {
+      "location_id": "loc_05",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        80,
+        380
+      ],
+      "resident_slots": [
+        [
+          160,
+          280
+        ],
+        [
+          235,
+          320
+        ],
+        [
+          310,
+          280
+        ],
+        [
+          385,
+          320
+        ],
+        [
+          460,
+          280
+        ],
+        [
+          535,
+          320
+        ],
+        [
+          610,
+          280
+        ],
+        [
+          685,
+          320
+        ]
+      ],
+      "interaction_point_positions": {
+        "obj_21": [
+          90,
+          120
+        ],
+        "obj_22": [
+          210,
+          120
+        ],
+        "obj_23": [
+          330,
+          120
+        ],
+        "obj_24": [
+          450,
+          120
+        ],
+        "obj_25": [
+          570,
+          120
+        ],
+        "welcome_table": [
+          690,
+          120
+        ]
+      }
+    },
+    {
+      "location_id": "loc_06",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        80,
+        380
+      ],
+      "resident_slots": [
+        [
+          160,
+          280
+        ],
+        [
+          235,
+          320
+        ],
+        [
+          310,
+          280
+        ],
+        [
+          385,
+          320
+        ],
+        [
+          460,
+          280
+        ],
+        [
+          535,
+          320
+        ],
+        [
+          610,
+          280
+        ],
+        [
+          685,
+          320
+        ]
+      ],
+      "interaction_point_positions": {
+        "obj_26": [
+          90,
+          120
+        ],
+        "obj_27": [
+          210,
+          120
+        ],
+        "obj_28": [
+          330,
+          120
+        ],
+        "obj_29": [
+          450,
+          120
+        ],
+        "obj_30": [
+          570,
+          120
+        ]
+      }
+    }
+  ]
+}

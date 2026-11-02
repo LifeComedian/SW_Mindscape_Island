@@ -1,0 +1,64 @@
+name: chaoxi-review
+services:
+  backend:
+    image: chaoxidao-review-backend:20261102-v1
+    env_file: review.env
+    environment:
+      REVIEW_MODE: "true"
+      DATABASE_URL: sqlite:////review-data/reviewer.sqlite
+      STUDY_RESEARCH_STORAGE_ROOT: /review-private
+    volumes:
+      - review-data:/review-data
+      - review-private:/review-private
+    cpus: 1.0
+    mem_limit: 1800m
+    pids_limit: 256
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/', timeout=5)"]
+      interval: 20s
+      timeout: 6s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: json-file
+      options: {max-size: "10m", max-file: "3"}
+  frontend:
+    image: chaoxidao-review-frontend:20261102-v1
+    environment:
+      API_BASE_URL: http://backend:8000
+      REVIEW_MODE: "true"
+      STUDY_RUNTIME_ENV: production
+      STUDY_PUBLIC_ORIGIN: https://review.mychaoxidao.com
+      STUDY_TEST_FIXTURES_ENABLED: "false"
+    cpus: 0.5
+    mem_limit: 600m
+    pids_limit: 128
+    restart: unless-stopped
+    depends_on:
+      backend: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/review').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 20s
+      timeout: 8s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: json-file
+      options: {max-size: "10m", max-file: "3"}
+  gateway:
+    image: chaoxidao-gateway:20261023
+    ports: ["127.0.0.1:8082:80"]
+    volumes: ["./nginx.review.conf:/etc/nginx/nginx.conf:ro"]
+    cpus: 0.25
+    mem_limit: 96m
+    pids_limit: 64
+    restart: unless-stopped
+    depends_on:
+      frontend: {condition: service_healthy}
+    logging:
+      driver: json-file
+      options: {max-size: "10m", max-file: "3"}
+volumes:
+  review-data:
+  review-private:

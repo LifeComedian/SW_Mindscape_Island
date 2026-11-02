@@ -1,0 +1,504 @@
+{
+  "locations": [
+    {
+      "location_id": "loc_01",
+      "name": {
+        "en": "潮汐港口与海边",
+        "zh-CN": "潮汐港口与海边"
+      },
+      "description": {
+        "en": "下船就是码头。小船停在岸边，沿着木栏杆可以走到海边。\n开放时间：08:00–22:00。每日自由活动时间为08:00–22:00。",
+        "zh-CN": "下船就是码头。小船停在岸边，沿着木栏杆可以走到海边。\n开放时间：08:00–22:00。每日自由活动时间为08:00–22:00。"
+      },
+      "scene_type": "harbor",
+      "version": "chaoxi-holiday-v6",
+      "connected_location_ids": [
+        "loc_05"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "sketch",
+          "type": "display",
+          "name": {
+            "zh-CN": "港边速写桌",
+            "en": "港边速写桌"
+          },
+          "description": {
+            "zh-CN": "画一张速写、翻看速写册",
+            "en": "画一张速写、翻看速写册"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "bench",
+          "type": "display",
+          "name": {
+            "zh-CN": "观海长凳",
+            "en": "观海长凳"
+          },
+          "description": {
+            "zh-CN": "坐下观海",
+            "en": "坐下观海"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "beach",
+          "type": "display",
+          "name": {
+            "zh-CN": "沙滩",
+            "en": "沙滩"
+          },
+          "description": {
+            "zh-CN": "潮间带寻物、在沙上画画或写字",
+            "en": "潮间带寻物、在沙上画画或写字"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "loc_02",
+      "name": {
+        "zh-CN": "花坊",
+        "en": "花坊"
+      },
+      "description": {
+        "zh-CN": "花坊里摆着花草盆景，也有插花和木作工作桌。旁边的小路通往民宿客房。\n开放时间：09:00–20:00。每日自由活动时间为08:00–22:00。",
+        "en": "花坊里摆着花草盆景，也有插花和木作工作桌。旁边的小路通往民宿客房。\n开放时间：09:00–20:00。每日自由活动时间为08:00–22:00。"
+      },
+      "scene_type": "homes",
+      "version": "chaoxi-holiday-v6",
+      "connected_location_ids": [
+        "loc_05",
+        "guest_room"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "plants",
+          "type": "display",
+          "name": {
+            "zh-CN": "花草盆景展示架",
+            "en": "花草盆景展示架"
+          },
+          "description": {
+            "zh-CN": "浏览花草盆景",
+            "en": "浏览花草盆景"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "flowers",
+          "type": "display",
+          "name": {
+            "zh-CN": "插花展架与工作桌",
+            "en": "插花展架与工作桌"
+          },
+          "description": {
+            "zh-CN": "查看花材与工具、制作插花、看看完成的插花",
+            "en": "查看花材与工具、制作插花、看看完成的插花"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "wood_display",
+          "type": "display",
+          "name": {
+            "zh-CN": "木作展示架",
+            "en": "木作展示架"
+          },
+          "description": {
+            "zh-CN": "浏览木作作品",
+            "en": "浏览木作作品"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "wood_work",
+          "type": "display",
+          "name": {
+            "zh-CN": "木作工作桌",
+            "en": "木作工作桌"
+          },
+          "description": {
+            "zh-CN": "查看材料与工具、拼装木船、自由拼搭木作",
+            "en": "查看材料与工具、拼装木船、自由拼搭木作"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "loc_03",
+      "name": {
+        "en": "岛角零食店",
+        "zh-CN": "岛角零食店"
+      },
+      "description": {
+        "en": "店不大，货架上摆着零食，也能看到有当地特色的包装和手写小卡。\n开放时间：08:00–21:00。每日自由活动时间为08:00–22:00。",
+        "zh-CN": "店不大，货架上摆着零食，也能看到有当地特色的包装和手写小卡。\n开放时间：08:00–21:00。每日自由活动时间为08:00–22:00。"
+      },
+      "scene_type": "shop",
+      "version": "chaoxi-holiday-v6",
+      "connected_location_ids": [
+        "loc_05"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "shelf",
+          "type": "display",
+          "name": {
+            "zh-CN": "零食货架",
+            "en": "零食货架"
+          },
+          "description": {
+            "zh-CN": "浏览商品",
+            "en": "浏览商品"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "photos",
+          "type": "display",
+          "name": {
+            "zh-CN": "摄影展示架",
+            "en": "摄影展示架"
+          },
+          "description": {
+            "zh-CN": "浏览摄影作品",
+            "en": "浏览摄影作品"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "loc_04",
+      "name": {
+        "en": "岸边餐馆",
+        "zh-CN": "岸边餐馆"
+      },
+      "description": {
+        "en": "这家餐馆能看见海，做的是家常菜，菜单不长。门外有一小块地方，饭后可以走走。\n开放时间：11:00–14:00、17:00–21:00。每日自由活动时间为08:00–22:00。",
+        "zh-CN": "这家餐馆能看见海，做的是家常菜，菜单不长。门外有一小块地方，饭后可以走走。\n开放时间：11:00–14:00、17:00–21:00。每日自由活动时间为08:00–22:00。"
+      },
+      "scene_type": "restaurant",
+      "version": "chaoxi-holiday-v6",
+      "connected_location_ids": [
+        "loc_05"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "restaurant_menu",
+          "type": "display",
+          "name": {
+            "zh-CN": "菜单墙",
+            "en": "菜单墙"
+          },
+          "description": {
+            "zh-CN": "浏览并点餐",
+            "en": "浏览并点餐"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "restaurant_table",
+          "type": "display",
+          "name": {
+            "zh-CN": "餐桌",
+            "en": "餐桌"
+          },
+          "description": {
+            "zh-CN": "选择座位、用餐、离座",
+            "en": "选择座位、用餐、离座"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "loc_05",
+      "name": {
+        "en": "公共广场与活动室",
+        "zh-CN": "公共广场与活动室"
+      },
+      "description": {
+        "zh-CN": "广场旁有桌游室、排球室和公共活动室，可以独自练习，也可以约邻居一起活动。\n开放时间：08:00–22:00。每日自由活动时间为08:00–22:00。",
+        "en": "广场旁有桌游室、排球室和公共活动室，可以独自练习，也可以约邻居一起活动。\n开放时间：08:00–22:00。每日自由活动时间为08:00–22:00。"
+      },
+      "scene_type": "square",
+      "version": "chaoxi-holiday-v6",
+      "connected_location_ids": [
+        "loc_01",
+        "loc_02",
+        "loc_03",
+        "loc_04",
+        "loc_06",
+        "residential"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "games",
+          "type": "display",
+          "name": {
+            "zh-CN": "桌游室",
+            "en": "桌游室"
+          },
+          "description": {
+            "zh-CN": "浏览桌游与玩法、游玩华容道",
+            "en": "浏览桌游与玩法、游玩华容道"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "volleyball",
+          "type": "display",
+          "name": {
+            "zh-CN": "排球室",
+            "en": "排球室"
+          },
+          "description": {
+            "zh-CN": "查看场地与规则、垫球练习",
+            "en": "查看场地与规则、垫球练习"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "common_room",
+          "type": "display",
+          "name": {
+            "zh-CN": "公共活动室",
+            "en": "公共活动室"
+          },
+          "description": {
+            "zh-CN": "查看活动安排、坐下休息",
+            "en": "查看活动安排、坐下休息"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "loc_06",
+      "name": {
+        "en": "临海咖啡馆",
+        "zh-CN": "临海咖啡馆"
+      },
+      "description": {
+        "en": "可以坐在窗边看海，翻一篇短文，或玩桌面游戏。想安静坐一会儿也行。\n开放时间：08:00–21:00。每日自由活动时间为08:00–22:00。",
+        "zh-CN": "可以坐在窗边看海，翻一篇短文，或玩桌面游戏。想安静坐一会儿也行。\n开放时间：08:00–21:00。每日自由活动时间为08:00–22:00。"
+      },
+      "scene_type": "restaurant",
+      "version": "chaoxi-holiday-v6",
+      "connected_location_ids": [
+        "loc_05"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "cafe_menu",
+          "type": "display",
+          "name": {
+            "zh-CN": "咖啡店菜单",
+            "en": "咖啡店菜单"
+          },
+          "description": {
+            "zh-CN": "浏览并点单",
+            "en": "浏览并点单"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "books",
+          "type": "display",
+          "name": {
+            "zh-CN": "读书角",
+            "en": "读书角"
+          },
+          "description": {
+            "zh-CN": "选书阅读",
+            "en": "选书阅读"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "postcards",
+          "type": "display",
+          "name": {
+            "zh-CN": "明信片展示架",
+            "en": "明信片展示架"
+          },
+          "description": {
+            "zh-CN": "浏览明信片、写一张明信片",
+            "en": "浏览明信片、写一张明信片"
+          },
+          "renderer_key": "display"
+        },
+        {
+          "object_id": "cafe_table",
+          "type": "display",
+          "name": {
+            "zh-CN": "桌位",
+            "en": "桌位"
+          },
+          "description": {
+            "zh-CN": "选择座位、享用饮品、离座",
+            "en": "选择座位、享用饮品、离座"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "guest_room",
+      "name": {
+        "en": "民宿客房",
+        "zh-CN": "民宿客房"
+      },
+      "description": {
+        "en": "你这七天的住处。窗边有日记本，床头放着小岛地图。每天从这里出门。\n开放时间：08:00–22:00。每日自由活动时间为08:00–22:00。",
+        "zh-CN": "你这七天的住处。窗边有日记本，床头放着小岛地图。每天从这里出门。\n开放时间：08:00–22:00。每日自由活动时间为08:00–22:00。"
+      },
+      "scene_type": "homes",
+      "version": "chaoxi-holiday-v6",
+      "connected_location_ids": [
+        "loc_02"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [
+        {
+          "object_id": "guidebook",
+          "type": "display",
+          "name": {
+            "zh-CN": "客房床头度假册",
+            "en": "客房床头度假册"
+          },
+          "description": {
+            "zh-CN": "翻开度假册",
+            "en": "翻开度假册"
+          },
+          "renderer_key": "display"
+        }
+      ],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    },
+    {
+      "location_id": "residential",
+      "name": {
+        "en": "岛民住宅区",
+        "zh-CN": "岛民住宅区"
+      },
+      "description": {
+        "en": "沿着树荫小路是一排居民住处。门牌上写着姓名，家中私人空间不对游客开放。居民清晨从这里出发，傍晚回来休息。\n开放时间：08:00–22:00。每日自由活动时间为08:00–22:00。",
+        "zh-CN": "沿着树荫小路是一排居民住处。门牌上写着姓名，家中私人空间不对游客开放。居民清晨从这里出发，傍晚回来休息。\n开放时间：08:00–22:00。每日自由活动时间为08:00–22:00。"
+      },
+      "scene_type": "homes",
+      "version": "chaoxi-holiday-v6",
+      "connected_location_ids": [
+        "loc_05"
+      ],
+      "opening_hours": {
+        "always_open": true
+      },
+      "interaction_points": [],
+      "allowed_actions": [
+        "move",
+        "observe",
+        "approach",
+        "wait",
+        "end_day",
+        "end_conversation",
+        "event_action"
+      ],
+      "event_pool_ids": []
+    }
+  ]
+}

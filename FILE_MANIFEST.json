@@ -1,0 +1,3759 @@
+{
+  "schema_version": 1,
+  "algorithm": "sha256",
+  "listed_files": 750,
+  "total_release_files": 751,
+  "self_excluded": "FILE_MANIFEST.json",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 448,
+      "sha256": "f57d19921136a7c2a4f456015e121e20972a57dba7ab2551c6ce9073d76b08c7"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 191,
+      "sha256": "f55f14bc37f16e1fe49a6e2bfd659347e2daaf13b7bc682a18e2b45f066ecb81"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 691,
+      "sha256": "6b88969f4d035bf3135998fc506b16a10f7aba40c3c42843d7e0f462e0ccb8bd"
+    },
+    {
+      "path": "backend/agents/__init__.py",
+      "bytes": 153,
+      "sha256": "2f602356967d3b7a3dda1629507f81f6159bd46459d233086f050378310cece3"
+    },
+    {
+      "path": "backend/agents/base.py",
+      "bytes": 1303,
+      "sha256": "84b683882fc61abb9f0a25a25062ab2bbcbf0ce6955b399b5236e1f1f6e3f80b"
+    },
+    {
+      "path": "backend/agents/chinese_style.py",
+      "bytes": 4735,
+      "sha256": "50463949cc4ec8b1eef2116886eb514020358addf051469ca56cd99f7d494acc"
+    },
+    {
+      "path": "backend/agents/decision_provider.py",
+      "bytes": 4101,
+      "sha256": "3298f80ce0a29f84ae7fc817e1ff203426781369520103c8d7204b5b2cd7ed17"
+    },
+    {
+      "path": "backend/agents/dialogue_fact_audit.py",
+      "bytes": 5463,
+      "sha256": "5eaaea29a5d279c5ac5b6a40c7f5b79b61baa35364efc22e6820104fb517f302"
+    },
+    {
+      "path": "backend/agents/dialogue_quality.py",
+      "bytes": 25532,
+      "sha256": "1e241b5c3b68a1c43447ce93eb74e468020bcd011832d8f00f6f8b3cfad93a45"
+    },
+    {
+      "path": "backend/agents/dialogue_turn_policy.py",
+      "bytes": 4331,
+      "sha256": "9a3dc77ae37acfb68bcc4f130e46bffd425341d2a4df459e785f6f0e4fd92747"
+    },
+    {
+      "path": "backend/agents/llm_agent.py",
+      "bytes": 25718,
+      "sha256": "74468cd379e3b150d382519e0e8976311179a0e8f1cfca9d313f02781b170c19"
+    },
+    {
+      "path": "backend/agents/llm_transport.py",
+      "bytes": 13155,
+      "sha256": "94f7d604cec81cfee851673e9342461881cce84c201c641513b1ffa053cbadc8"
+    },
+    {
+      "path": "backend/agents/output_safety.py",
+      "bytes": 5908,
+      "sha256": "3e74a2cc2cfc94356d2e1ffe06a11f4bf92013649d7806cf44456b4f0b1ee453"
+    },
+    {
+      "path": "backend/agents/personas.py",
+      "bytes": 10478,
+      "sha256": "4b6e86e30fa641b046522770c0d9bafc24ec253853e90e409735a24c13ebc262"
+    },
+    {
+      "path": "backend/agents/role_prompt.py",
+      "bytes": 7994,
+      "sha256": "a22ef835a26dbf106eb51640923c29ab3f84b10959c4d2358b3fffd511b0d8bb"
+    },
+    {
+      "path": "backend/agents/rule_based.py",
+      "bytes": 13153,
+      "sha256": "69895e4ad65909ae0cbbfb2962e96044a7c0cdfc466afd369bdbb44929ebb505"
+    },
+    {
+      "path": "backend/agents/safety.py",
+      "bytes": 1357,
+      "sha256": "4538267dc8da13b11a5c2a14f964b6572dfde8045a1fd4a80d776899295cff20"
+    },
+    {
+      "path": "backend/agents/service.py",
+      "bytes": 1147,
+      "sha256": "938d617eaa999a1b21babddda2abf049163d2a62ff03fc53f82f46c41ca3d8db"
+    },
+    {
+      "path": "backend/assets/holiday-next/manifest.json",
+      "bytes": 5705,
+      "sha256": "56844a64d6f2bcbbaeaec4e13d4823a52353e318b06e2640eb23f8f06751e7af"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/activity.bonfire-chat.webp",
+      "bytes": 303886,
+      "sha256": "d958787de6b07c6225d1dea5bd769545f3eb49f80ff68867629eb64d6fc9b1e2"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/activity.bonfire-goodbye.webp",
+      "bytes": 339986,
+      "sha256": "4e3ec159f2d261f1e1e3baf7202ef6ecab8960ad323fa86372ad4f5efc0147bb"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/activity.bonfire-wide.webp",
+      "bytes": 382776,
+      "sha256": "0a007e3bdece696d76de64aba92caae4de1daf8cf6995c4d260dad9da7ac8214"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/activity.welcome-chat.webp",
+      "bytes": 309104,
+      "sha256": "a9870a648c807fe256b1889952d10c1b64c814986cc55b239a1af96e1523ae25"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/activity.welcome-speech.webp",
+      "bytes": 301254,
+      "sha256": "7379c563facd422456073aaeec8eb4eabe403ca589ba5d5f32ada524c55f5fbd"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/activity.welcome-wide.webp",
+      "bytes": 313786,
+      "sha256": "72a257c1d3296d6264f0170689b14180e874d67ef8fe15c743cc0d7b0f97c71b"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/location.guest_room.webp",
+      "bytes": 283090,
+      "sha256": "2a9ca6073e4d31ab6db018fc7bc35d04ea19d1a1cefc78b9e18f23a4a9eb1a6d"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/location.loc_01.webp",
+      "bytes": 403918,
+      "sha256": "a246fb8b611c1296ecb357ccf13ed0fa3ec2357055108785261b704f4e3f8da3"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/location.loc_02.webp",
+      "bytes": 331602,
+      "sha256": "3c551fbafa1395ff50d7a28dc6f390c724b0e0f4ceca6bd2f7ae4ad2a6272fff"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/location.loc_03.webp",
+      "bytes": 340684,
+      "sha256": "3fdfed503627ac1d642e3aebcc449e2956e329d01e14809ac8e49f85dbf19996"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/location.loc_04.webp",
+      "bytes": 306032,
+      "sha256": "69d44577c1c1b988181730d516faa6c4bb378313410be45302b42db929ca0527"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/location.loc_05.webp",
+      "bytes": 358306,
+      "sha256": "fe189a524a7af24045fd5429aa4dd3431ab5611937714135a697bb1acb7ebf3d"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/location.loc_06.webp",
+      "bytes": 329314,
+      "sha256": "3778ac145a6e6b6a3b83f6c7eca6254bdc65216f50c71701780e1753f8bb8325"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/location.residential.webp",
+      "bytes": 443000,
+      "sha256": "1c6b994765cc2f09445763ba0fa3a8fddbf61b996c05232a9512c62003ca46cd"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/map.island.webp",
+      "bytes": 499560,
+      "sha256": "9c5d01e0a1b9660fdbbc965c2bf2dedf1a72694a619efb41f2479da3674de81f"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.beach.webp",
+      "bytes": 353134,
+      "sha256": "a5ddc8dc374742742964abf31e851de3b9832774d31711305b65db218ccb4749"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.bench.webp",
+      "bytes": 384720,
+      "sha256": "ca3bb2a23e0ec4407337f627d76d18a6408aee8b24a1a39f066457356ff0efd9"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.bonfire_table.webp",
+      "bytes": 332014,
+      "sha256": "66991e2800472539e81bc8d6016fdd1bb1534d02f57c15f7ba44394e8b8c41c0"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.books.webp",
+      "bytes": 275570,
+      "sha256": "45ac1bfe8daf4cdc19c5d259a2bc0c37069be346caf524682323d73b59706b8a"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.cafe_menu.webp",
+      "bytes": 256966,
+      "sha256": "beda94e870e776e752bfe7b55978f8e5a16fa426e4b22d335694f697c2ef3710"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.cafe_table.webp",
+      "bytes": 287864,
+      "sha256": "cf9c5a1bb7d382b583e44101918c6944834d914161ba1bb3aa14d5fc14554127"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.common_room.webp",
+      "bytes": 295020,
+      "sha256": "724c99b0fda6bac7ac43bc9eeed99914e5f88ac3823b38d565878c7e4d507c59"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.flowers.webp",
+      "bytes": 327270,
+      "sha256": "e0fe900ae572b4fd7f19c682d957bd9eeb7fe3dc3f8ff13e74e77ba62490525b"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.games.webp",
+      "bytes": 322958,
+      "sha256": "c7d1a465cb6cfe240f3e03746fa7ca32b2d6cfbd0f1accee8cf2a81d7812d9e1"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.guidebook.webp",
+      "bytes": 281950,
+      "sha256": "acc37304eb79203bca995e85faae3ecc1dc75fb0edf86a9796b477962dc84494"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.photos.webp",
+      "bytes": 283610,
+      "sha256": "9064196b72d28c0683be91333d0be22706e4c00871153273a117109663731878"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.plants.webp",
+      "bytes": 385812,
+      "sha256": "f8ff46100b71d6ffbd9333a0d3cc6d6fed422370769022237896c383827a9747"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.postcards.webp",
+      "bytes": 262330,
+      "sha256": "320534c7a8f0a61c45fdbe22294747d25e46569135afd27ddaab467e23862772"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.restaurant_menu.webp",
+      "bytes": 286160,
+      "sha256": "6131c7b3e8eecbbf34f5388180dd6d27e1b7f61343c1f47cbdd1084b26894d51"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.restaurant_table.webp",
+      "bytes": 265820,
+      "sha256": "9fb2f066eb23d4fccd2b9f7473bb024aa9dfbb5bef32720204bc8300af338788"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.rope.webp",
+      "bytes": 284472,
+      "sha256": "b3067706ed4b16ded816626249ca0153a8b9c135c608ab21e48bb8f49bc30128"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.shelf.webp",
+      "bytes": 353298,
+      "sha256": "64614e01acf204ff853ac5134dd37419a84127514373eef14a99512cd919e8b7"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.sketch.webp",
+      "bytes": 348800,
+      "sha256": "1e599361da8370cf3af34153c6a6078d54385a5dc74df1956630a64a57128da6"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.volleyball.webp",
+      "bytes": 223598,
+      "sha256": "1322ac0818ecdf31e8b433c17e5da0e159cab63dcb2e206717f2e229af78a32b"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.welcome_table.webp",
+      "bytes": 321846,
+      "sha256": "2d5de33a47cbf3ced5d0e54ccf7952c1d7ddd0b94c0716be4690c27b816ef2fd"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.wood_display.webp",
+      "bytes": 261316,
+      "sha256": "317fb5b8f9125d1ec3d18732615959dda1a928882c14ed5cf9492a941b7c8b3a"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/object.wood_work.webp",
+      "bytes": 295580,
+      "sha256": "1d05819f792633878087dab7bd46b8243f7d1be0ea46ed724d09361407b4bdc7"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/resident.1.closeup.webp",
+      "bytes": 242640,
+      "sha256": "73d4292683e1bc066829fe85ab84c4d14d6cd6396a76663c6ff142a7fbbaf560"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/resident.2.closeup.webp",
+      "bytes": 233194,
+      "sha256": "864de36a2c7972c29d161b43ba6edc8c61205ea0b8692519ef6c21f088fd679a"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/resident.3.closeup.webp",
+      "bytes": 203260,
+      "sha256": "4d3c6631314f0a41a77a019993dc2184edb032b2fe2f217984070541b1399573"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/resident.4.closeup.webp",
+      "bytes": 221326,
+      "sha256": "05e4273313b332e1e28d5fd7bdb86735bdb45f288ba6a43db06782f4f3d188b1"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/resident.5.closeup.webp",
+      "bytes": 197142,
+      "sha256": "909b09d5b9e62b6f24cda1ebf1825544b93da359ac9fcc280f1c1ff7c6e0e7ee"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/resident.6.closeup.webp",
+      "bytes": 191354,
+      "sha256": "ae85ae225cd0fbc54670a058f3d396eff996a4bbfd46ba4ab6b220613b33897d"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/resident.7.closeup.webp",
+      "bytes": 164592,
+      "sha256": "e39a71df006506fa98f9f4774300b35f73174bf7e670a8e3ab138bd08ab40188"
+    },
+    {
+      "path": "backend/assets/holiday-v5/images/resident.8.closeup.webp",
+      "bytes": 243254,
+      "sha256": "cf914dda93931af3494a7b5a69901e11384f3717e34c42c70c3b638d65a2d7e9"
+    },
+    {
+      "path": "backend/assets/holiday-v5/manifest.json",
+      "bytes": 26206,
+      "sha256": "8a605b738622acf578800b024b501c8c0e75330a1d28cda8324d7976be3f417c"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/activity.welcome-chat.night.png",
+      "bytes": 2485750,
+      "sha256": "ab3feae43d4c278d2c9261f772502c1aade58068eb73da34a773c12f93504dac"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/activity.welcome-chat.night.webp",
+      "bytes": 308396,
+      "sha256": "ca39880dd45b793db37f16aea3f5933affd0cda88297cf8d5f19ca5551a73433"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/activity.welcome-speech.night.png",
+      "bytes": 2507646,
+      "sha256": "01fc2fa2fb12e0bc61ee4b97dd45b653f6dcae5cf63bf64c5b6e73d838173734"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/activity.welcome-speech.night.webp",
+      "bytes": 312132,
+      "sha256": "21924ef0e2db7f4f1487b417ad69910287eb3fb81dd20e148f19d60c27e97d71"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/activity.welcome-wide.night.png",
+      "bytes": 2457714,
+      "sha256": "488ce44a12b76ab746193ea0de17cf5269e091c1a59e6311ea6d4ccbd497bde6"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/activity.welcome-wide.night.webp",
+      "bytes": 300742,
+      "sha256": "4a1bef84a6a69d5412238a9cd356a007dffad4d9ba5e7e8481ed42c4b387a522"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/book.meditations.png",
+      "bytes": 2827547,
+      "sha256": "258ce4d13b1ced2ebc5779bc8f4c5edeaeadca56ea88fc51d2f6995140f85d5b"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/book.meditations.webp",
+      "bytes": 278208,
+      "sha256": "d291f84970ed9f4330cc30bc50ad65755eb2c0b7be6df9186b2b9291fd9cba7e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/book.stray_birds.png",
+      "bytes": 2802084,
+      "sha256": "7ef23d72132e66bf1db098c3d910ec87d6c420d3841e0abda04ff051d98df28b"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/book.stray_birds.webp",
+      "bytes": 286186,
+      "sha256": "ca478f28f8e966928b26d64a7d4b99722e035cf06c7f91718cc0dbb1e3dff8b9"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/book.walden.png",
+      "bytes": 2751005,
+      "sha256": "a03fe70a5c72a5f9b48918934834738a76b0f8f2ef6e7f10c0896623913372fa"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/book.walden.webp",
+      "bytes": 266014,
+      "sha256": "87c50ad740fbdb308ad510174a1766b8f1a777030f1310c8ca49f061e9f7bfa7"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.photos.harbor.night.png",
+      "bytes": 2300865,
+      "sha256": "f1bf84e7f2c67021fb8aa6e72a90120b2a5872dff7815900d8d5bc2a2acc86e4"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.photos.harbor.night.webp",
+      "bytes": 260334,
+      "sha256": "89c01b3ccf56f4109d88e70b7d67d852989ce2470079808abd20459711819ac5"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.photos.harbor.png",
+      "bytes": 2404042,
+      "sha256": "942a19f582f27a704503511542fa535f8ed2b522aec6d1400fb1e2fe1720d594"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.photos.harbor.webp",
+      "bytes": 267046,
+      "sha256": "7f53722e1defe1312d57d0712f3dd4bf39b6012a7850bc38205e8379e15fdae5"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.photos.street.night.png",
+      "bytes": 2610028,
+      "sha256": "8bfbd639d5673325dca075149542bb7779754af7f2f6cd5f35864eb68ef584c4"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.photos.street.night.webp",
+      "bytes": 330352,
+      "sha256": "0c27946bb11e462658550dc9be74532d0f3fea12cc7f543e0268836384c73e70"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.photos.street.png",
+      "bytes": 2749912,
+      "sha256": "c76be9ff6a5def8c0be675aedeff4d14479c6f02d7f3a23ceed575647eacc049"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.photos.street.webp",
+      "bytes": 353122,
+      "sha256": "c19b7cd85628ca0255f0e4c8c7b18e30d8881307cd1c9f63d796ea1058953828"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.daisy.night.png",
+      "bytes": 2560146,
+      "sha256": "c94cc76d1cb87f2a62fac394af9db4be91be71b67815fb9ea72244d27cbe2759"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.daisy.night.webp",
+      "bytes": 312680,
+      "sha256": "1888a9055e5598251bb5d6d653f51b017c61586b476c02a992010d0247f3630c"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.daisy.png",
+      "bytes": 2748373,
+      "sha256": "068ccad9062778d022ab347e188aade82100092e89238166c348ab9abe4a5778"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.daisy.webp",
+      "bytes": 359752,
+      "sha256": "7d67b40ad90fb1021488ad8a596e0683628dfb993d98405b925ea5eb638fe43f"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.fern.night.png",
+      "bytes": 2639267,
+      "sha256": "9d13cfbdfc06f7a060c874ba8e6d7933c3669039692ea6294fb9ea6639198891"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.fern.night.webp",
+      "bytes": 354484,
+      "sha256": "1f62cd7e910e14c28afc1efe4ce8fd50e4974c400b946ee00e8c05e646bdc011"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.fern.png",
+      "bytes": 2853770,
+      "sha256": "a5c859610b7963828bda51a3165f849f1b06aa8512b16743f882c7c81b1f946e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.fern.webp",
+      "bytes": 376400,
+      "sha256": "43e6034183eaf0ead9e505c8cf17a8c4168b990f0152161de43ee283ef6b8048"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.mint.night.png",
+      "bytes": 2551830,
+      "sha256": "f832b51292ea81f34a327b5148e8ca8bb54cf5d058c0f79b05b5f6c26285907e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.mint.night.webp",
+      "bytes": 320434,
+      "sha256": "5d4b073f90b6201c766a60650920a395a41c6d1c61f177ff0b1988234a904eb7"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.mint.png",
+      "bytes": 2697103,
+      "sha256": "ed4e8a1ac732753006263b2bf1073e4c2f40bca6914d2722308eda659ce68468"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.plants.mint.webp",
+      "bytes": 342076,
+      "sha256": "30f1908505fa6ca6cb24b04b33892d371dff57e7629becef5e93669e792ef500"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.sketch.morning.night.png",
+      "bytes": 2873668,
+      "sha256": "b0fb3f6291c9cd8066a17d113e55c6dde8645053985ee5f731315ceb7f99a1cf"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.sketch.morning.night.webp",
+      "bytes": 423032,
+      "sha256": "b5d64718323a594d1240b100b6844db20ef0c2fbdc755786ac3a01929171bc20"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.sketch.morning.png",
+      "bytes": 3108953,
+      "sha256": "400822c4a1ec187aa9250f080c075bacbc8432d9da855c96e95dbadcb124cc3a"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.sketch.morning.webp",
+      "bytes": 461700,
+      "sha256": "f5e187c271461e6d48adb4984c467f563c083454ec62e8670e870b1542034570"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.wood_display.boat.night.png",
+      "bytes": 2298461,
+      "sha256": "425fd2c642e01afe45977f871a536959e723057b19ae2673c4d562fd7d4eba78"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.wood_display.boat.night.webp",
+      "bytes": 238782,
+      "sha256": "18c1bee8165b327dc197cdfdcd08d6f2a4d1760ff0f02986f2bcecf95af95d75"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.wood_display.boat.png",
+      "bytes": 2420396,
+      "sha256": "8d25661395776d55ec4b83f96178b15de131a92a9158573cb3049caef531c0f1"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.wood_display.boat.webp",
+      "bytes": 237974,
+      "sha256": "74eaf51eb305bb69505fa1165147e0903852e0bcaf47ff68fa29c0b327d61c08"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.wood_display.coaster.night.png",
+      "bytes": 2480263,
+      "sha256": "2fdf772ab5a1bdaf4f5af47ac5f656669dcbbed71be72f4db2c3a0e4073eaee9"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.wood_display.coaster.night.webp",
+      "bytes": 268404,
+      "sha256": "f9313bcb60072c89ff3684268f73cd895e0cdad10d82aa070e1693b770ac1d45"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.wood_display.coaster.png",
+      "bytes": 2652825,
+      "sha256": "9b12ee562832bde0b8ebb44a9a895c0968d9066dd57165742c3280e570ed5be2"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/exhibit.wood_display.coaster.webp",
+      "bytes": 278118,
+      "sha256": "3df75daee8bfaf7f85373dd9bad35632494615f3630aad3beed416fb23c0ad54"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.guest_room.night.png",
+      "bytes": 2445961,
+      "sha256": "8deece36012672ddfdb4dda764de191ee13e6ca5acdf5867d8f4be7a798c76b5"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.guest_room.night.webp",
+      "bytes": 265882,
+      "sha256": "0bcf74d6dc81532b7396a4f69288e3c2daae680ac05f0f6bbc39244447c98286"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_01.night.png",
+      "bytes": 3104983,
+      "sha256": "cbceb6ac60ac13b1fda2d82811063025c60203be25ee66b656ae64e09652420d"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_01.night.webp",
+      "bytes": 457830,
+      "sha256": "55aca17aaac75657b81179e33d5a7260bdbf9688076083a7186ba647d23b95b1"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_02.night.png",
+      "bytes": 2582675,
+      "sha256": "9d3b02c441818aaad6fdd03be24f739053267fec1a5d238f5ed438c6cce55d82"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_02.night.webp",
+      "bytes": 321920,
+      "sha256": "ddf0b86c185b119cebd199e6d2faa877182e711cd417a5e00645ec3071a3a1e4"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_03.night.png",
+      "bytes": 2760817,
+      "sha256": "5dd6bd17a32b1a6a76992dee27d03551822024c4edf0d0943904fbaa03332adc"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_03.night.webp",
+      "bytes": 375580,
+      "sha256": "062e65f30bedd38f4c6ece4fa60533ab3f6ef8b086d793292aa49a60364d0579"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_04.night.png",
+      "bytes": 2517805,
+      "sha256": "d84d7eaaa1703df66b1ba83c554890165e1c6487914445af2442e2c68931b62a"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_04.night.webp",
+      "bytes": 326402,
+      "sha256": "6ad49f169726e11217cea80af0cdc74de34e9575341dbbfeb34ad6625711f8c5"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_05.night.png",
+      "bytes": 2738122,
+      "sha256": "438b7d48843df9a1df02c859392ea53b6b30740a0fed1a184f93c1e972df075c"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_05.night.webp",
+      "bytes": 378676,
+      "sha256": "1573e1cde77215f7f0f58d51e59724aa46e686bb8819f01e5a1fc6368db60641"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_06.night.png",
+      "bytes": 2567891,
+      "sha256": "62dfd00e49f6c1202bb4f39fa1d7896903b683767838a7d846471fcda051f0a9"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.loc_06.night.webp",
+      "bytes": 326424,
+      "sha256": "2ad0e53922cec7b4654e255e1deeb399178211053d1c0651d7dc269f6cef961a"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.residential.night.png",
+      "bytes": 2940584,
+      "sha256": "0994bcc4d26a5e9312fa99f74c8a0da2230b23757dd0e521f72cbfd96ae2e877"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/location.residential.night.webp",
+      "bytes": 404776,
+      "sha256": "b3a1772133d3ace74588f0d86dee9ad729167c12ab754e948058b7ec4ab124f2"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/map.island.night.png",
+      "bytes": 3322538,
+      "sha256": "3f0d67c1564d5918878a8848e7bfdbb984f1fe183866eaffd82322d68bc59d57"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/map.island.night.webp",
+      "bytes": 492928,
+      "sha256": "342b99226d4f743ac67039ca67161a96660516b9a5e667440bff84728f553943"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.beach.night.png",
+      "bytes": 2987256,
+      "sha256": "081f72cd7aebc225c23bc9f87f0baf3cb006487e7d19d7688a05eac27056b772"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.beach.night.webp",
+      "bytes": 409778,
+      "sha256": "ea0b8645609574423a29e927628d071943b3ca8923a2c61a8fea4ab04ac486db"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.bench.night.png",
+      "bytes": 2854526,
+      "sha256": "738c288b3cd88c800cd58694bec05adbdde770a147fa48f00804d577ece17ced"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.bench.night.webp",
+      "bytes": 394548,
+      "sha256": "903c4c78c76925cbc01a22f2649581a21ac847271641554edcbdce00450beaae"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.books.night.png",
+      "bytes": 2279795,
+      "sha256": "797e3be1b549933b526b4c1dce2ab2d812d12fdaeece9ca81d4d182592e244f4"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.books.night.webp",
+      "bytes": 264752,
+      "sha256": "7e34fe1ca02e6cb33db11f31327e186f222e3671162ecd78b0f77eee5795c78a"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.cafe_menu.night.png",
+      "bytes": 2308595,
+      "sha256": "e49da4a330968239187ef3c8e173d3a273d52176dd25d2373f8c521bc94818a8"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.cafe_menu.night.webp",
+      "bytes": 262314,
+      "sha256": "48b1f56b430cf25e6fc2ab97a95fb8c42c76f109db2c933024038329ab252403"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.cafe_table.night.png",
+      "bytes": 2435118,
+      "sha256": "fabd18f69fb36fcbf061d09544232fe85474e7bf6268d439f21c159063cef24b"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.cafe_table.night.webp",
+      "bytes": 290720,
+      "sha256": "679ca54f0f6d057e7686e31dd651a4cd40c6c60ec86db7fc638cb6d72f62473b"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.common_room.night.png",
+      "bytes": 2408157,
+      "sha256": "c66c9c77be9077a8fd496afbb0c25187e04b1bf45b119e1ab1d06d62e0f89526"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.common_room.night.webp",
+      "bytes": 293500,
+      "sha256": "9db560a882d8179dccd8af4e4f4e3714e0910449fed3507912bf0e102f426c1f"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.flowers.night.png",
+      "bytes": 2722102,
+      "sha256": "f67b23e18e740c96a964ac7d421d13debf6143c59011c81947d4068ff873926e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.flowers.night.webp",
+      "bytes": 346648,
+      "sha256": "ca6f7ccf49e9d28949c06eb9936d0108647baf9d840a3a3eeda4824c819cd7b9"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.games.night.png",
+      "bytes": 2538417,
+      "sha256": "c4eca1fc1867e3098c47fda230edf1fc17165b1ce645726b994ecc03557b907b"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.games.night.webp",
+      "bytes": 316900,
+      "sha256": "ef3c1216f64abed67ba57475144493702d7b40dfb7d08fa022296cfcbf47ff9e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.guidebook.night.png",
+      "bytes": 2529186,
+      "sha256": "5ece4546c1cfb1a66181e58a67a5444e9b9aa4a8574e6b5985f070881b6b797d"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.guidebook.night.webp",
+      "bytes": 296012,
+      "sha256": "72e388d8aecd5a589b599780f524ecae4d38e61671092a757d21f521bd621263"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.photos.night.png",
+      "bytes": 2359804,
+      "sha256": "6a9c189f0dac8fd0f8e2fa1d74dc210d6f09d92a6aafdda7d3afb09bd4abacb0"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.photos.night.webp",
+      "bytes": 276170,
+      "sha256": "864020708a607960782ffb246d420a2485bc3ec04dd9a1a8741e4aebd4f6d3fe"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.plants.night.png",
+      "bytes": 2722355,
+      "sha256": "9430ff6a2fa1cd8a256e115a4414cef5de62a348a41100f2de55c3795c26e523"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.plants.night.webp",
+      "bytes": 370388,
+      "sha256": "1a9738f2ab6575686489edfe4252198ea96ecb79c228e18d01423cd3f3b88b06"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.postcards.night.png",
+      "bytes": 2324188,
+      "sha256": "47a9aeda7fd43ca2f1ad8b673ccbc5518485f8ac0293b5844901b8b5cfea122e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.postcards.night.webp",
+      "bytes": 280876,
+      "sha256": "87328e6d04fc7b1e1edc7409850a93d11d94d9c294181162060fda9313c00cda"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.restaurant_menu.night.png",
+      "bytes": 2311165,
+      "sha256": "2f650cbe3bb788972799b0ae349de2c53df80b0063106626d882e80ceb96a290"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.restaurant_menu.night.webp",
+      "bytes": 266944,
+      "sha256": "7aadd9a4960010f4cf3352863196a4b6adf7b020cf8a6c97bf2175daab5367fc"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.restaurant_table.night.png",
+      "bytes": 2401712,
+      "sha256": "63d72549cc8bf77cde7ea4041def320726c20db76e8c0f4e20aa22c6a82c90f0"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.restaurant_table.night.webp",
+      "bytes": 275194,
+      "sha256": "4c17f98f6fbc54c4e0723ee88072f6929ddebabc86dcc3c191b2e77b798a06df"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.rope.night.png",
+      "bytes": 2554371,
+      "sha256": "f3807f5b8776b6ce00f153024c0d71c4ab8dba9050bcecdca3fef45a72a1bd78"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.rope.night.webp",
+      "bytes": 300282,
+      "sha256": "5bf38c19f3f6a1a8a34f9d07ed6cb05bea9c0150455eae8cd4b711821e6e339b"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.shelf.night.png",
+      "bytes": 2588956,
+      "sha256": "4499f21b510735122241a1b8431be0efa9847d47d86d0bdbb381e17dfaa99e2d"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.shelf.night.webp",
+      "bytes": 363516,
+      "sha256": "37cb6ba6ba5d9be6d29e32dfd376844e87fd03a44221aff2870c81121fe02a88"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.sketch.night.png",
+      "bytes": 2746998,
+      "sha256": "3afe7b6bc985181795a2aa9043714701d52c79569cd37c7f36ea61bc9475364d"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.sketch.night.webp",
+      "bytes": 390670,
+      "sha256": "ed832c790774e25ca7ffa6286fa328b80e3d8bd56c09157be83c249927655244"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.volleyball.night.png",
+      "bytes": 2350457,
+      "sha256": "92e808b61f13e27ca141f4189ef1b3668ae413875ffd9c2d724724edf5f09681"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.volleyball.night.webp",
+      "bytes": 242290,
+      "sha256": "a9182e8c22fcde7c66b56aaf8fb53d22759eb7519ef4bb3a8029c455212677f9"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.welcome_table.night.png",
+      "bytes": 2606369,
+      "sha256": "05068a466c8a0a12dd9ff4dae910c70200b8ef4269b4a9a1385436f5ec633352"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.welcome_table.night.webp",
+      "bytes": 330560,
+      "sha256": "c479bc058dbf93ef17d5e157057c24a36a04ada792fed5844000b039b1180d98"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.wood_display.night.png",
+      "bytes": 2374505,
+      "sha256": "baa17bd3c72b52c5054274afd27800d0a050feca24f5aec9751b7efc8b063da0"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.wood_display.night.webp",
+      "bytes": 269472,
+      "sha256": "1f52492101878b23df6598918cda1aa56744983fcb9d71ece81473957152a0cb"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.wood_work.night.png",
+      "bytes": 2687653,
+      "sha256": "547fe24140990395ac72bea6211631d4ae2987cde3cb6add26a93abb637eec5c"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/object.wood_work.night.webp",
+      "bytes": 317196,
+      "sha256": "6c2f1267db415a154d3701cd19fe753aca144acb7c4f5844a2e74fb3bce5c500"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.early_ferry.night.png",
+      "bytes": 2583263,
+      "sha256": "cb5760c934fcde15e41b5e47a08bfce501ca85d109f124c00fce1b2e4b00fa2d"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.early_ferry.night.webp",
+      "bytes": 324860,
+      "sha256": "7657b692ad9becbf097f12152c4e6a9ceec8d53ec3cba4bb4f0190135a1b62d2"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.early_ferry.png",
+      "bytes": 2872049,
+      "sha256": "9ef8b28959ef4339aa50a57ea7e0b9594a77ea620b9f26823deb3731330d5230"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.early_ferry.webp",
+      "bytes": 368580,
+      "sha256": "6f5c3a3c9414e6104f4ca364391ed28e511049207a03d00a0eaeb3cc939d9a26"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.evening_walk.night.png",
+      "bytes": 2532930,
+      "sha256": "81fe0858624be6b65656c376da65f64b8e4916152ba2d31869bc13e6eea05ffe"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.evening_walk.night.webp",
+      "bytes": 320870,
+      "sha256": "1449a5f70fbda4c53a598b188c403ece31cf2b83fbbbb63abec9bb69a61a65cd"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.evening_walk.png",
+      "bytes": 2834922,
+      "sha256": "6d492e5820f9fc872b982d871ee81f79bbdf2620a3ceb8880c75000d5ccdb7eb"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.evening_walk.webp",
+      "bytes": 385720,
+      "sha256": "08d8a0a20fe02bf1e372f169235e66d72edadefba8405a1cac6a2fb313ccf330"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.next_visit.night.png",
+      "bytes": 2656065,
+      "sha256": "89522375fe1258910c31e76d3ed22bdcb236a9b6aeaf9d7216680a9e3e097ea9"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.next_visit.night.webp",
+      "bytes": 323470,
+      "sha256": "ea8ae77356c202ccfebb6f7d97a75fab0c97d373b6259740774be49e0c8d3cd3"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.next_visit.png",
+      "bytes": 2829085,
+      "sha256": "2a9e698a59233e80eadc005299f61c212e9992e79fdc2a33f6357fe01bacdba5"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.next_visit.webp",
+      "bytes": 355720,
+      "sha256": "9a72c648cf4c9f574a3cf8bd1d060ee79e2539e9e7b3b894d43fcab39e86a30e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.window_rain.night.png",
+      "bytes": 2712539,
+      "sha256": "fbf3675b2c3ac87792041e127803f967e7f4bf32eb942a282cdfc55263643b5f"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.window_rain.night.webp",
+      "bytes": 356354,
+      "sha256": "ae3c6a30559561ab2ad6225bf979a03f0001f3beaa17574adca5e80b04c37664"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.window_rain.png",
+      "bytes": 2951195,
+      "sha256": "394b090a73c2ceca39b72e48cf644a0596e98ca6165c291f74c2a3f245685edb"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.window_rain.webp",
+      "bytes": 405704,
+      "sha256": "1dadfadbcd0dbe67669f349ab8e5d662f27f2b0982ad76b7a5caf61932d377b9"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.wood_boat.night.png",
+      "bytes": 2482050,
+      "sha256": "2f3f5f7d0f132c62088c7201a26439c40f062321198257300df505cc2174db58"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.wood_boat.night.webp",
+      "bytes": 288614,
+      "sha256": "84b114afb3204d594f2e0c609af5918a82cd10e037b860d5fd69f95eb64b0c02"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.wood_boat.png",
+      "bytes": 2709935,
+      "sha256": "3996af448b77cea5f544ac65f9e45d2fbc2843fdb3d670dd16a5f4b9e164d823"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/postcard.wood_boat.webp",
+      "bytes": 325974,
+      "sha256": "861bfacc75987b22ed6c0b39a8ec02d60d4113263d27dbf348dabbc323fb0cb0"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.1.closeup.night.png",
+      "bytes": 1768102,
+      "sha256": "cc8945c4876ca2027002d03b4064f03a6ec964247904685af9202b62d5a80424"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.1.closeup.night.webp",
+      "bytes": 213290,
+      "sha256": "ac6cc2636547eba3c4edf15d1ff4dc46f588d3030a2443d8f61d504ef0c4887d"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.2.closeup.night.png",
+      "bytes": 1552695,
+      "sha256": "190a2cb4f2cec65b2b21d7b292d70e83170e27944d38cb8e84f357e27a16a300"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.2.closeup.night.webp",
+      "bytes": 191872,
+      "sha256": "c8084662a5e96b5dcc8873865b36c648a7078a3dc3af4b9cd3c1da5bbf4b09db"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.3.closeup.night.png",
+      "bytes": 1530559,
+      "sha256": "aa97a3257a80490761bfac7169b23b7c66a59903f388347ac2d06ae066b41b49"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.3.closeup.night.webp",
+      "bytes": 178406,
+      "sha256": "797d2e13fd2a379dc648ea99572a5a7b47e19a0bda3486dc785af95f38767403"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.4.closeup.night.png",
+      "bytes": 1754209,
+      "sha256": "e822c47bf3640ae15660dd7d82ae4a80d93a27eebe36d9f28b21561ee06075fe"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.4.closeup.night.webp",
+      "bytes": 201758,
+      "sha256": "4f8ff98829f84eaed3ec2941ac11902d557aa954a9c99dbc2f1b6ce638cb4e4b"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.5.closeup.night.png",
+      "bytes": 1516251,
+      "sha256": "66219861e6ae14e18d92ea36e51f268fec1783eaf579f346599b708833f17a5e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.5.closeup.night.webp",
+      "bytes": 165634,
+      "sha256": "15442f0320f4ff19856348fe5f86f9bf97c8747147a38000a409b438971f29a0"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.6.closeup.night.png",
+      "bytes": 1506419,
+      "sha256": "3c774cbc6f7c37e1cc22f8880241df1813ebbca7d9b50687586f3113cbac084f"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.6.closeup.night.webp",
+      "bytes": 182218,
+      "sha256": "3f2a144cd2b443052130b7535bdbc6ac1846f313a5a54912986270c969da5f9f"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.7.closeup.night.png",
+      "bytes": 1454777,
+      "sha256": "26366f6331a1e6d06eea429e13c2fbb37b6c6be6ed066402c16b7590e6cc700d"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.7.closeup.night.webp",
+      "bytes": 151426,
+      "sha256": "87484970fd31ff2ef44f655a0a5a403dbdd89e6fbf8971c3088d3920794c6b8f"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.8.closeup.night.png",
+      "bytes": 1675497,
+      "sha256": "8f037a50dd96beb1c3907156da5d65e790d5c0ba9eb557ac28171e8899d48610"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/resident.8.closeup.night.webp",
+      "bytes": 187788,
+      "sha256": "31d410c24aabbe299f8b841537ea214ef31f0deacb4afe31473f64c5bf1d5976"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.1.night.png",
+      "bytes": 3286517,
+      "sha256": "6e03ce5fd1c7cddf8de4975b55228d6c76bf348e271c7b26aded3e8ef037dce0"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.1.night.webp",
+      "bytes": 473942,
+      "sha256": "76fd073925a2072f0a36154bff6a6d5660596e8e2856e793e5b68ec742c9239e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.1.png",
+      "bytes": 3616283,
+      "sha256": "3d8364c5a9bf9a52eb6c438137fd50c5d2adb3ffa40df524179dbd8d50839f6a"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.1.webp",
+      "bytes": 565616,
+      "sha256": "6f5489bf9e851f77813b4511ff1af99bff9f023d0f3889bbc83eeee7dd9644d1"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.2.night.png",
+      "bytes": 3156324,
+      "sha256": "c208ccd27cc7f29f4cf5a82f0b98eaa67e323ed82c9f32fab0841c23797e4e78"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.2.night.webp",
+      "bytes": 463128,
+      "sha256": "107565355471e856e4c5c5b6a04528eba04897fb46546ae3cdbc68331538b115"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.2.png",
+      "bytes": 3502023,
+      "sha256": "d4083615b8e510f4bdd8d68425f7eba75c58cdd0eac37ab9553a49caadfd6af5"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.2.webp",
+      "bytes": 544844,
+      "sha256": "73fc5d55eb171e5081cdfa0379a528cb647a7a81f8c81db318fb528f1334ea61"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.3.night.png",
+      "bytes": 3368387,
+      "sha256": "22adc1708ec8f17aff69e4810bc1d31dcfa08897a4f804887dca95414b96af7d"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.3.night.webp",
+      "bytes": 496886,
+      "sha256": "c4368f283d7a413b25507ff048bd336ab594882ad0f1f602a2569298eeae19ef"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.3.png",
+      "bytes": 3646380,
+      "sha256": "ed689f43030fb724d05c43c0a903dc5a6ea53562f594851f8956ca9caa814fcf"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/search.3.webp",
+      "bytes": 582694,
+      "sha256": "ee26e0843b980c7c1bcca28f00e908604497dbb44ce521d137f80faaa4f698fe"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.bench.night.png",
+      "bytes": 2916780,
+      "sha256": "0971d406d878faf56c3ada4139ad4f2ef8d742921bab073742246606cf95059e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.bench.night.webp",
+      "bytes": 425480,
+      "sha256": "e7487ab4342efa10a7dd0ddd70c2c6a4bb4c8c919365343a027ad4ddb9314464"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.bench.png",
+      "bytes": 3133541,
+      "sha256": "a47a3fd76c2d86feced9925b7e5519f5f6effdb7c4a02b1b1c3df8b136123171"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.bench.webp",
+      "bytes": 464976,
+      "sha256": "c4b751fa4c30a66686c4656b01caa762afb599c809596fbb8628fee2783a698c"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.balcony.night.png",
+      "bytes": 2866952,
+      "sha256": "885b0f941e54d6626cb73db57440f275747d6577ffa07ae2ad412382c27aff4a"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.balcony.night.webp",
+      "bytes": 448982,
+      "sha256": "48fc7dde27deb2dc5cf155f414a74dbe1ec1202d6151a2f15d5531ab128cfe19"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.balcony.png",
+      "bytes": 3028155,
+      "sha256": "eb834c6ad2c5bac388e424a97b3ee516f5f33466bd2297378b85f6418eae0b12"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.balcony.webp",
+      "bytes": 487244,
+      "sha256": "bcfe614ff6887f96de4a8fc59778a58430750ce35bf74ea413a29f819e6766c6"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.indoor.night.png",
+      "bytes": 2438404,
+      "sha256": "0b352166ce452056f22496d423ecd490e221aa54e7872c7187b4e46312c27424"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.indoor.night.webp",
+      "bytes": 340356,
+      "sha256": "e6604065c52acb50d053754509973495728076c4498147bbc975b3d7be97c119"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.indoor.png",
+      "bytes": 2655550,
+      "sha256": "c9e6b84ce7abf30dee3f294b68eec98b2576a6a1fd1b1564d5d6695d8cff00f5"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.indoor.webp",
+      "bytes": 375332,
+      "sha256": "f4b3afeb2cc97b46046376e0ec541671b3b2f05bcf3607480b7d97cb8a91f404"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.night.png",
+      "bytes": 2875181,
+      "sha256": "c7b9fb52a4068c9b5cdc1c795c421a7e99b2fe2dfd6f6bd30ccd6cbd823727a7"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.night.webp",
+      "bytes": 421520,
+      "sha256": "c784e86d02bb78904fe1c18efc5b26d00215c9255aa855dd40cba5afd8d7c7e0"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.png",
+      "bytes": 3155613,
+      "sha256": "f847d3e93977ac9d0259fa9435d903c85fb9be2d767013aa96e9beb999d5aafb"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.webp",
+      "bytes": 495482,
+      "sha256": "5784490955bc5fa43e1f9dace2320ca67bcdcfcd00a3849df8e662613d63b881"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.window.night.png",
+      "bytes": 2577265,
+      "sha256": "1c89d8f430ef02895a5f09a4b22cf109a39581e9a734978c90629b63f45ff692"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.window.night.webp",
+      "bytes": 369432,
+      "sha256": "1d4bd08e8f3af59329a3eefcbe6cedd9478def65955c86762b99b5219022ece7"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.window.png",
+      "bytes": 2899849,
+      "sha256": "63b764adbe96c9b5f5f665e4ceadcfaff172af4758b748670e9a8df70867f242"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.cafe.window.webp",
+      "bytes": 433144,
+      "sha256": "7258a43a77b0e4979a942a369363b294e4d9838424263f3f550c3b3e86d8bde8"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.common.night.png",
+      "bytes": 2711323,
+      "sha256": "f8e94deb477feb9c7d78f6d55d9cc51961fadad8ad3a95f82852723d4727cdba"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.common.night.webp",
+      "bytes": 389262,
+      "sha256": "bf1173f54d7bdd8f484f8664b876a7a0a0dd9893b3e8b091d581734a305a6a90"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.common.png",
+      "bytes": 2938245,
+      "sha256": "b3f84035fc4614a3d37714cd984b0ac238386c20ed974f16c90b46bcdd7cb06c"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.common.webp",
+      "bytes": 435868,
+      "sha256": "f4387548862ce4084f15c876a39cf11220a3fb9778a2ceea0195ed551fadb1ae"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.indoor.night.png",
+      "bytes": 2515215,
+      "sha256": "62379317c17416e89e6be34d399a50618903a5755528177c6597daecea8e3c04"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.indoor.night.webp",
+      "bytes": 343856,
+      "sha256": "c881c0410134517afc8355e1626a3abee7128fc1fb661d2084579a5533ab1746"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.indoor.png",
+      "bytes": 2819171,
+      "sha256": "a716c3884e140c2c1c94258308c7da1324c8b289b729c7a7a8bf2e2c18569aa5"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.indoor.webp",
+      "bytes": 414010,
+      "sha256": "8a55b5d426a1a1895ac258dd64bf2300e8d7021b22cb2fa6d5797484cff7a8bb"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.night.png",
+      "bytes": 2839942,
+      "sha256": "454e9d8a52a9ffa609a1edade75f920f2d4f017369a96989f7df09cab54b93a2"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.night.webp",
+      "bytes": 426314,
+      "sha256": "18b885c84472be119a82ea05ad7cc3f0f037950fd38c4dcb320969ff6e09c48c"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.png",
+      "bytes": 3032263,
+      "sha256": "2dc00c45b9dfbd576ebdf2d68b919513ed198d8f246c8d019fa7a1921671b0d2"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.sun.night.png",
+      "bytes": 2805210,
+      "sha256": "1d296fb9e0b40be176f12b24b818698d739508b54f8dab4db3bf78610afaaf78"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.sun.night.webp",
+      "bytes": 438032,
+      "sha256": "9670fcfb96dfc2529d367b2f78f99d35fc0bfc3b327633d1735ffbf3914726e8"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.sun.png",
+      "bytes": 3064276,
+      "sha256": "8010ee093789c2f398f5047353d80815ed554ab49a9b2dcec76fafebf9985b42"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.sun.webp",
+      "bytes": 497176,
+      "sha256": "822e3fd4096271571cea4637b91e00e8affe3d6f3349c7b82d02524505c6762e"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.webp",
+      "bytes": 458470,
+      "sha256": "1f34620df5fce2d3b8cb05fb4d58e2c1f7fd7b9ec922b36603fe1c2788d2afe0"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.window.night.png",
+      "bytes": 2825947,
+      "sha256": "f8ea880f74e0144051d9ab2b97b6aa3763bceb8b5044992adc5557445a860d0f"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.window.night.webp",
+      "bytes": 438872,
+      "sha256": "d1ce5bdb5b8871b5c323cf2af5bbd139f6feed836202a01aa0377ea05ac0fdc9"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.window.png",
+      "bytes": 2913173,
+      "sha256": "db63595c679980670973c0782668a4df373aec105c51e3927606eb61f3da4510"
+    },
+    {
+      "path": "backend/assets/holiday-v6/images/view.restaurant.window.webp",
+      "bytes": 447100,
+      "sha256": "96cf1f2d5dd756a0c545ce8fba3b35fc33b9ba7661a339c8ef16e9cdd332de96"
+    },
+    {
+      "path": "backend/assets/holiday-v6/manifest.json",
+      "bytes": 59347,
+      "sha256": "85452fde9df9a76628f6d4c08a237e0e28af6c08902d75cd10e31eefebfe21ff"
+    },
+    {
+      "path": "backend/assets/player-v5/player-female.png",
+      "bytes": 1656438,
+      "sha256": "fa3677177a9ac6f11625d1e84a5cc47485fa7f215652c361ecb7bf3498a22f9d"
+    },
+    {
+      "path": "backend/assets/player-v5/player-male.png",
+      "bytes": 1672834,
+      "sha256": "67dbf54badd75030bdd2dc1c5701f495affc8fdf9f96a5beba2a55a367ee439f"
+    },
+    {
+      "path": "backend/config.py",
+      "bytes": 3311,
+      "sha256": "5662444abe3002975d6c56a9c7058a9c8bb4e469cf7e8a58a3074412d3d36207"
+    },
+    {
+      "path": "backend/content/__init__.py",
+      "bytes": 39,
+      "sha256": "c4c433ab0e784e40cdc2d03567b901c74781c53fd619b954e8f18f4fa506b60e"
+    },
+    {
+      "path": "backend/content/build_holiday_art_inventory.py",
+      "bytes": 13477,
+      "sha256": "d9e60dd8c7e25350597eb63967bd5ce520fd01e7b737be14b69c9a15b03d053d"
+    },
+    {
+      "path": "backend/content/build_holiday_pack.py",
+      "bytes": 22288,
+      "sha256": "2c24729f65746ace32a565b1d657a9d718a3c0f28fe6225fdc21501715633bdd"
+    },
+    {
+      "path": "backend/content/experience_next.py",
+      "bytes": 7622,
+      "sha256": "c3064a539aa59faa361c6fb7e7a594ba804295b61878e1ae4b4e8bba87b083a1"
+    },
+    {
+      "path": "backend/content/experience_next_books.py",
+      "bytes": 114,
+      "sha256": "8e2f7709b831f8d7d24b3752a39908e8337cdf4466a92c7b41ce80af9aa85463"
+    },
+    {
+      "path": "backend/content/experience_next_catalogue.py",
+      "bytes": 2630,
+      "sha256": "6ab729f7b988f0ad853c4217b076b291880bb2d90e7fc8903b08f46ee01731db"
+    },
+    {
+      "path": "backend/content/experience_next_characters.json",
+      "bytes": 29947,
+      "sha256": "bc68044fc6423fa93cab543e19aeba27a3f57c2d5319bfb4e291a8e8fa26d7d4"
+    },
+    {
+      "path": "backend/content/experience_next_library.py",
+      "bytes": 3833,
+      "sha256": "b58064fc8012c0dac7d543a27d40b76fd9e01350d4657f7e0d8f040ffad38748"
+    },
+    {
+      "path": "backend/content/experience_next_postcards.py",
+      "bytes": 528,
+      "sha256": "c83a2078cbf3a2fdf282545ef6d4186cd2aa0f48e8bd94c3945585606ce2629e"
+    },
+    {
+      "path": "backend/content/experience_next_reading.py",
+      "bytes": 24000,
+      "sha256": "fd50ac3b5ba46cf7fd892aac71209e062aa83e8e5174da65953867f6c6b97c35"
+    },
+    {
+      "path": "backend/content/experience_next_stock.json",
+      "bytes": 7285,
+      "sha256": "34f62bdf1dc40812cc7007273717c3204579ed55d41e63310e9c3de40ce11aff"
+    },
+    {
+      "path": "backend/content/experience_next_stock.py",
+      "bytes": 2770,
+      "sha256": "fec1e41b1226df7222cd3a36e54bc348c18790a71a1a20640c57315cd68ae5af"
+    },
+    {
+      "path": "backend/content/experience_next_topics.json",
+      "bytes": 38847,
+      "sha256": "37acbff6be652543c7326cd64e901db87e2062ee437fdc2c71fc8088d0388582"
+    },
+    {
+      "path": "backend/content/holiday_art.py",
+      "bytes": 4200,
+      "sha256": "6f18650328b40786262113d8c3c614f412ababa5559db97d2b4482198e07a754"
+    },
+    {
+      "path": "backend/content/holiday_chinese.py",
+      "bytes": 8813,
+      "sha256": "eaae381b20659f5550db7b01c97f641efb67c789b0bbb508fb3f634e9c680eca"
+    },
+    {
+      "path": "backend/content/holiday_experience.py",
+      "bytes": 12484,
+      "sha256": "90ef987a665c92b2116a20e6e9875e8c1b44bc7f35904806e2afc4b77318c92a"
+    },
+    {
+      "path": "backend/content/holiday_microcontent.py",
+      "bytes": 6669,
+      "sha256": "d01b164ac0b923deeedfe569b26586165db0c6d9431c54083225fb65f05e363d"
+    },
+    {
+      "path": "backend/content/holiday_reading_texts.py",
+      "bytes": 8580,
+      "sha256": "c30bc90e89e891121650fbc9b491d8f4df7badc6de002a8c4163b3601b0168c0"
+    },
+    {
+      "path": "backend/content/holiday_reading_v6.py",
+      "bytes": 4611,
+      "sha256": "e7917a3d92313ebdec4e0820616af2f2994dbbb89aae6071fb027ea8bc281917"
+    },
+    {
+      "path": "backend/content/holiday_search_v6.py",
+      "bytes": 1019,
+      "sha256": "8e48a1ecea508676165a1287e9ac6462af5f79a1a8e4f18513be41d835251eb0"
+    },
+    {
+      "path": "backend/content/holiday_v3.py",
+      "bytes": 9270,
+      "sha256": "8c15e342969bff6968a29243b995524de764f892d80d19b7f770df0d0d43ef8e"
+    },
+    {
+      "path": "backend/content/holiday_v4.py",
+      "bytes": 14937,
+      "sha256": "ce33f2194202d055ddea6715a4ba19de25882781dcede5dc9e536fd92a277ebd"
+    },
+    {
+      "path": "backend/content/holiday_v5.py",
+      "bytes": 4902,
+      "sha256": "972ca4baf4848f51391a25a8df8a2b1ceef90205ebd89bbbf85a3c13b289711b"
+    },
+    {
+      "path": "backend/content/holiday_v6.py",
+      "bytes": 10750,
+      "sha256": "27a214b7faa52b6c207574a1cd03c12da1d8de433d8b9ae4c304c93ec2b1d6c9"
+    },
+    {
+      "path": "backend/content/loader.py",
+      "bytes": 11278,
+      "sha256": "3897580d4c06a06f061bd49805cc430de1bf5dcc96b8a5c26f17c8d1d6ef36a8"
+    },
+    {
+      "path": "backend/content/opportunity_audit.py",
+      "bytes": 3114,
+      "sha256": "da85a1b9738cafb51334417e77d9fc3eaac2484f966ca2884878821f289fa501"
+    },
+    {
+      "path": "backend/content/packs/chaoxi_holiday_v6/events.json",
+      "bytes": 22,
+      "sha256": "4e136a9be1fa1022eec8dfc39794898852cd86895b9a5adad345179688da8132"
+    },
+    {
+      "path": "backend/content/packs/chaoxi_holiday_v6/locations.json",
+      "bytes": 15699,
+      "sha256": "8d61f1fd3b40926d0152b64a34e7e3f19de965f714cea8bfd361287e858439d6"
+    },
+    {
+      "path": "backend/content/packs/chaoxi_holiday_v6/manifest.json",
+      "bytes": 1350,
+      "sha256": "ab8ca234ce357a8430279615830aab2ae5e2c1acf429f618fd45fef69791f436"
+    },
+    {
+      "path": "backend/content/packs/chaoxi_holiday_v6/map.json",
+      "bytes": 12020,
+      "sha256": "274116cfc8145b1742e90664b941158f2f5d4777e7ceba265f0f95392581a253"
+    },
+    {
+      "path": "backend/content/packs/chaoxi_holiday_v6/residents.json",
+      "bytes": 316410,
+      "sha256": "09342160b7e6eee55067cb81dc76e53fe977f54eebca855d68b4ca846fb12f84"
+    },
+    {
+      "path": "backend/content/packs/chaoxi_holiday_v6/source-mapping.json",
+      "bytes": 12412,
+      "sha256": "1deeb26f88b9f130101ebd35ae78d93b15e81b972d3f6949475d809cca06b5fc"
+    },
+    {
+      "path": "backend/content/packs/chaoxi_holiday_v6/systems.json",
+      "bytes": 96190,
+      "sha256": "8ed5b509bbce7efbf37be18590e022510cacda6786a0a25712f57fd2d4700852"
+    },
+    {
+      "path": "backend/content/packs/chaoxi_holiday_v6/visuals.json",
+      "bytes": 17250,
+      "sha256": "11101f35e09576f5ce121cfff2300423fa4d43994841d3e07ab6a766306a71af"
+    },
+    {
+      "path": "backend/content/packs/island_v05/events.json",
+      "bytes": 4098,
+      "sha256": "db50d162f131e1418ed2c2797efb327617efc7b557d21812156d96b9d6edd6e2"
+    },
+    {
+      "path": "backend/content/packs/island_v05/locations.json",
+      "bytes": 8162,
+      "sha256": "136805529474a01d0dd98d0ce46be8f4291aeaa29182c5d4e8608b40098d055c"
+    },
+    {
+      "path": "backend/content/packs/island_v05/manifest.json",
+      "bytes": 750,
+      "sha256": "9c92181541095343f0a298a5d3015aab8ce37fd6858c9a31db25c447a01a7d61"
+    },
+    {
+      "path": "backend/content/packs/island_v05/map.json",
+      "bytes": 4616,
+      "sha256": "e6152afde816a0ab4c88b63f430e67859f2429c3a0e58bf9d304e3875ad0efed"
+    },
+    {
+      "path": "backend/content/packs/island_v05/residents.json",
+      "bytes": 18520,
+      "sha256": "d749195b8b5fb41e93e2a984f0a923baec44dfe4cde466e8fcefc61c0f658f8b"
+    },
+    {
+      "path": "backend/content/packs/island_v06/events.json",
+      "bytes": 76358,
+      "sha256": "cba6b1d9b454f4a5f44020df419f0316f6df09353582ae613db4c13ece393bd5"
+    },
+    {
+      "path": "backend/content/packs/island_v06/locations.json",
+      "bytes": 9850,
+      "sha256": "d367a4dd7017156bfd27fba3a013e4129f0d8eb64385fc233353f5b7751d927c"
+    },
+    {
+      "path": "backend/content/packs/island_v06/manifest.json",
+      "bytes": 799,
+      "sha256": "36b11772328dca11254f76b72eac0eb27d770ebc701747e50076b17b31317c27"
+    },
+    {
+      "path": "backend/content/packs/island_v06/map.json",
+      "bytes": 4849,
+      "sha256": "74c8fda0c5af9d9378afb50e014db4ac0ed8bd5ff3ed9439141c65306d2caeb5"
+    },
+    {
+      "path": "backend/content/packs/island_v06/residents.json",
+      "bytes": 28434,
+      "sha256": "39f78111b425787cc1491479dd4979ca44c1d428c0c6373f8dbcb00329d1aa2b"
+    },
+    {
+      "path": "backend/content/packs/island_v06/visuals.json",
+      "bytes": 13011,
+      "sha256": "67624c80bd1ecf1c74f3680f5b2bcd982f6249013f02a8c621bde1b055f4364f"
+    },
+    {
+      "path": "backend/content/serializers.py",
+      "bytes": 2767,
+      "sha256": "934b7ea4a94dae29a249509bbb1a637f371986d15014d30aa8fbabe284abff5f"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v1/events.json",
+      "bytes": 22,
+      "sha256": "4e136a9be1fa1022eec8dfc39794898852cd86895b9a5adad345179688da8132"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v1/locations.json",
+      "bytes": 21352,
+      "sha256": "70a7b6d1032d4c372788564104cf681492ea9a7e252e24ee6ffe7d9aac01e5c8"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v1/manifest.json",
+      "bytes": 1333,
+      "sha256": "6e73f1ec35dcb022e2801e71b9c5ff77fbbdfb3d0ab369cd6a895f04bd6b43f5"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v1/map.json",
+      "bytes": 9274,
+      "sha256": "805a8622ad28a8ad559fe5741f3e91d0e41c681f3a81e357a5bd532a9256e1c4"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v1/residents.json",
+      "bytes": 79777,
+      "sha256": "cc9de89e427d31c50fe14dbbfbde0f17455cc8a5da8966d00cbae13795a39c2c"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v1/source-mapping.json",
+      "bytes": 15510,
+      "sha256": "1938a6508e7d89f2e8a5c86bddb71281c0cfd45b326090c00f4d77f124ae05d9"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v1/systems.json",
+      "bytes": 347684,
+      "sha256": "8570b57e75d9b1382b2681da0fcffe70ff5da83a98de2d6a5695504656abd97f"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v1/visuals.json",
+      "bytes": 13028,
+      "sha256": "33c54bf18ebfd264ae6a914e3b5db71cc28efdc6107b22cd5b710a3d51965a55"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v2/events.json",
+      "bytes": 22,
+      "sha256": "4e136a9be1fa1022eec8dfc39794898852cd86895b9a5adad345179688da8132"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v2/locations.json",
+      "bytes": 21441,
+      "sha256": "247472b0c46e9f45d5cb6c24948eb6a04b52210a4b659e055e0ec0b2e7193dda"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v2/manifest.json",
+      "bytes": 1341,
+      "sha256": "4cc7e5eec1b16885601b56142b61460957852dccddb2617b73f5b161ef62f7d7"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v2/map.json",
+      "bytes": 11453,
+      "sha256": "4e45ec41a9190fd80c2762e0dbc2fea00d84693d70494da57da02a36d4a5e386"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v2/residents.json",
+      "bytes": 131496,
+      "sha256": "9197b88cee9825526610cb640723ce02395d86cc4f7131378c2ba919dd5c0f0e"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v2/source-mapping.json",
+      "bytes": 15510,
+      "sha256": "1938a6508e7d89f2e8a5c86bddb71281c0cfd45b326090c00f4d77f124ae05d9"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v2/systems.json",
+      "bytes": 381242,
+      "sha256": "bc130c5c753dc1fa102518e35d749b23297043e2199b805104245e62eaeb93bd"
+    },
+    {
+      "path": "backend/content/staging/chaoxi_holiday_v2/visuals.json",
+      "bytes": 14716,
+      "sha256": "35deb1828715a8d99a7f139a7151a0008ae51ea9a57d4d7284f32175f236f1d6"
+    },
+    {
+      "path": "backend/content/templates/island_v07/events.json",
+      "bytes": 19,
+      "sha256": "1a46c0402c164e450fc729a327a7f36d64cf4e4425fc9fd7063a788623706f19"
+    },
+    {
+      "path": "backend/content/templates/island_v07/locations.json",
+      "bytes": 22,
+      "sha256": "3d799e50689c4f75f20cdedba823ea35062eabb648e503a311745b0542cad9fc"
+    },
+    {
+      "path": "backend/content/templates/island_v07/manifest.json",
+      "bytes": 1280,
+      "sha256": "0cf514a8c3e83914a37f2f402b49732b3c427ac7950b6fb972db998873ba8ea9"
+    },
+    {
+      "path": "backend/content/templates/island_v07/map.json",
+      "bytes": 310,
+      "sha256": "b44d883b33e7e77e08489b58208b878c566f032ff47a596dad97c6cb17cd477b"
+    },
+    {
+      "path": "backend/content/templates/island_v07/residents.json",
+      "bytes": 22,
+      "sha256": "26b4be370b85e0c612036613991b30db13c5cc2548c9497bfb48b8ca0c8361f7"
+    },
+    {
+      "path": "backend/content/templates/island_v07/systems.json",
+      "bytes": 3007,
+      "sha256": "5f18deedb56b3716ac04e46d3f9f2abc0a183c69490ae6e6432fa9bb5f64a63c"
+    },
+    {
+      "path": "backend/content/templates/island_v07/visuals.json",
+      "bytes": 91,
+      "sha256": "21822c4e4059aaf33755aaf34bda1099441f005f0fbd68d17b769cf4f03d9ac3"
+    },
+    {
+      "path": "backend/content/validator.py",
+      "bytes": 166705,
+      "sha256": "2ee471a4cae86e1ec5d0846dee7b2db957a5dae12c2afebaf967141e92b6185b"
+    },
+    {
+      "path": "backend/content/visual_assets.py",
+      "bytes": 12011,
+      "sha256": "7e91203c69ac53740069f28e97fabadc33339db87a4f2aff63104f7e7cff3b20"
+    },
+    {
+      "path": "backend/data/__init__.py",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "backend/data/agents.py",
+      "bytes": 948,
+      "sha256": "7d4fd32529f3e1cae63575d5439e75b843ffb8312fa9c366093af37134598fd1"
+    },
+    {
+      "path": "backend/data/island.py",
+      "bytes": 12052,
+      "sha256": "d63fbfa66e431056097c6b37703d57e5fd5c84717aac8075a5f56a8d83efa8a6"
+    },
+    {
+      "path": "backend/data/island_v04.py",
+      "bytes": 16041,
+      "sha256": "00e84c39d30a11d1d32b8c3a740fc265f9c8344cc58cd63f6467274f15684a61"
+    },
+    {
+      "path": "backend/data/neutral_events.py",
+      "bytes": 8121,
+      "sha256": "63d167c99ccdda1c13c3d2bfd4e84a2b5275103d860e71cf6ba872817e412140"
+    },
+    {
+      "path": "backend/data/posts.py",
+      "bytes": 5039,
+      "sha256": "822b42c929771cce93b3dc0ce222c3e42f913494dbb5d1db3f795d00f5c4e786"
+    },
+    {
+      "path": "backend/data/restaurant_events.py",
+      "bytes": 15569,
+      "sha256": "2960f568d859c77849df5c2d94c59d08ed409d8a9c826713ed322efc091dee6c"
+    },
+    {
+      "path": "backend/data/timeline.py",
+      "bytes": 27121,
+      "sha256": "1c60a9832caa2a4f516567f16f33670a8f3242780acc608b74c804312927462f"
+    },
+    {
+      "path": "backend/database.py",
+      "bytes": 25121,
+      "sha256": "47f78430006a57ef0d9876b5e55fda212f864ec47b02a72b05e57e817c46724e"
+    },
+    {
+      "path": "backend/feature_extractor.py",
+      "bytes": 7791,
+      "sha256": "ca48ff37c245cea865a40d8875fe0fce55aa4ded886eeca3c5fe252bbeb9aa9e"
+    },
+    {
+      "path": "backend/llm_diagnostics.py",
+      "bytes": 1216,
+      "sha256": "535677202ec1c7e03498e5878502ad02473d510b4a90336b6ad07eabd11c2555"
+    },
+    {
+      "path": "backend/main.py",
+      "bytes": 85412,
+      "sha256": "14d69e6a1bbcc38246f604a847c8d07c8d4eae9237251c6dfe0680aba88869f3"
+    },
+    {
+      "path": "backend/models.py",
+      "bytes": 84549,
+      "sha256": "ba180f9ae21adc9ae85910ec836c0960147edb8f12012f83f402fdb97bb6d5d0"
+    },
+    {
+      "path": "backend/requirements.lock",
+      "bytes": 86315,
+      "sha256": "ac8573821550da95b6c0d0dc119b5240ec3872965e339d62f6c3a9bb6f0d3dc7"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "bytes": 170,
+      "sha256": "03bfb887792b94e4868cef38e38ec265f6d8f60452d7bd009d34c14b8b87fd57"
+    },
+    {
+      "path": "backend/schemas.py",
+      "bytes": 14661,
+      "sha256": "274c5a9f82748ecdff06aee4c9702f273e62435e0a0aa8e4ebc097fba5aeca26"
+    },
+    {
+      "path": "backend/services/__init__.py",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "backend/services/activity_discussion_service.py",
+      "bytes": 8800,
+      "sha256": "90e569b090358def7c5b5aa761334a0cc6ab96af5b2630862c0abea5ee7055f9"
+    },
+    {
+      "path": "backend/services/activity_experience_service.py",
+      "bytes": 44073,
+      "sha256": "aef194f9fa7ed12225a4a55d737ed334ccda664773f5204c623a6b4a15dcf2f7"
+    },
+    {
+      "path": "backend/services/agent_service.py",
+      "bytes": 836,
+      "sha256": "7ea45b23b06fde2ce9e2d2ed0d0cc49c4f9db2269ff40eaea04e93db936a9433"
+    },
+    {
+      "path": "backend/services/atomic_action_service.py",
+      "bytes": 34790,
+      "sha256": "5067430071327ed2ae47f26e9c31a69c2a75b4a4b4b6ca04de2e7efbe1296900"
+    },
+    {
+      "path": "backend/services/autonomous_world_service.py",
+      "bytes": 16039,
+      "sha256": "017d621e729ffbc91218b866f78e394fb35121cd9471f84d596158d361d90217"
+    },
+    {
+      "path": "backend/services/behavioral_event_analytics.py",
+      "bytes": 15973,
+      "sha256": "800d310c4a334cf4740180e626d785fb0a673198ad0645933bc22a944480e2de"
+    },
+    {
+      "path": "backend/services/contact_budget_service.py",
+      "bytes": 1091,
+      "sha256": "32664d379011a7725e7bbe00f5574a6ec314c0e5f6ac991641945c6456b75563"
+    },
+    {
+      "path": "backend/services/content_studio_service.py",
+      "bytes": 15716,
+      "sha256": "24c25abdf42bb9f9ce0f8283e42d8c9fa3c7f5e36eaa6b5fc1a453e3cc6b74e4"
+    },
+    {
+      "path": "backend/services/day_review_service.py",
+      "bytes": 3858,
+      "sha256": "bd4137681ad88c5711789b72837d39f114b1da3a847fa30f685be7cc2978af3d"
+    },
+    {
+      "path": "backend/services/decision_gateway_service.py",
+      "bytes": 43826,
+      "sha256": "9ccdb6e901e7cc0d75785e88ead27c6d7860d57e55cb7188b86efcb3893a910e"
+    },
+    {
+      "path": "backend/services/declarative_event_service.py",
+      "bytes": 17362,
+      "sha256": "c334f0e2eb2e22136f4e54dbda248925b392b9fc6112400cdf3fbeea468888f0"
+    },
+    {
+      "path": "backend/services/development_world_service.py",
+      "bytes": 2131,
+      "sha256": "83600a6babe3770cf41caa494984f6157e53def62c4d0964cf9068f5e7995feb"
+    },
+    {
+      "path": "backend/services/dialogue_catalogue.py",
+      "bytes": 4945,
+      "sha256": "fbecd452baad5dd67f49c786b07c6a4e7d6698c2b4569b8a4949bc2b607866c9"
+    },
+    {
+      "path": "backend/services/dialogue_grounding_service.py",
+      "bytes": 6130,
+      "sha256": "4ffababd8a25713cdced22b136622ea31a6707140544b6e136f4639c78bff091"
+    },
+    {
+      "path": "backend/services/emergence_director_service.py",
+      "bytes": 80645,
+      "sha256": "58a9937cec6a21863cbe85bb8e77baa1e4c12023ae9d5f99ac6543374e72baa4"
+    },
+    {
+      "path": "backend/services/evidence_capture_service.py",
+      "bytes": 6166,
+      "sha256": "f7268bb3e755d173e4544f66f00578e3b9b81800054e273cac544dcc914a0e98"
+    },
+    {
+      "path": "backend/services/experience_next_daily.py",
+      "bytes": 4447,
+      "sha256": "d33461324e61e52a164163fef5fe6fc7c437e6dbdb695e261ff83215fad940fe"
+    },
+    {
+      "path": "backend/services/experience_next_guides.py",
+      "bytes": 2652,
+      "sha256": "86c888bd315c070d038de0bad94e1a00651e2dcbf4f51f65f38f51116c8cefff"
+    },
+    {
+      "path": "backend/services/experience_next_postcard_service.py",
+      "bytes": 7676,
+      "sha256": "cdc58dc750607d461938a7c0a0eeafea0ab3e939096e33187a7f9713e23c94c7"
+    },
+    {
+      "path": "backend/services/experience_next_topics.py",
+      "bytes": 2871,
+      "sha256": "f5454128d2606435f2b99e0e259ea2133b89bb0a5234a13ad67d38469e5e4e75"
+    },
+    {
+      "path": "backend/services/feature_service.py",
+      "bytes": 1717,
+      "sha256": "6ad9295769bfa1891aa1a7faa733828e853c4e46e48119f37b2107474ce85119"
+    },
+    {
+      "path": "backend/services/holiday_calendar_v6.py",
+      "bytes": 4599,
+      "sha256": "ea7059231c1e77ed41750683b094df4949d3091e44fcc0d62e046c9ddd06b027"
+    },
+    {
+      "path": "backend/services/holiday_demonstration_service.py",
+      "bytes": 7054,
+      "sha256": "7dad3357fc69250b336b8f7c3b7f375f6390d7609c59c8f75ea91c8edd84008e"
+    },
+    {
+      "path": "backend/services/holiday_dining_service.py",
+      "bytes": 7336,
+      "sha256": "26e26ce891f72212361d3b4f8fe9a6809edba0b8546ea4f2c92cf540835509e1"
+    },
+    {
+      "path": "backend/services/holiday_flex_service.py",
+      "bytes": 4765,
+      "sha256": "f9fe1716744989bbb828013535684119ddcb257d40cf95a5baa1db9ac8a3606e"
+    },
+    {
+      "path": "backend/services/holiday_games_v6.py",
+      "bytes": 8541,
+      "sha256": "374c5b071674fa06e6ee261d9dfb80784de7890b8b5624cf1420b3145e884a17"
+    },
+    {
+      "path": "backend/services/holiday_guidance_v6.py",
+      "bytes": 1661,
+      "sha256": "42c9766fbe572a718e0747246b52e6b3b805cf25d831dc8b0b724d95c49c036f"
+    },
+    {
+      "path": "backend/services/holiday_guide_service.py",
+      "bytes": 7050,
+      "sha256": "deb96506adb442e545c6f0b6bfd7f8e59c23d08127c9b9ff25b5807092bd6a6c"
+    },
+    {
+      "path": "backend/services/holiday_journal_facts.py",
+      "bytes": 2218,
+      "sha256": "be5988e3f084a988e04c5746dd3b99b26ec6bc6f9dc7e9a45d1335283afcbbfd"
+    },
+    {
+      "path": "backend/services/holiday_object_service.py",
+      "bytes": 26807,
+      "sha256": "0241b4a4548289a4d836589fbb97176b17dffff1795d912ecc3bfd42f322d6f3"
+    },
+    {
+      "path": "backend/services/holiday_play_service.py",
+      "bytes": 6004,
+      "sha256": "fa115b2b43a03642ce1590e43f483c38fe0e742c044f79e0cbd426bc33f2e019"
+    },
+    {
+      "path": "backend/services/holiday_routine_service.py",
+      "bytes": 5845,
+      "sha256": "9f432f78b14f5bbfeb2e85f5ca7b5696dd49a20f3e7ff64694031f583841f18a"
+    },
+    {
+      "path": "backend/services/holiday_shared_memory.py",
+      "bytes": 8000,
+      "sha256": "048c72f6ac2dc9458b2c3a95dd3318832f8960feb1c6b7aea20a49d885df0130"
+    },
+    {
+      "path": "backend/services/holiday_sketch_service.py",
+      "bytes": 1610,
+      "sha256": "14dbf654c0fe1bf49b9e1aad44f423fec852448ca124112286ec88be668ea376"
+    },
+    {
+      "path": "backend/services/holiday_social_identity.py",
+      "bytes": 9522,
+      "sha256": "6965f7d9dd3b34c1041c9c70ed49a71e935fba3d9b8aa62d19dc969cd7138a02"
+    },
+    {
+      "path": "backend/services/holiday_social_v6.py",
+      "bytes": 19105,
+      "sha256": "5a7855d3fb7ae83471d86b3a215cb9bc676b5d38733ab6780c1f6450923a9bec"
+    },
+    {
+      "path": "backend/services/holiday_uno_v6.py",
+      "bytes": 7656,
+      "sha256": "6798dd68381439671f546e18dca96b4b407be17bec875474fa7c1c25b91b0cde"
+    },
+    {
+      "path": "backend/services/holiday_usability_migration.py",
+      "bytes": 3790,
+      "sha256": "3ce6cbf2432f1bfe24679016003888c01f3697d47e832e2661c5725cbc71caa5"
+    },
+    {
+      "path": "backend/services/holiday_v5_service.py",
+      "bytes": 32997,
+      "sha256": "e2f1a9fe69f63c3d3b8883881430b23c7b9f4abb4cc278b38d6cd7d2de8b51fc"
+    },
+    {
+      "path": "backend/services/holiday_volley_v7.py",
+      "bytes": 2566,
+      "sha256": "8c1f04731e1802315dcf770f440cccbeaac79ae1b543cf5e238ec82f418ad38d"
+    },
+    {
+      "path": "backend/services/holiday_work_review.py",
+      "bytes": 7529,
+      "sha256": "b7cdfc18012b03652e6ed06926b6c320eaca3ebad820d651718492dc946c9e93"
+    },
+    {
+      "path": "backend/services/holiday_work_service.py",
+      "bytes": 5407,
+      "sha256": "908bca946e810c0e63d1648150277bcceb2cbe88cc5787ae72d35aa7bff09634"
+    },
+    {
+      "path": "backend/services/interaction_prompt_service.py",
+      "bytes": 26259,
+      "sha256": "2d1f2616b7ee38caac79b55ef30cce58127389805929727302c280124e906151"
+    },
+    {
+      "path": "backend/services/interaction_time_service.py",
+      "bytes": 12025,
+      "sha256": "114064c6e223e3d04f078430282270c39cf402bdb1bea1c8a74ec65e72329a3a"
+    },
+    {
+      "path": "backend/services/llm_service.py",
+      "bytes": 177,
+      "sha256": "b19203bfab5435248216793a73990a0b1838b84a52e1a2b1fdc11ceb5539fa25"
+    },
+    {
+      "path": "backend/services/narrative_service.py",
+      "bytes": 3110,
+      "sha256": "7dfdab61b5f68c4e2da51e3ac8568f1ff2237ef05587cbd60a880d724ca307fd"
+    },
+    {
+      "path": "backend/services/phone_plan_service.py",
+      "bytes": 55462,
+      "sha256": "b18c495fe6346cd5db73a4625d4671d5bc2717414dc2fc419b23d27127a265f3"
+    },
+    {
+      "path": "backend/services/plan_service.py",
+      "bytes": 81481,
+      "sha256": "fc43ae37a96e974e99218b396aaeaf807252e8630a3d0b1696c4b7972724b81e"
+    },
+    {
+      "path": "backend/services/player_activity_service.py",
+      "bytes": 3958,
+      "sha256": "3f8445a6fb63d770c896eb8786d4154a8b4bbfb1f9c4082a6581b7317231d79c"
+    },
+    {
+      "path": "backend/services/player_record_service.py",
+      "bytes": 6750,
+      "sha256": "b4e53f07d443a699a641a3577013e4bfc91b5fb211421c7e70e1d5ead1e1ce3a"
+    },
+    {
+      "path": "backend/services/resident_autonomy_service.py",
+      "bytes": 35446,
+      "sha256": "af3cb8c946d0b28e4acafcf4b1993410c1ddee80603d5c8c7841d2d03cfdfdaf"
+    },
+    {
+      "path": "backend/services/resident_runtime_service.py",
+      "bytes": 32555,
+      "sha256": "3e4e1b79102cb07b5f1aad6224a6dd226fd401f8a56c15b4c7cc672f6b8f9563"
+    },
+    {
+      "path": "backend/services/resident_social_service.py",
+      "bytes": 62225,
+      "sha256": "a1da79d46ba5b9a7da9f6705d8cd345c4b8d38d9dd32323f0c1a3473e67cd493"
+    },
+    {
+      "path": "backend/services/role_context_service.py",
+      "bytes": 10385,
+      "sha256": "c54e82c4ed3026701ce37d41f8af9028350632726b9f7d38a19e755d3f79d8d2"
+    },
+    {
+      "path": "backend/services/safety_service.py",
+      "bytes": 1184,
+      "sha256": "c91fca23ba16ceb435bea311d414ac77473654ce5891cc0e4d2ba44339ffc252"
+    },
+    {
+      "path": "backend/services/scheduled_action_service.py",
+      "bytes": 11346,
+      "sha256": "ceb44fbe7a4b7335b65aa5caf803f4f30b509a13e166ea7efc30c3f99240127d"
+    },
+    {
+      "path": "backend/services/scoring_service.py",
+      "bytes": 7732,
+      "sha256": "49bc4414f8e565bd4b980d7ea290dbcb5bccda9083ece831b31ba4d82b87ba19"
+    },
+    {
+      "path": "backend/services/simulation_service.py",
+      "bytes": 39393,
+      "sha256": "2f535ea364c010973fffa5981e821e4865929cd5ec0141a2c0e24c7cbb4834d6"
+    },
+    {
+      "path": "backend/services/social_world_service.py",
+      "bytes": 6597,
+      "sha256": "ad5250725ae560c62f170161bc7cfb8c1e34e18f316b475c665fc9106f9b0572"
+    },
+    {
+      "path": "backend/services/stage_service.py",
+      "bytes": 41564,
+      "sha256": "ad4015ff94706ecd641fc187af122b736db2dc6e1edaac51405072f90ba609dc"
+    },
+    {
+      "path": "backend/services/world_event_service.py",
+      "bytes": 35653,
+      "sha256": "62689d0e10a7bf38a97ab9d1ac095cf5727d3679ea5fdbc8f0613330f34ae88e"
+    },
+    {
+      "path": "backend/services/world_memory_service.py",
+      "bytes": 13851,
+      "sha256": "6d772e9259f5c14280c80bf7bfb3f2a10a4c93fbd52131d8e7b5dfa51aef35f4"
+    },
+    {
+      "path": "backend/services/world_relationship_service.py",
+      "bytes": 17910,
+      "sha256": "59d77a092415793a3efb5a4893824295d96564c09b70fadf8d0e14da2e5a08eb"
+    },
+    {
+      "path": "backend/services/world_service.py",
+      "bytes": 204550,
+      "sha256": "845332e79103e2db8b14b0920a8425d96a1888c62933c4cdd2373de8db9dfcc8"
+    },
+    {
+      "path": "backend/services/world_simulation_service.py",
+      "bytes": 26685,
+      "sha256": "be1d265f8d0d5d45c2b8fab58b6e81a616f202cc5e94e2b5de47463bb0f8b225"
+    },
+    {
+      "path": "backend/services/world_social_publication_service.py",
+      "bytes": 15457,
+      "sha256": "617ca5eeb1b62b25af0c9b8940fd1f1233a97d25f4f81dbd3bf86607cc30f393"
+    },
+    {
+      "path": "backend/study/__init__.py",
+      "bytes": 934,
+      "sha256": "acefcf3d8964ee97ed6f57308ca25ae98d1a9507e26b2ad579a45b0c9787dd23"
+    },
+    {
+      "path": "backend/study/access.py",
+      "bytes": 6528,
+      "sha256": "a57f2ed767ee2968a7ccde6e6f3beb7c2ad8d75548aa1df87c4a47378444cbae"
+    },
+    {
+      "path": "backend/study/access_guard.py",
+      "bytes": 5056,
+      "sha256": "18ee84209a0cfa74c9c5101cc4a48ae4912fcfeea64a517ba0fd5f19d7ecb163"
+    },
+    {
+      "path": "backend/study/admin.py",
+      "bytes": 3515,
+      "sha256": "ef46d29b9e09418b7a50b08fad8100e5d86ccc73067820cf64d752cc3fa4185a"
+    },
+    {
+      "path": "backend/study/api.py",
+      "bytes": 48609,
+      "sha256": "834b55bfb589ceaf48336c3868367a5a60a10dad83057f15672e762075ab1a2a"
+    },
+    {
+      "path": "backend/study/assessment_interfaces.py",
+      "bytes": 5077,
+      "sha256": "93aef6bd6350c585c04b811be7796b4ba25306e6c0ca2ed7f27cfebad5eb61bd"
+    },
+    {
+      "path": "backend/study/assessment_packages.py",
+      "bytes": 5838,
+      "sha256": "c7549033ada2aaacb6dbb992ae10d93ce8bd723e564d13f8c2d8cc660048137f"
+    },
+    {
+      "path": "backend/study/assessment_replay.py",
+      "bytes": 16385,
+      "sha256": "620f15cdeefbb52cbc4409771449caf19274ba517ef7442464a76248b7bebfe4"
+    },
+    {
+      "path": "backend/study/assessment_report.py",
+      "bytes": 12544,
+      "sha256": "a5bee8df768be4fe81ba3b6e85feaf824b855cea88854a17101dfbd8b417095c"
+    },
+    {
+      "path": "backend/study/assessment_service.py",
+      "bytes": 35196,
+      "sha256": "29a37750fc3a7b9e1f13131d2b22055baf89f1a642dbed75c6ca1384983ba1bf"
+    },
+    {
+      "path": "backend/study/available_results.py",
+      "bytes": 9108,
+      "sha256": "562ce099e1d7125015f4f921387c749f7fc306f0b6d69f5a8e73a9ec9e8131eb"
+    },
+    {
+      "path": "backend/study/backup_admin.py",
+      "bytes": 4481,
+      "sha256": "5e904a546ea84fc287b5ec805d69f9ddb575cdefca5ed0715c83fabc4498af29"
+    },
+    {
+      "path": "backend/study/bfi2_instrument.py",
+      "bytes": 10616,
+      "sha256": "769d34dd41a19bddebce89ba5eebefbaaf848bf1a6844226e70fe3ec160ff0dc"
+    },
+    {
+      "path": "backend/study/compensation_admin.py",
+      "bytes": 6339,
+      "sha256": "cdc898f01c2415511c3b4cc2643ccbd2a5cbc73bbc8d2d5a7f9b9a395fe69799"
+    },
+    {
+      "path": "backend/study/completion_instruments.py",
+      "bytes": 5843,
+      "sha256": "34c7b67c60dd9a127e0ff81dfe67e7ee5c61ad1400183ab2a52891a15a7fffa0"
+    },
+    {
+      "path": "backend/study/completion_service.py",
+      "bytes": 19606,
+      "sha256": "0cb9ef604f64233a18d25baf3cbeb65cd441a9b0347d2fad9e64bf0e5d773892"
+    },
+    {
+      "path": "backend/study/contracts.py",
+      "bytes": 11721,
+      "sha256": "594942ade0d11fca49273e659d63eeb6488b34fa525fd5b46b9d5462b032bfbf"
+    },
+    {
+      "path": "backend/study/controlled_report.py",
+      "bytes": 16757,
+      "sha256": "3e75d69e5fe5e4747783a10de66d22df39fc7695ec8bd23d9adc882d06242ab3"
+    },
+    {
+      "path": "backend/study/controlled_report_legacy.py",
+      "bytes": 6632,
+      "sha256": "f8b8336fa1db4cf92a9333a9f98373af6098f1e6efe12f3d569570a400f73cce"
+    },
+    {
+      "path": "backend/study/controlled_report_service.py",
+      "bytes": 1899,
+      "sha256": "4f7b265c1edcf3bfc9bd67f66ccfa10b2d75507f3e17d0edb737762deca67b4c"
+    },
+    {
+      "path": "backend/study/controlled_report_v2.py",
+      "bytes": 5421,
+      "sha256": "606cbad9b73074af9b0dbbf40d22353d9936c412a1a37112937f994ccaf14028"
+    },
+    {
+      "path": "backend/study/controlled_report_view.py",
+      "bytes": 2778,
+      "sha256": "94ec1c1c0b7032f84c2069899f5050dd6d262fce8f910217797b4bd6b1c7bf5b"
+    },
+    {
+      "path": "backend/study/draft_assessment.py",
+      "bytes": 9656,
+      "sha256": "49052015b207f5313f36009717c388c445aa74fa424f650378a33d9994e2619b"
+    },
+    {
+      "path": "backend/study/everyday_observations.py",
+      "bytes": 11363,
+      "sha256": "ba1b2900ca92ecf166e4f519f81bb6925a571cf340f129589459b14f635d76c3"
+    },
+    {
+      "path": "backend/study/evidence_contract.py",
+      "bytes": 23863,
+      "sha256": "eadfb61559fd23ef39e0bb6c5c09d64c8a255afbf8f2c085671dd02e3705972b"
+    },
+    {
+      "path": "backend/study/evidence_mapper_contract.py",
+      "bytes": 4673,
+      "sha256": "c984bad780c666772db9ea3e3614a7121b235c9433c728733ddf17671d84d7d6"
+    },
+    {
+      "path": "backend/study/experience_instruments.py",
+      "bytes": 4250,
+      "sha256": "3fcb558b0e276d6274bee9fc31842be799dc16f3b2291567d4812db638f766b4"
+    },
+    {
+      "path": "backend/study/export_service.py",
+      "bytes": 20379,
+      "sha256": "2d6f5da1c914ee8664aeb25446a8081b9969fd21c575134f0da271596a847285"
+    },
+    {
+      "path": "backend/study/holiday_assessment_v5.py",
+      "bytes": 20973,
+      "sha256": "0cd76859db0952191fa3f667dd89f93c6b65e6b19e771c771b0c9c7052387090"
+    },
+    {
+      "path": "backend/study/holiday_flow.py",
+      "bytes": 2242,
+      "sha256": "e3b6c389c7f7a4d9f95f7c0d1011da1528c9d7b7dd08596d3409a0a15324e9ae"
+    },
+    {
+      "path": "backend/study/holistic_report_contract.py",
+      "bytes": 15992,
+      "sha256": "eb55c2175f8afc52691aafeca2344e00faca2c78eb15f876514c008b7b3b309a"
+    },
+    {
+      "path": "backend/study/island_recap.py",
+      "bytes": 10643,
+      "sha256": "3eaa906704ad9330281e013fe2b60cf0bfc87c99ec2892e48997b86a6442b3ea"
+    },
+    {
+      "path": "backend/study/maintenance_lock.py",
+      "bytes": 913,
+      "sha256": "ae480c897b0bcf299f30e0ad371c59a3ea7d30cca7190d40e5a87103417e65bd"
+    },
+    {
+      "path": "backend/study/models.py",
+      "bytes": 31470,
+      "sha256": "947646d8183afcb9d788ddabd48084ef0f1954f46591af0dc17c51873554e147"
+    },
+    {
+      "path": "backend/study/participant_service.py",
+      "bytes": 7397,
+      "sha256": "19a1369a88b9487556eb1181dcd0e5d64634e283546923a2fa3ee9a7fc4c0f0f"
+    },
+    {
+      "path": "backend/study/production_letter.py",
+      "bytes": 6478,
+      "sha256": "8363a565e5e3b27ac23e43f23bed02225fb7e40feefb1dd2abc57ab230effeba"
+    },
+    {
+      "path": "backend/study/production_observation.py",
+      "bytes": 5770,
+      "sha256": "4cf68d1f3f4ca3e160d96903b798371b56ad280acd8786784cd00f6b0786b1be"
+    },
+    {
+      "path": "backend/study/protocol_20261018.json",
+      "bytes": 15599,
+      "sha256": "bac32394db04af23cdfab45f9fc3a008b86f121ae24d3a7663c2b06507c34ee2"
+    },
+    {
+      "path": "backend/study/protocol_v2.py",
+      "bytes": 9143,
+      "sha256": "dbfd6a71e59915ce7de34c20e51aab803de611babb4e94e0bed3d17082d29f25"
+    },
+    {
+      "path": "backend/study/questionnaire_service.py",
+      "bytes": 16865,
+      "sha256": "9e7631a1e0d99bae0df3f6f0fc43043edd9aeea741cc3a5e0d2a2128f3734609"
+    },
+    {
+      "path": "backend/study/recap_insights.py",
+      "bytes": 12195,
+      "sha256": "3759694de22567307a11d01e14abbbbc966b66dbde494e47ef83de992ea755ef"
+    },
+    {
+      "path": "backend/study/research_admin.py",
+      "bytes": 13786,
+      "sha256": "f81bd900a4df1f6437caf65b168a1ea41db42014d9f7c1e66daf12e71cdbdc59"
+    },
+    {
+      "path": "backend/study/results_service.py",
+      "bytes": 27284,
+      "sha256": "50df550a86a906cdf2a5fdbf8ee388dd26352cf242c89e69e4f4fa5c1a13ce53"
+    },
+    {
+      "path": "backend/study/reviewer.py",
+      "bytes": 15310,
+      "sha256": "7d1fbc1e4db700fa47e57283b11877ff335cbeb63b12466110bdcc42af993527"
+    },
+    {
+      "path": "backend/study/schemas.py",
+      "bytes": 5260,
+      "sha256": "d6b494778925a8bf43e895905a9df3312fdb9dd2ffce623acdb128a13cc65b69"
+    },
+    {
+      "path": "backend/study/sentence_grounded_report.py",
+      "bytes": 15664,
+      "sha256": "d5f17f50ad076541fa29441a1ff542b4564b87aa9954d2a8f522238acaba4e23"
+    },
+    {
+      "path": "backend/study/sentence_report_release.py",
+      "bytes": 1546,
+      "sha256": "9a07dd9c05ee68d880c51bed787d1b15ac79f6532ea15568a870677231532d0a"
+    },
+    {
+      "path": "backend/study/sentence_report_v062.py",
+      "bytes": 7957,
+      "sha256": "5b43b75f6889f1f49a6174613df4904e5b88b7077e7e9f6a891bd8c24fef3047"
+    },
+    {
+      "path": "backend/study/sentence_report_v063.py",
+      "bytes": 5187,
+      "sha256": "734619d4ee4693934b8b8740b41839eed369318f7852ae5708bb6108f60c04c9"
+    },
+    {
+      "path": "backend/study/sentence_report_v064.py",
+      "bytes": 3641,
+      "sha256": "bdcd80c1da0f1adbb059cf9ab1e2607c09f8b9d9d4bebf848f467d86ec6ec01b"
+    },
+    {
+      "path": "backend/study/service.py",
+      "bytes": 11085,
+      "sha256": "ce79c07d2c5eaefad503307eb79a6c4ab5d568a22c8143f5cc81c87f89a723a3"
+    },
+    {
+      "path": "backend/study/world_bridge_service.py",
+      "bytes": 19332,
+      "sha256": "b7e3b4e3d07dd03e1d2c58c8a72622870544410bf097e4ab1cfda994e36a049e"
+    },
+    {
+      "path": "backend/world/__init__.py",
+      "bytes": 2857,
+      "sha256": "828560b76236a61a47df60070f525a35008d9b8c0acadd77d362c76330a4c0db"
+    },
+    {
+      "path": "backend/world/atomic_actions.py",
+      "bytes": 18620,
+      "sha256": "5426026d7728defe153a89e4e8293cf31e580fc9ef82ce5187d30b12fc4c70e6"
+    },
+    {
+      "path": "backend/world/autonomy_policy.py",
+      "bytes": 1437,
+      "sha256": "77885ff13cfa7f6dba40627caa565da6b233ae2014abcbd2ba44f7428fe7f28e"
+    },
+    {
+      "path": "backend/world/clock.py",
+      "bytes": 3764,
+      "sha256": "c6d981c58d18a4138e79ec6ccb54ac459f24b4939e1bc08db53b0c776236ac3a"
+    },
+    {
+      "path": "backend/world/decision_contracts.py",
+      "bytes": 5373,
+      "sha256": "4afbcb5b72199cff10811c98ca8f2fd342bd1f34fd46c145d895c440f4e58dbd"
+    },
+    {
+      "path": "backend/world/declarative_events.py",
+      "bytes": 22259,
+      "sha256": "3658001ad83a0ab9c723742227ad29c8cea228df997d7602eb1e7a7acc4a3706"
+    },
+    {
+      "path": "backend/world/emergence_contracts.py",
+      "bytes": 20399,
+      "sha256": "ecae7154ceadb59eaa94a107da616b6ab7578ef929f80330d9e85fd0c88877de"
+    },
+    {
+      "path": "backend/world/events.py",
+      "bytes": 9949,
+      "sha256": "57eeb9a4c5d4143ff4688bc3fb7d01fedf4daf36519c413c226b8391b7212a55"
+    },
+    {
+      "path": "backend/world/graph.py",
+      "bytes": 3958,
+      "sha256": "ef0a60d8575f69ebc0b027ae454ab6760bcc93510f20535439ea6cd9a66e2169"
+    },
+    {
+      "path": "backend/world/interaction_policy.py",
+      "bytes": 1811,
+      "sha256": "8ed409063a5cc6f6b75059e9e6c26d6a416a2248b79eebbdf37c8075ee58e2c0"
+    },
+    {
+      "path": "backend/world/narrative_arcs.py",
+      "bytes": 3485,
+      "sha256": "2dd9114da335850acbae3a38d5553afd76c36a25485965f65696bf71c5035291"
+    },
+    {
+      "path": "backend/world/npc_responses.py",
+      "bytes": 2940,
+      "sha256": "d52ba90ad6ed0b704864ec1515be9d742093a2fc16ddb739604a51060ef9df6c"
+    },
+    {
+      "path": "backend/world/registry.py",
+      "bytes": 2710,
+      "sha256": "04a971a198975f27287c69b46a76025fd04d515661b80b8d7f4bc80ed01a6cff"
+    },
+    {
+      "path": "backend/world/resident_agents.py",
+      "bytes": 11347,
+      "sha256": "bea7b6e36f67881cd250e295c696d55094de2c20e29d297ca4fb0ac730f7ebd6"
+    },
+    {
+      "path": "backend/world/schedules.py",
+      "bytes": 5769,
+      "sha256": "dee6322837fc8147d9b8a668dd3d3effd0be654f172f25a76ba7408e08553620"
+    },
+    {
+      "path": "backend/world/specs.py",
+      "bytes": 29333,
+      "sha256": "87a0082397a540ddd1367679d405815b74b9bce7fad9c76c6736e288d15321ee"
+    },
+    {
+      "path": "backend/world/stage_recipes.py",
+      "bytes": 9605,
+      "sha256": "e649ef093ab78d92a4700ca9430d5af9c8abd0aeea456c74b1721ffdce118ee6"
+    },
+    {
+      "path": "backend/world/studio_emergence.py",
+      "bytes": 30092,
+      "sha256": "7a515d45b39c87cbd2778f46e78bd082558a4f7c3bd3409361ca5b4820471e16"
+    },
+    {
+      "path": "deploy/compose.review.yaml",
+      "bytes": 1889,
+      "sha256": "c5bbf40b0ca34fc6784b8a6e9512b28d03d82d04af10e8d57247706208af880d"
+    },
+    {
+      "path": "deploy/compose.yaml",
+      "bytes": 1609,
+      "sha256": "b9f5834a1c7ad33101814c7bbb3b45ef0ce1a8a1fe0fcc8244d9487d6c46a2e1"
+    },
+    {
+      "path": "deploy/Dockerfile.backend",
+      "bytes": 726,
+      "sha256": "10efdac0d1c9b16c7246c4471ff7ed54812ce921f00af46110bad1c9d6f70b2a"
+    },
+    {
+      "path": "deploy/Dockerfile.frontend",
+      "bytes": 615,
+      "sha256": "acd167571e396497a63a65b225b9c9a68175030457b73f9d956bc33981188853"
+    },
+    {
+      "path": "deploy/Dockerfile.review-backend",
+      "bytes": 227,
+      "sha256": "0b54c5c99bf0f829783cfbcd594f74b9d6fd54bdb894c993e8915aed13cc2281"
+    },
+    {
+      "path": "deploy/Dockerfile.review-frontend",
+      "bytes": 528,
+      "sha256": "aca352767a9ef98bdcfc3859ff9e932cba56b305b3d12df4ccec29b1be7d0c1a"
+    },
+    {
+      "path": "deploy/nginx.conf",
+      "bytes": 532,
+      "sha256": "8d5b01fbf07afa4631f11dc2839acdd47843887237b47c806cd6892316233934"
+    },
+    {
+      "path": "deploy/nginx.review.conf",
+      "bytes": 503,
+      "sha256": "272d346e9df64653c1198ed20467ef5ef54f048c7daba8b37fe1e44795e5d96f"
+    },
+    {
+      "path": "deploy/server.env.example",
+      "bytes": 1094,
+      "sha256": "de1022aecb4be0a65c037a0865b77bd3bac546f33d2ca90da9abc82aa1f66fec"
+    },
+    {
+      "path": "deploy/sqlite_backup.py",
+      "bytes": 1579,
+      "sha256": "6aa6be822a454d92da02840264aacaeb84a9372bf1dbbccc33d578018097aec5"
+    },
+    {
+      "path": "frontend/app/development/decisions/page.tsx",
+      "bytes": 3055,
+      "sha256": "841d0da393695781dda0ff4417435f1b28f84d6fb3aca1279b974eb50126d9ca"
+    },
+    {
+      "path": "frontend/app/feed/page.tsx",
+      "bytes": 152,
+      "sha256": "68f24ea63099f7850aca14ccb3e9822eaa2fc1bcf4c0868ec51f2b9a0a2e1b33"
+    },
+    {
+      "path": "frontend/app/globals.css",
+      "bytes": 1838,
+      "sha256": "0c6a3f0492303d308d8190569dc9c0f14ce7df7fa3008d43cab41e2419161762"
+    },
+    {
+      "path": "frontend/app/island/page.tsx",
+      "bytes": 900,
+      "sha256": "ec655156c056835a75976622a63bf8be2afc87167e7798075ba784c370544160"
+    },
+    {
+      "path": "frontend/app/layout.tsx",
+      "bytes": 1183,
+      "sha256": "c00cc6b200922592a0687e7c8ce6e7f4b0b02b9be3e5af652a8bf82d237e16b8"
+    },
+    {
+      "path": "frontend/app/page.tsx",
+      "bytes": 3909,
+      "sha256": "e52e030aadba05fe1957eb6181b8e18ea11ccde4412a49739eec226ca71d1783"
+    },
+    {
+      "path": "frontend/app/result/page.tsx",
+      "bytes": 5115,
+      "sha256": "21c674b1a315e0f8c0a5378b64c90279a68f6d0be95604dcc1eb21d87b76280c"
+    },
+    {
+      "path": "frontend/app/review/api/[command]/route.ts",
+      "bytes": 3396,
+      "sha256": "e82f2a22fba22cde30347426eeaece5a3d3de3a79547fee90905eb73c73f7f0c"
+    },
+    {
+      "path": "frontend/app/review/page.tsx",
+      "bytes": 241,
+      "sha256": "a9e9953deb5d5d217eea371f3ea5a534ddffce44ef5455b9545cb377eb059c9a"
+    },
+    {
+      "path": "frontend/app/review/reports/page.tsx",
+      "bytes": 231,
+      "sha256": "e5e5946c26f94d6974c5be8f5c309fd500263cf845752e953fe36951eb6b4a14"
+    },
+    {
+      "path": "frontend/app/review/reports/ReviewReports.tsx",
+      "bytes": 3384,
+      "sha256": "e20e03258738ac292167b5af090f2f381afc6f4430b0e259a5193bde16a65455"
+    },
+    {
+      "path": "frontend/app/review/ReviewHome.tsx",
+      "bytes": 9538,
+      "sha256": "e0abf5358c7e7294ce58e09388b1603b0044a60d67bf231f3a891503c2814869"
+    },
+    {
+      "path": "frontend/app/setup/page.tsx",
+      "bytes": 8554,
+      "sha256": "70f1fc12598ab9bd3d9a23c9baed44e50e90fdace64dff12b522870b1d9e6f61"
+    },
+    {
+      "path": "frontend/app/setup/start/route.ts",
+      "bytes": 1968,
+      "sha256": "3270d3c50eb8dcb8e27980400ebaf8c97433560ee699059184e2ce54ffd9399b"
+    },
+    {
+      "path": "frontend/app/setup/world-options/route.ts",
+      "bytes": 848,
+      "sha256": "fff593611ac4fb8c2c88bb5377dd357c613d1199def4c1339309356f9089631b"
+    },
+    {
+      "path": "frontend/app/studio/ContentStudio.tsx",
+      "bytes": 183674,
+      "sha256": "c0589f0e476852ee63b687010d5a160f423758f0f6517b4964ef2a9c87aac5f8"
+    },
+    {
+      "path": "frontend/app/studio/page.tsx",
+      "bytes": 375,
+      "sha256": "bcbf982950830a028ada7dd6d26de606da01a02d0a00f7c0c87ad306f3f15124"
+    },
+    {
+      "path": "frontend/app/study/[step]/page.tsx",
+      "bytes": 7431,
+      "sha256": "ad83da994fcf5d03136d420cca79b8c894f6e799288d29d8a85e3514eca21fd9"
+    },
+    {
+      "path": "frontend/app/study/api/[command]/route.ts",
+      "bytes": 3018,
+      "sha256": "bba75680d4c05f91efea6ff7b6a56c0757c1ac0dff7ab6e7284175ae058ee361"
+    },
+    {
+      "path": "frontend/app/study/api/bootstrap/route.ts",
+      "bytes": 2594,
+      "sha256": "bb83c5b49118db65dbfb82b1ac33a02d2f7fda9bb2af8d44bf223b10c8f4e742"
+    },
+    {
+      "path": "frontend/app/study/api/reset/route.ts",
+      "bytes": 886,
+      "sha256": "927c260a9fa379f0add1e7cbb546282f6802bcb03e82e48011a665ad2b6e99a2"
+    },
+    {
+      "path": "frontend/app/study/api/test-complete-island/route.ts",
+      "bytes": 1220,
+      "sha256": "dffe7a8c606dbac750eb89c1f72dce21b64f326da92b452e6c9e5de5d9389b51"
+    },
+    {
+      "path": "frontend/app/study/api/test-fixture/route.ts",
+      "bytes": 1533,
+      "sha256": "ec540cdef83eafb8144abe27ed16555ea4880c387e84e8d5b355ab9374c1bc69"
+    },
+    {
+      "path": "frontend/app/study/components/BFI2Questionnaire.tsx",
+      "bytes": 15030,
+      "sha256": "801a8f2323c44d0aee18ac908f44c2eb4442f5089dca66e095bae1ff2cfdbcd8"
+    },
+    {
+      "path": "frontend/app/study/components/ComparativeFeedback.tsx",
+      "bytes": 12794,
+      "sha256": "0c7e300bb1e90ecac84de4b2dc48fed5d4f3462d299613a8f0662cd60d07c5a1"
+    },
+    {
+      "path": "frontend/app/study/components/CompletionReceipt.tsx",
+      "bytes": 3121,
+      "sha256": "88453a02ede25986769f04da6f4fc988d0cd4e1de624d0c1b7d406d1b4487758"
+    },
+    {
+      "path": "frontend/app/study/components/DebriefAndCompletion.tsx",
+      "bytes": 3269,
+      "sha256": "4faf0f44ee5bc4270c54c45f3f102ab2d229cd385842d03d63332f6ca41f2bfd"
+    },
+    {
+      "path": "frontend/app/study/components/ExitInformation.tsx",
+      "bytes": 1012,
+      "sha256": "5754c57563b18244e9b3c9e8226847c9d1d9e3fb70395c893d3c7aa8d2eef767"
+    },
+    {
+      "path": "frontend/app/study/components/FormatExperienceFeedback.tsx",
+      "bytes": 11328,
+      "sha256": "0f8d960678eb8ae2d363906b020f72d7fcb32d22d7853b0152350e880e99a80f"
+    },
+    {
+      "path": "frontend/app/study/components/GameEstimatePanel.tsx",
+      "bytes": 7279,
+      "sha256": "e5eafae97dff7bfe793a150da06a726e65e2088b042fdaa75c2c9f1511d04c66"
+    },
+    {
+      "path": "frontend/app/study/components/IslandRecap.tsx",
+      "bytes": 7773,
+      "sha256": "ce6a61fb9887d0a03effbc0fabfe5069ca9a65a1e2dceef6104ff8a442091ace"
+    },
+    {
+      "path": "frontend/app/study/components/RandomizedResultsFlow.tsx",
+      "bytes": 16675,
+      "sha256": "340cc3c66822c6a90d711840bdc1c45dd75ed6d000e177eaee622aa657d5fe7f"
+    },
+    {
+      "path": "frontend/app/study/components/WithdrawButton.tsx",
+      "bytes": 1654,
+      "sha256": "19c57160a8fc57e893fca1564e239e774be3e5d9dfef4f90af059f275f304ab8"
+    },
+    {
+      "path": "frontend/app/study/consent/ConsentForm.tsx",
+      "bytes": 5887,
+      "sha256": "afd9bc23c90a689bd6b2e6f20bca929e498e155c88755d2d42fb220dfc93902c"
+    },
+    {
+      "path": "frontend/app/study/consent/page.tsx",
+      "bytes": 906,
+      "sha256": "2ccd22b762639608abb1b0eaed3b28f35d13f53af2dd2e0678e8757ad6e0e898"
+    },
+    {
+      "path": "frontend/app/study/exit/page.tsx",
+      "bytes": 832,
+      "sha256": "755f8a133c02261f7f7d684578d5ecaafaa9d6c9b7aa5988cf4fbe1cd6935101"
+    },
+    {
+      "path": "frontend/app/study/ineligible/page.tsx",
+      "bytes": 1540,
+      "sha256": "8794d2fcc2591bbe5e96821a073575395c15035d0bab3d8edaf2501f2c830785"
+    },
+    {
+      "path": "frontend/app/study/onboarding/OnboardingForm.tsx",
+      "bytes": 11854,
+      "sha256": "16241f6148c99fabde56996b50913b11a6fe0665139ed26705128fef0ddaa143"
+    },
+    {
+      "path": "frontend/app/study/onboarding/page.tsx",
+      "bytes": 1775,
+      "sha256": "510d450fc3cef8de126446a68dfc74596b2119621a4840c8ef86175ee3ca9981"
+    },
+    {
+      "path": "frontend/app/study/screening/page.tsx",
+      "bytes": 1471,
+      "sha256": "d1b0d14a602ac43df810c3cbc2e7f264a09ecfa88ae98fc068c4355fa9f406fd"
+    },
+    {
+      "path": "frontend/app/study/screening/ScreeningForm.tsx",
+      "bytes": 3020,
+      "sha256": "91248631c0e1da571996362fc53c3af5f0fbeb52461fccc8239fddd67e896d77"
+    },
+    {
+      "path": "frontend/app/study/start/page.tsx",
+      "bytes": 1686,
+      "sha256": "b361b771ff9a8918bcc39cd6ddb78dbf8ae55d37a67f2e1063e09dda634d0f9c"
+    },
+    {
+      "path": "frontend/app/study/start/StudyBootstrapButton.tsx",
+      "bytes": 3830,
+      "sha256": "715e9c1b05348b8a347911c9c8427d847b9b851d802b9d4a6b63f0b06d5070a7"
+    },
+    {
+      "path": "frontend/app/study/withdrawn/page.tsx",
+      "bytes": 1093,
+      "sha256": "6294b9cf9dac9a97902c5952ae89b1b94884ecacf149ccc5090a6fdaa4e2ca8b"
+    },
+    {
+      "path": "frontend/components/CommentInput.tsx",
+      "bytes": 2259,
+      "sha256": "62fc9533cc0f0db82b7e58662e053a74783b3688332a098ac8057b190bda1346"
+    },
+    {
+      "path": "frontend/components/FeedbackReport.tsx",
+      "bytes": 5862,
+      "sha256": "705acbd8a39d21f268be776d19aac50a9f0bf24765775ac394451ad45733f2a9"
+    },
+    {
+      "path": "frontend/components/game/ActivityChoices.tsx",
+      "bytes": 3310,
+      "sha256": "2046e061ff1d82954b7a3a63e5e23512f264eb9ec7c4338c71234f7f9b707720"
+    },
+    {
+      "path": "frontend/components/game/ActivityConversation.tsx",
+      "bytes": 5036,
+      "sha256": "8237b1bbcaeb2c42100c71270e462d68a0f537ea15d2ef877f75e32f65e4f60f"
+    },
+    {
+      "path": "frontend/components/game/BeachSearch.tsx",
+      "bytes": 4081,
+      "sha256": "7ea7a663916c99bdf16c460581b57c129cc5628418a50d80c13d62de9749d578"
+    },
+    {
+      "path": "frontend/components/game/BookReader.tsx",
+      "bytes": 1230,
+      "sha256": "3421b598ea1d9a5781ce95f790da80800fc8860aff81c4050e3ec975b1bfd490"
+    },
+    {
+      "path": "frontend/components/game/DayBoundary.tsx",
+      "bytes": 1842,
+      "sha256": "8d625ca32f2e4416515c0c9acdb930266841f477e1babee7242b50e3a9303242"
+    },
+    {
+      "path": "frontend/components/game/DayReviewDialog.tsx",
+      "bytes": 2488,
+      "sha256": "db4177d2527f5ecad4737bc67e14a8a79fed59db811fad222b67a404b862cada"
+    },
+    {
+      "path": "frontend/components/game/DialogueOverlay.tsx",
+      "bytes": 9349,
+      "sha256": "e707022ea0ec164d000636d6bb8257ce04cfa059e3b056514e3b74921b80c6f5"
+    },
+    {
+      "path": "frontend/components/game/DiningPanel.tsx",
+      "bytes": 4979,
+      "sha256": "b3e0bc68a2904cb4dc95609befd2975867073dc9309534bbb54f723ada12225f"
+    },
+    {
+      "path": "frontend/components/game/FreeWoodwork.tsx",
+      "bytes": 10050,
+      "sha256": "be51d5774b1a388776d3e721db87b6e4e8113e39e8a970ce1ee76814390b7fa3"
+    },
+    {
+      "path": "frontend/components/game/GalleryWork.tsx",
+      "bytes": 2834,
+      "sha256": "4451a3185a8247e63ece983fc7e970153d8a12759fdd7222e9495a2c84c48b99"
+    },
+    {
+      "path": "frontend/components/game/GameHud.tsx",
+      "bytes": 7685,
+      "sha256": "f19f33ac8e216da5e6c55161c659a889a44eb59789b1ccb44408326acff4ad28"
+    },
+    {
+      "path": "frontend/components/game/GameMenuDrawer.tsx",
+      "bytes": 3509,
+      "sha256": "5bebe105b2366b7bca98d5997fdcbdb11d49d20bfb6756333b97baa5304f51a6"
+    },
+    {
+      "path": "frontend/components/game/GameOverlayFrame.tsx",
+      "bytes": 2525,
+      "sha256": "3e58470166503493d7624587976b02d133f9da303e57298a96c351c7f8ad6b11"
+    },
+    {
+      "path": "frontend/components/game/HolidayActivities.tsx",
+      "bytes": 17902,
+      "sha256": "e7fd3294cb361fff89b3caf554c3baf8269dfb17d0804c58960a0ba75c8c3e8f"
+    },
+    {
+      "path": "frontend/components/game/HolidayIllustration.tsx",
+      "bytes": 1194,
+      "sha256": "4dccbd50428be7e638366a0b89696eb9b47671e14637105bba67a78c504f5450"
+    },
+    {
+      "path": "frontend/components/game/HolidayNight.tsx",
+      "bytes": 321,
+      "sha256": "343c237a44b3459dacd3c637a54c3d811e554226c8cca3121301709595634842"
+    },
+    {
+      "path": "frontend/components/game/Huarong.tsx",
+      "bytes": 9084,
+      "sha256": "40659db15f320839c72b302baa451005ad3f4312f800b48a0c458bea20554d59"
+    },
+    {
+      "path": "frontend/components/game/InteractionPromptOverlay.tsx",
+      "bytes": 3278,
+      "sha256": "ad0e76f01eb3feb869cf69190f8f3d05ab3f5bbf99d38d384f29772c0863abd5"
+    },
+    {
+      "path": "frontend/components/game/IslandGameShell.tsx",
+      "bytes": 74373,
+      "sha256": "7f081128d08061ad7ee920058ab2f47316598a4760fa9223f7170dac508afb06"
+    },
+    {
+      "path": "frontend/components/game/ModularStagePanel.tsx",
+      "bytes": 21314,
+      "sha256": "36a5209bd966913ab3238eecf1de2efcbc5480595c873a0718417da8fc08b267"
+    },
+    {
+      "path": "frontend/components/game/NarrativeChoiceOverlay.tsx",
+      "bytes": 22078,
+      "sha256": "c5b182c9e3e9276d9cb21026400e526c3b27227b03345bee9136779d2d2051a7"
+    },
+    {
+      "path": "frontend/components/game/ObjectActions.tsx",
+      "bytes": 4244,
+      "sha256": "e18d0df69d4197ed26e61994755cb41d586fc1ec0366ffd266ce55bb356398f2"
+    },
+    {
+      "path": "frontend/components/game/ObjectExplorer.tsx",
+      "bytes": 27771,
+      "sha256": "8332f89cfaddd2d2e564a51b77678119db3979b28a9fc2c640b0dedb8cdb7021"
+    },
+    {
+      "path": "frontend/components/game/ObjectResult.tsx",
+      "bytes": 1054,
+      "sha256": "7b1e5176b420eac2391dfd018f00c12142f2e678beaaa0cf2a56593987307a4e"
+    },
+    {
+      "path": "frontend/components/game/PassTimeDialog.tsx",
+      "bytes": 4471,
+      "sha256": "7aed8824312a6643f4f57770274201a46f0720110d5d762980baf93befde38ab"
+    },
+    {
+      "path": "frontend/components/game/PlayerAppearance.tsx",
+      "bytes": 992,
+      "sha256": "3980313ed643f780f0625d67d4c87a28426ef36aa00f878ce2d0f0545fadc983"
+    },
+    {
+      "path": "frontend/components/game/PlayerRecords.tsx",
+      "bytes": 2713,
+      "sha256": "e37c5a84c3e91b3850d578f2a000f9382584b5ffbb8c8639bf384400991615bf"
+    },
+    {
+      "path": "frontend/components/game/PlayPieces.tsx",
+      "bytes": 10586,
+      "sha256": "1369ea60ba897ad7602d29716e2f495e6366e7f0bbcb216c71eb741d2c31c6e0"
+    },
+    {
+      "path": "frontend/components/game/PostcardWriter.tsx",
+      "bytes": 2522,
+      "sha256": "bc8b63d7281e1d0dfe523e3b6de8703ba2ef20332c5d6ec6f885afc7d3d47d6b"
+    },
+    {
+      "path": "frontend/components/game/RopeWorkshop.tsx",
+      "bytes": 6087,
+      "sha256": "bb7e4a8fe4b535c8d62c158a6ba6039fed743360f62c9b29a5f57486dbd46762"
+    },
+    {
+      "path": "frontend/components/game/SceneDialog.tsx",
+      "bytes": 3265,
+      "sha256": "9854ef260c62937e6ad40386ec1f766af7fce516b6ef2c7bcf5afbd77d2f7380"
+    },
+    {
+      "path": "frontend/components/game/SketchCanvas.tsx",
+      "bytes": 8488,
+      "sha256": "51ad4227c30ddd69eee1dfae461ab52af81edfce439025b7b6420719bfa93ebf"
+    },
+    {
+      "path": "frontend/components/game/SnackPurchase.tsx",
+      "bytes": 1420,
+      "sha256": "1ab3a183ceb24e1cd87509c0688b3aca31d31e0ebfdf7faffcb52fd63b58baea"
+    },
+    {
+      "path": "frontend/components/game/StageInputChoice.tsx",
+      "bytes": 1691,
+      "sha256": "1ae0b705e6c0bee12770c292c4614f93258937cde5aaf3fab885e7907b4d0728"
+    },
+    {
+      "path": "frontend/components/game/TimedVolley.tsx",
+      "bytes": 9077,
+      "sha256": "6d97a3915677765db4e2461952269a09255c91ecc577187f36a4707356f354c7"
+    },
+    {
+      "path": "frontend/components/game/UnoTable.tsx",
+      "bytes": 5292,
+      "sha256": "dbb0b7face611b8fcd34724517dc18296b0efec6bc4d23dc85d182fc4855d8b1"
+    },
+    {
+      "path": "frontend/components/game/V5Companion.tsx",
+      "bytes": 8381,
+      "sha256": "71d0de22e4f24ab378ee99f3ef2885eef284bfba86569371de8673dc76d454a8"
+    },
+    {
+      "path": "frontend/components/game/Workshop.tsx",
+      "bytes": 16810,
+      "sha256": "1c411be8e5e46b03e3f520ed111dfd75ab60c3222d5a7b6021f362ea0cd043e8"
+    },
+    {
+      "path": "frontend/components/game/WorldStage.tsx",
+      "bytes": 448,
+      "sha256": "2788705fb59ee343edffb1f2e55eaa9fc02fd9e0708f619b9e48f96ed6a66d0d"
+    },
+    {
+      "path": "frontend/components/island/AccessibleWorldLog.tsx",
+      "bytes": 3272,
+      "sha256": "37ee7ad8a9f875e727aa9eea182ff5d0ac9169f8c02ea57ebbfd93de811de69f"
+    },
+    {
+      "path": "frontend/components/island/IslandMap.tsx",
+      "bytes": 10447,
+      "sha256": "94ca1649eb7a4a16e36c0cf6d8a0a8e12184d9f668cc9d06db9d073719ae5ca2"
+    },
+    {
+      "path": "frontend/components/island/LocationScene.tsx",
+      "bytes": 23222,
+      "sha256": "63ebb1b96f53d51f815f5e53d9580bb68824fa925898ba6defa491d2a978484f"
+    },
+    {
+      "path": "frontend/components/island/MapActorMarker.tsx",
+      "bytes": 4184,
+      "sha256": "4de05f2fe83cf85ba320d814d75fdccd95ea0bcc002e18b3dbc9f797f645cd42"
+    },
+    {
+      "path": "frontend/components/island/MapInfoPanel.tsx",
+      "bytes": 6100,
+      "sha256": "1314b81c07d13eb7befe99d90de49da9d778fb931e2562a5f58d3bc8a2b39da7"
+    },
+    {
+      "path": "frontend/components/island/MapLocationMarker.tsx",
+      "bytes": 5098,
+      "sha256": "309c8b87c6758dc9441d7ceca9ec46ee779030100b59da005760dcd98107ac60"
+    },
+    {
+      "path": "frontend/components/island/WorldEventCard.tsx",
+      "bytes": 3771,
+      "sha256": "59e09dfced8adebbaff58949b4a6b4f36860b585c28ba4879b4cfd419735cf9e"
+    },
+    {
+      "path": "frontend/components/island/WorldHeader.tsx",
+      "bytes": 4591,
+      "sha256": "b42d62a3bb0e8511fd6e47f2f57dce77f3604808a1323c09bb1a4dc601225b49"
+    },
+    {
+      "path": "frontend/components/LanguageSwitcher.tsx",
+      "bytes": 1089,
+      "sha256": "b552a139d6c173e82fabdfb2b6a4dac4528550c44398f8cbe54762a31d158e04"
+    },
+    {
+      "path": "frontend/components/PostCard.tsx",
+      "bytes": 20037,
+      "sha256": "c58bbf06f321df530a69a55521f1a5a2e5f7d48de0350d1ef3841bdfc45a46af"
+    },
+    {
+      "path": "frontend/components/PostComposer.tsx",
+      "bytes": 2801,
+      "sha256": "fcec737630127f4a99feed42f2f8712ef7dfa35c25fbf4ec3d53ee78f06b1f62"
+    },
+    {
+      "path": "frontend/components/ReactionButtons.tsx",
+      "bytes": 2268,
+      "sha256": "b0d531ef34ad3caaf64aa86c88e0cad104a94857b30c356b5712a1a63af0c809"
+    },
+    {
+      "path": "frontend/components/ReviewToolbar.tsx",
+      "bytes": 738,
+      "sha256": "0deaaf60354dae0cbd8739361fdfdbbb7285b685788a8f4058d25bd36349af3a"
+    },
+    {
+      "path": "frontend/components/social/InvitationTimePicker.tsx",
+      "bytes": 2608,
+      "sha256": "cbabfbf80c3c0c811cc85b06b75aae1141f85cb1264dfd2ab6f8817c9368eae7"
+    },
+    {
+      "path": "frontend/components/social/PhoneActivityComposer.tsx",
+      "bytes": 6180,
+      "sha256": "d3b7f3e83da6d7400eec01dcf1ef201aa884599346a1bf5ef714efe61dd2bf98"
+    },
+    {
+      "path": "frontend/components/social/PrivateMessages.tsx",
+      "bytes": 5052,
+      "sha256": "5d5796b72630ebd10728b6258e5e64971d15d8f9d65ced2451266f2511bee6a3"
+    },
+    {
+      "path": "frontend/components/social/SocialFeedPanel.tsx",
+      "bytes": 48566,
+      "sha256": "f620c7062ee7f97325c8951cb5b0534ca2f4809e49433d16c3a2ea8e5ab53399"
+    },
+    {
+      "path": "frontend/components/social/SocialIdentity.tsx",
+      "bytes": 1842,
+      "sha256": "adb8a53baadd80e162adb1cc75ce99372d07f3e5c566fee2576e3f87acb5bc6b"
+    },
+    {
+      "path": "frontend/components/social/SocialPhoneOverlay.tsx",
+      "bytes": 3252,
+      "sha256": "10d64fe07821edefd146dc7d653d17e35def806a154d8a71089d6ee9a36843a4"
+    },
+    {
+      "path": "frontend/components/studio/ModularEditor.tsx",
+      "bytes": 44719,
+      "sha256": "682eaa308e3fff528c32db437d30bf1aa26d19437866baede679b0a208e75c1b"
+    },
+    {
+      "path": "frontend/eslint.config.mjs",
+      "bytes": 471,
+      "sha256": "5ce7b2c8eca663516421bff94d358e78b523021b0b4ce157035bb3aceda98952"
+    },
+    {
+      "path": "frontend/hooks/useIslandActions.ts",
+      "bytes": 4535,
+      "sha256": "31e054d51e0a1215cf21aa0bb13425968efad642e78941559b1163fa5f40fdce"
+    },
+    {
+      "path": "frontend/hooks/useIslandOverlay.ts",
+      "bytes": 923,
+      "sha256": "7573a23bdf8056ee1cbef46a0b8c5b57114ba6a8045ab457ec51da94e25aa167"
+    },
+    {
+      "path": "frontend/hooks/useIslandWorld.ts",
+      "bytes": 3932,
+      "sha256": "9bcad8df2da00330d5cbc8277f5573ad9215cd1da7848a8e2bfc2892c29e478d"
+    },
+    {
+      "path": "frontend/hooks/useWorldPulse.ts",
+      "bytes": 3923,
+      "sha256": "cb1060674dbafdf5e7167b49f6572a722e6c5092e75a937b1676d5cb9be2237e"
+    },
+    {
+      "path": "frontend/lib/api.ts",
+      "bytes": 41845,
+      "sha256": "b4e9db5704c8316366ed807b31f7e5772cbb225dcb1c56dc672da01c22a9e19b"
+    },
+    {
+      "path": "frontend/lib/content-studio.ts",
+      "bytes": 15585,
+      "sha256": "22770fcd630c7dc88f9b46a447e41c509adf6d7a83ac68b1469cd260c2a55f00"
+    },
+    {
+      "path": "frontend/lib/holiday-art-assets.json",
+      "bytes": 6859,
+      "sha256": "e13f8406bd1543b686baa443b6e11b9eca46f5ffa223da126d1a61758428b50f"
+    },
+    {
+      "path": "frontend/lib/holiday-art-next-assets.json",
+      "bytes": 38393,
+      "sha256": "a5f7d088b430e9c25ff304a6b6dee8a81887ca3997b0faff08ca5e01f8f8fdc7"
+    },
+    {
+      "path": "frontend/lib/holiday-art-v6-assets.json",
+      "bytes": 56495,
+      "sha256": "60d0a5f94199b0ec0b2f150eae197a0f398ed7cd17e7959e6e8952fb4da2afeb"
+    },
+    {
+      "path": "frontend/lib/holiday-art.ts",
+      "bytes": 1736,
+      "sha256": "3a00c9ae659067e05f37512167f133bfdf6939555ace12009d49ea8cd0bf51f9"
+    },
+    {
+      "path": "frontend/lib/holiday-v5.ts",
+      "bytes": 3486,
+      "sha256": "db235518811ad518b541c567f2d2fa5344b695f421859027de16fa0d68e1b2e8"
+    },
+    {
+      "path": "frontend/lib/i18n.tsx",
+      "bytes": 29639,
+      "sha256": "e44e2ca873e7657bc5d862d1ce76288858efc4c0b618498bd15385593fcd535a"
+    },
+    {
+      "path": "frontend/lib/reviewer.ts",
+      "bytes": 717,
+      "sha256": "b66a0ecf93f4f49ac896ee4e666afe9f67a2ac77947d6df860fdf831d6906264"
+    },
+    {
+      "path": "frontend/lib/studio-modular.ts",
+      "bytes": 4907,
+      "sha256": "0b9394ca850eaa00e24f69fca2529c5ffcc4809f83914e0713dba0dd84f2cbad"
+    },
+    {
+      "path": "frontend/lib/study-consent-content.ts",
+      "bytes": 10306,
+      "sha256": "d0d1acb5932a84cc92303131b180698645c9f9632066ea644fe5c03a23d668ab"
+    },
+    {
+      "path": "frontend/lib/study-workflow.ts",
+      "bytes": 4361,
+      "sha256": "52c95476afead086be46ff934ffb6df6fc871529eb8a4ec300eca5b04c3ca9dd"
+    },
+    {
+      "path": "frontend/lib/workshop-trace.ts",
+      "bytes": 2607,
+      "sha256": "bc76511086d858664045aef894285e67f968e8cd7decb8960c30232058471239"
+    },
+    {
+      "path": "frontend/next-env.d.ts",
+      "bytes": 83,
+      "sha256": "42f2417a1cf85d03a10379df6333e1e7c49a62d7100fd03e9035e091af25adfe"
+    },
+    {
+      "path": "frontend/next.config.js",
+      "bytes": 145,
+      "sha256": "68986c5d6aa53d11675ac0812523632508b94688bcc9f756f40410199d6c83c3"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "bytes": 245138,
+      "sha256": "40330b5bb930264c055e7b252eb5cf329ca02ab4e8a6cbecb206d36b4929207f"
+    },
+    {
+      "path": "frontend/package.json",
+      "bytes": 810,
+      "sha256": "824b8dfdd848f80d212abd2684f87c7cf477dd06940592337cd621853127c656"
+    },
+    {
+      "path": "frontend/postcss.config.js",
+      "bytes": 89,
+      "sha256": "b78f5d0a0a449ecf58b6b6252e26cd2216c7aa41235e2d6d01a26b9a065cd439"
+    },
+    {
+      "path": "frontend/proxy.ts",
+      "bytes": 2380,
+      "sha256": "9c7fff983e6db7f3c7e7fc06036d61f13736cbae2e1fb16072cf8e794ad7b109"
+    },
+    {
+      "path": "frontend/public/island-icon.svg",
+      "bytes": 315,
+      "sha256": "363172d0d6da063d8346e1bce7c742d09f369255789fa66092c65f4cf89dcdec"
+    },
+    {
+      "path": "frontend/public/next-art/exhibit.wood_display.boat.review-v4.webp",
+      "bytes": 167504,
+      "sha256": "10f8c47322ec30d0d7f0cbf052a9b4e40987ed2ff97c065e0bef106153c9d2a1"
+    },
+    {
+      "path": "frontend/public/next-art/exhibit.wood_display.coaster.review-v4.webp",
+      "bytes": 192102,
+      "sha256": "feeed5795d3f4ade589f0c3ecaa007b77cf49d6132d94bb9dbfb0422774101c9"
+    },
+    {
+      "path": "frontend/public/next-art/location.loc_03.night.webp",
+      "bytes": 370214,
+      "sha256": "cf4e2546feeaa877df38356eaf5e323632b6027c239ce54940e1752703b88239"
+    },
+    {
+      "path": "frontend/public/next-art/location.loc_03.webp",
+      "bytes": 391380,
+      "sha256": "cab7c895644c17eac1bd76fae35ea6e7de987e9222e3c3dbdb1702b7c7c28ffc"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.analects.review-v4.webp",
+      "bytes": 176690,
+      "sha256": "d90d25fff5b3a6707c9709b493c48dc7b8935cfd582192da08d2d680a9fae410"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.dao_de_jing.review-v4.webp",
+      "bytes": 175036,
+      "sha256": "58bcc9f94a58f1389382dbe2739d128065a29db3601b6bf268e066134a0c19d0"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.drinking_five.webp",
+      "bytes": 241658,
+      "sha256": "3221e7712f4f466bff628190292c3e81e00ca5624a0791769111c2f70d4bd115"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.enchiridion.review-v4.webp",
+      "bytes": 179912,
+      "sha256": "29a3cd5f70bdc547ebd04ae48923b45fcbf172584af64b8babdc27060b12e3ac"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.epicurus_letter.review-v4.webp",
+      "bytes": 176440,
+      "sha256": "124a39e5e5e54e022aebfc1cc3afca165c225c571f4288147011fd9c1f0f2a5f"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.lake_rain.webp",
+      "bytes": 217794,
+      "sha256": "8a1b2351d5d7578ab198684d7da5965317cb787c08f57e9d684b1daa8b9d07bc"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.montaigne_essays.review-v4.webp",
+      "bytes": 187214,
+      "sha256": "531b9b626b76c2b50e527c13743e9f0ed53b5131b264d1d8c6037b3ec02ba794"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.mountain_evening.webp",
+      "bytes": 249194,
+      "sha256": "6c23f9d077ad39a86be9f9173e05c6b7b95b622114c8ccdfe4d69d9b6a171c97"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.quiet_night.webp",
+      "bytes": 236198,
+      "sha256": "39ea88ad9c6c9e3bf61dc2275462363553bb18a931aed84a03c9ba1fd4f4ebcd"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.seneca_letters.review-v4.webp",
+      "bytes": 156890,
+      "sha256": "28ca385e9df38e290e0c1c5733e8c150d0c7052d34dcaf1c7e6b5d7b28cd5010"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.spring_morning.webp",
+      "bytes": 230832,
+      "sha256": "f51ecb257b5a6c2fc2f83493e233dcdb802c930fe0429ea4601c79c8afa4d86c"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.spring_rain.webp",
+      "bytes": 234176,
+      "sha256": "5bc14951e678e662d8904e7f095cefbc318b03ef1038f53289d98429b932901e"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.stork_tower.webp",
+      "bytes": 247382,
+      "sha256": "db642aea4952fb5b5343cc67a84e9ad981b88ef8d389a0a6390e729d068353c4"
+    },
+    {
+      "path": "frontend/public/next-art/next.book.zhuangzi.review-v4.webp",
+      "bytes": 170734,
+      "sha256": "1f6199a22c7f5bf8c070d0c9943a870556b5ea35040b528c22ea629ba2ed5082"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.bicycle.review-v4.webp",
+      "bytes": 459152,
+      "sha256": "be2a5e35456cd2c0965c0b09ed141fe02e3e2774d9ae9cebd88765b4b6eccd64"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.bicycle.webp",
+      "bytes": 225938,
+      "sha256": "0064c70de06661164836396558614faa08612d715f1685ec4898d969aff27ad5"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.cat_steps.review-v4.webp",
+      "bytes": 404526,
+      "sha256": "d4de9b8e1f748ece188cad98bf88b7db0808597ad56dcbf1ef51ce9e2cc6b98d"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.cat_steps.webp",
+      "bytes": 218048,
+      "sha256": "878e408a88ac80158491f8e12b52151e39cd5ccdbdf527890825966f0c1413c1"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.flower_window.review-v4.webp",
+      "bytes": 394436,
+      "sha256": "f4fa483ac3383ac72b942ad20ce3e11e081518f5b97ae84a6969c62c9c412aaf"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.flower_window.webp",
+      "bytes": 197248,
+      "sha256": "9f93526ea0315cf913be10644f7b6e8bae088aa446833faa898774bf98e8cd5b"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.garden_path.review-v4.webp",
+      "bytes": 488322,
+      "sha256": "b5b2e5ba6257ccb968bd39e1570a069a191c2316a00f7f1dedd457b39fd07366"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.garden_path.webp",
+      "bytes": 245598,
+      "sha256": "9862648500fb28dbdc313494a85c53775a6cb2b6cbcf3511771e51c72812dc58"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.moon_sea.review-v4.webp",
+      "bytes": 396702,
+      "sha256": "33ac828c94b48cacde02602f6ced6bf4d76d592a402c91022332f83557af5148"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.moon_sea.webp",
+      "bytes": 187532,
+      "sha256": "77abccf4723973057f9e511304b75f2332bb0610625ebac0cbbed58147831393"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.morning_bread.review-v4.webp",
+      "bytes": 429660,
+      "sha256": "dc937d242d5df0678cbf506d51a776c99dcabaf36c069a8af22faac07d52c745"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.morning_bread.webp",
+      "bytes": 207228,
+      "sha256": "f8ef40eedae14a6f26c639420c41508af9f7409ef27fffdfe1cc746069e0340f"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.orange_sunset.review-v4.webp",
+      "bytes": 353850,
+      "sha256": "b8faf8188807384345d8af52c4e89fb3194dfdad30c77bfac85da3a6b9458660"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.orange_sunset.webp",
+      "bytes": 208664,
+      "sha256": "599ea2e790eb3f0527fae880d7de80a0e80c96635269a73294e7ab38107397fe"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.paper_boat.review-v4.webp",
+      "bytes": 385922,
+      "sha256": "960cc81838b50ab3841f5cb0e5ea188cde53f36ef4bbb72e06c60b655b16ecf9"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.paper_boat.webp",
+      "bytes": 175556,
+      "sha256": "c34e16cc493cb36b2c593f11fc992edd1aea33201b9bb24f623b9ceb5f97790c"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.rain_puddle.review-v4.webp",
+      "bytes": 458950,
+      "sha256": "ec46bf67fcac4d55fd8636144dd64a1264d0eeccd68ef636c12c874070dc4b31"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.rain_puddle.webp",
+      "bytes": 208140,
+      "sha256": "3247bf74c84b9966f122019f5aa45f1bf90d49f452ac2dce3f8122980dfe9929"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.shells.review-v4.webp",
+      "bytes": 397582,
+      "sha256": "4c471897d59a1de56d2f21c321873533e33c59db1655a3b23c8572f3ea1c350a"
+    },
+    {
+      "path": "frontend/public/next-art/next.card.shells.webp",
+      "bytes": 173062,
+      "sha256": "d04ccb9fa88cfb5b9dbe9cbdae19afa7978745ecd807da8b7ee61b19496f61c5"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.americano.webp",
+      "bytes": 169256,
+      "sha256": "c115414fa9d7ca7726aa7267928d0682ffe43b0426eb2ad53fc87b12acb3b151"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.berry_yogurt.webp",
+      "bytes": 151744,
+      "sha256": "ebc4d99c86565808ff154dea3d100b9c1a429998ccd86c018ee3be82ff45f8c8"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.cheesecake.webp",
+      "bytes": 115360,
+      "sha256": "f0adb53ea9ed32b69a909c2d1b69ce51dd8f0fa7d08427d2a6bec73456d66f09"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.cinnamon_roll.webp",
+      "bytes": 161848,
+      "sha256": "7ce2700cce1ba19c980e9c42ebc25fdaeec4adb4bbc600a9503a576aaf296dc5"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.cocoa.webp",
+      "bytes": 151230,
+      "sha256": "ecbb96c0bcb48bf4868e7a14269c27e1fc596aa881735a53d36e0f12a076279a"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.coffee.webp",
+      "bytes": 105030,
+      "sha256": "571c426747783993d83fc6f536df3365d5bb3b5d3396591319b38582662974a3"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.corn_soup.webp",
+      "bytes": 146548,
+      "sha256": "6a732543ca764ce40e238b539776ea76a0e097e31faa95de1c9827c054baa305"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.curry_rice.webp",
+      "bytes": 211362,
+      "sha256": "dc0aa7af670f08f3d60d57b70e110f624530522e58e33154eca19e8fe31cdf03"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.lemon_soda.webp",
+      "bytes": 153432,
+      "sha256": "6f929574949403aafda63f2e4453ecb4c10136cc020416ea275ad08710deab67"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.matcha_latte.webp",
+      "bytes": 155840,
+      "sha256": "f7b3a0db52ad06cf4309be95898692e45f20a96e8ec049d6edaf4d36daf79713"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.mushroom_noodles.webp",
+      "bytes": 164356,
+      "sha256": "a22cf92ffde000f22d613c72abc7b89a6dfa76374bc7124210409d78aa0755bc"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.noodles.webp",
+      "bytes": 152140,
+      "sha256": "87f15b0e2a5117ec26160ba8e1817bff064d364b82cf772c793b73077f9d66a0"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.oat_latte.webp",
+      "bytes": 127378,
+      "sha256": "b253410223f5e1c0421c8afa6134c43e6d8e11dc902b1336db73a41fd58c6d94"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.orange_coffee.webp",
+      "bytes": 136744,
+      "sha256": "9bece7eb876a1c33723bf68830aae2e63dfa8721ba9c3a0885e870b37de05186"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.peach_tea.webp",
+      "bytes": 161138,
+      "sha256": "af6688613c58f5169b724654de555a6a341023af26564b7c080194c691866c49"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.pumpkin_rice.webp",
+      "bytes": 156592,
+      "sha256": "a399f70e4e228c736814ac1cd97bc4e2927ad426440d7323cae6928335cc6b8a"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.rice.webp",
+      "bytes": 158016,
+      "sha256": "852d7627a8b3671deab0531d7571073da166e94244cfb90cf6feb793971962e7"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.sesame_noodles.webp",
+      "bytes": 177430,
+      "sha256": "3fdb5cc5942b6910ecc339cfbd381908d8ab3767fb8e711dc2c81d4b325f3d79"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.soup.webp",
+      "bytes": 132786,
+      "sha256": "517dca051a41d4f5068bfcd109b49c24650bbffaa2b6a68d8db05bf6d2e1cede"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.steamed_fish.webp",
+      "bytes": 197218,
+      "sha256": "4c8c65a71526b7a9bcb96405b6e17f7820794a60bee6f0a1b9b01daeddfed3a6"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.tea.webp",
+      "bytes": 135610,
+      "sha256": "6b69d6fb2f6fdd7825e13c230676af8c0e90e9d37cd812c8772ded5f3c2f6367"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.tofu_rice.webp",
+      "bytes": 196472,
+      "sha256": "c785aeebcac5e4e3cf3f4b0fa0adad4ebeec75c0b5d6aa07a65c06be10cb9d95"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.tomato_egg.webp",
+      "bytes": 155132,
+      "sha256": "4755dfb8d43f110e9673ae5758172783f5a038f9e8a89d48572e91089fcd05ea"
+    },
+    {
+      "path": "frontend/public/next-art/next.food.vegetable_dumplings.webp",
+      "bytes": 156998,
+      "sha256": "e7662198e1e50483291c88be6eff5331e4508212236ef1a1a449ee490404e743"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.flower_cosmos.webp",
+      "bytes": 143718,
+      "sha256": "7752a3f6eeb6ce9c269cbce1f1cbb4db71498e4f3f0c6706a47300ce18670657"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.flower_daisy.webp",
+      "bytes": 145604,
+      "sha256": "886c970a1a39cc4e91497211cddc003baf30a9ea0d7581686fd0bf8dc2e587f5"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.flower_hydrangea.webp",
+      "bytes": 195108,
+      "sha256": "75c50c20a3becddeeaaaa75f50bcfcb6490b98eeeaeaf5407a837d053deb165b"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.flower_jasmine.webp",
+      "bytes": 160668,
+      "sha256": "1bcb16b53876d0b6d284556cd06ec0584f226a4cecdac851d071e0da0a6fc7de"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.flower_lavender.webp",
+      "bytes": 134088,
+      "sha256": "f8c11f44d47b57ce76ff513acd2d08f6f48de01890313c85a28e4e7497194159"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.flower_lily.webp",
+      "bytes": 186788,
+      "sha256": "d719164d69ed7bf67a9a4637caeb2bc621b1efe756d39e3929eba2ffae1d00ff"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.flower_marigold.webp",
+      "bytes": 164532,
+      "sha256": "eeb1d9775fc3a295787e1c5111069c57bba607bd459cdb6dc28c99276e9b554a"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.flower_rose.webp",
+      "bytes": 135066,
+      "sha256": "7e5b636726babce78f95b9f8c6bbef9784c99e1fde47b82d907a7e7c6e9a9b84"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.flower_sun.webp",
+      "bytes": 200586,
+      "sha256": "aa2231c012421d6422fe7cece583144d38d0aab0bc2cc9a375da6291f360b47a"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.flower_tulip.webp",
+      "bytes": 140274,
+      "sha256": "61961eeb9781bdb893f2baa2af92cc042d8a633909b0ba229ed00921dcd50825"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_bicycle.review-v4.webp",
+      "bytes": 369648,
+      "sha256": "029a5fb75a688a24d869c5f0b63f9681a00faa3c22a3d2e3d8890fbc46ccdd3f"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_bicycle.webp",
+      "bytes": 296706,
+      "sha256": "58e7f48937455da209d043e8d6873951521227f8d0702bb977ca99d186f0aa0f"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_bread.review-v4.webp",
+      "bytes": 271908,
+      "sha256": "ddae8360d07d96d05f9a2ed2dfa3d8eb6c5a3b26da9971815a8b4ad81e5fe469"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_bread.webp",
+      "bytes": 240356,
+      "sha256": "b854d27e1fa3cf6c2414f665dbb7bb08dc8adaf4e81c9de6271da63841736c49"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_chairs.review-v4.webp",
+      "bytes": 308368,
+      "sha256": "da3c49586384a9b9506ee07ad82a547e79da492f74d1b3f3dc95ce8a0c73350c"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_chairs.webp",
+      "bytes": 184294,
+      "sha256": "532963e7a097ebf586a9fa84dee3027aa653aa40f6c0e0bff08ea8ff22931cf1"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_lights.review-v4.webp",
+      "bytes": 311944,
+      "sha256": "4660eaec13d1953da0e65eae53eb1b5f0ed1a16b1d089be825cbd62e0e5fa086"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_lights.webp",
+      "bytes": 267378,
+      "sha256": "f6f9bdd4c3a457120cae3a2cbfebf2092a9aeeb3a6f11c2e6e14775164bcfa60"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_nets.review-v4.webp",
+      "bytes": 367028,
+      "sha256": "cc5871fb8ae717e4fe553e8f635f59e82751e16f07c45af43ae0ba75e3ec3869"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_nets.webp",
+      "bytes": 270704,
+      "sha256": "5b3f4e3f49336ef204f55615afa8b6234c905342f78123a87771e6ea36b8dc8a"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_rain.review-v4.webp",
+      "bytes": 355298,
+      "sha256": "e00024b5a7e12afea7e8753137d2cae9f3d4bada2968fddcdb383ca6b36eca96"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_rain.webp",
+      "bytes": 184654,
+      "sha256": "9bf9d7a713b7589d3997246bfb62c2eec1848c029587245b654499589de242b4"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_shadow.review-v4.webp",
+      "bytes": 357490,
+      "sha256": "2d2f28632cb25791fd71db6e27a67ba3e4864b8f269e4034ea8fd686978f5cbd"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_shadow.webp",
+      "bytes": 220550,
+      "sha256": "09e7deae5735690601d6de37c6855109a4587e19f693d5876f06c552c02cf05d"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_tide.review-v4.webp",
+      "bytes": 372338,
+      "sha256": "5d40e21c3fa0785dc363983078302e723c27a1d61c2c8c34c963de6d2e7872c2"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.photo_tide.webp",
+      "bytes": 284136,
+      "sha256": "01c4145587896af6cfb4d82142d919747f27929550b998726ecaa78d52f2f7dd"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.plant_jasmine.webp",
+      "bytes": 152870,
+      "sha256": "cd5f60744a455b25c9d6a5f014e71e745ea76841054be2dc2fe7c24d72f93b9c"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.plant_mint.webp",
+      "bytes": 152276,
+      "sha256": "7640b70a2911a7a970777cc857f12548556c8ddfa2a490eed2441d12d7dcb3d7"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.plant_rosemary.webp",
+      "bytes": 179254,
+      "sha256": "5a8b1121a36566c83635268468268fc468bb5d508655f61934f807ff482eb78f"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.wood_bird.webp",
+      "bytes": 100014,
+      "sha256": "1a4a487bd4c73b5ffdb76638547a0bcfe15f107fb8bd15b8ca3dab2936865c5d"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.wood_cat.webp",
+      "bytes": 106156,
+      "sha256": "3b6ab1a92ee870d9645ae7745632470ed8cca9af790c37a815d6a0b7f9031109"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.wood_clock.webp",
+      "bytes": 135370,
+      "sha256": "8ed905ce8e2e0510519519ff679a8fc74d12c0dc7402b660ad1f4d6088e881ca"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.wood_fox.webp",
+      "bytes": 145022,
+      "sha256": "d8b0e373c165b5eb7d8e312c78f49257765880c06c2577735aff29b4bf95d9ef"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.wood_house.webp",
+      "bytes": 105180,
+      "sha256": "70aaa83cc1062c106a9c9a15b4c6946b4dc81a0b1373353ba6edb248aefef3a3"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.wood_lamp.webp",
+      "bytes": 111742,
+      "sha256": "c13adf791a0680f46f3c315ef0ff630c2c6e3b10fdc1d5ed02dc9e176685b031"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.wood_music.webp",
+      "bytes": 127418,
+      "sha256": "48b6f92c62d209166a400261de340a9b55b13999db1e4fbc794cd72156c703b4"
+    },
+    {
+      "path": "frontend/public/next-art/next.library.wood_whale.webp",
+      "bytes": 111974,
+      "sha256": "3951ed1de93573aa6c983569d008b93faa74f72a65c6c6e240aba7fd34aee85a"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.banana_chips.webp",
+      "bytes": 157482,
+      "sha256": "fd6f56f142cda2f5ca7e94def2ac75babff9518396c8fb79b4d522218e9067b1"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.biscuit.webp",
+      "bytes": 164992,
+      "sha256": "234adbc6485f210798fd984017506bb5cb46a03df14119cdca75c70a715ce4e7"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.chocolate.webp",
+      "bytes": 169588,
+      "sha256": "7a4dbb170cd440774eb7a0cd4f2a8ece5c83cdaa368b7a83f980cdb4874b83c3"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.dried_mango.webp",
+      "bytes": 154242,
+      "sha256": "5978e694927e9f389918f8edee804a9a4292f994863f57c01634b9ff52081b11"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.hawthorn.webp",
+      "bytes": 189332,
+      "sha256": "9aa79f72f9b60a8a7bb0b9da8bbf3f37c3e01b941165657b9dd1210d935c14b7"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.milk_candy.webp",
+      "bytes": 124026,
+      "sha256": "35a1dac7ded6106054327c58907638c9eafc1dc33fa6dfa28e2a1557e6cdba0b"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.nuts.webp",
+      "bytes": 195080,
+      "sha256": "a41784f1abb6f55bf1f4ef347fd1944b3deaeb3ae01d1a829e5b897075d47119"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.popcorn.webp",
+      "bytes": 167360,
+      "sha256": "204948a19714956a56142ce5086f496bf819cb705b75e445ed5df58fd8233f02"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.potato_chips.webp",
+      "bytes": 139196,
+      "sha256": "a680ec5318acb510daccede8d98a63f38950b111995e3fbe0d02925c33369c63"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.rice_crackers.webp",
+      "bytes": 196076,
+      "sha256": "07822f25cbc03ee5b437c6cdb3ef27d23301dae80cd871e1e3eaf5688fc93082"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.seaweed_crisps.webp",
+      "bytes": 174370,
+      "sha256": "4870e0be74f8878e3714c68ec8d7d9083da441f7a410e0e7697f4583486dd4f8"
+    },
+    {
+      "path": "frontend/public/next-art/next.snack.sweet_potato.webp",
+      "bytes": 167930,
+      "sha256": "159cbcca6d32951fa724835b0fd7c0d31189d896b33f18fe36fec3eec1e2114b"
+    },
+    {
+      "path": "frontend/public/next-art/object.postcards.night.review-v5.webp",
+      "bytes": 313524,
+      "sha256": "b99cc5c8fc8298ea91e49eb30bf805fb7c4a9fdd10c9e040b1d677aed9a4e16e"
+    },
+    {
+      "path": "frontend/public/next-art/object.shelf.night.webp",
+      "bytes": 380228,
+      "sha256": "7065a960b10337dacd52f5970338f5ca06edfa4e454ec0c180bce2c4d07c46e2"
+    },
+    {
+      "path": "frontend/public/next-art/object.shelf.webp",
+      "bytes": 391184,
+      "sha256": "1c616b02509086f19ed798e1d704c5b08f4e53439246db8d2f3e739a37eb44d9"
+    },
+    {
+      "path": "frontend/public/next-art/resident.10.closeup.webp",
+      "bytes": 73268,
+      "sha256": "687d197695634c4c01b4c6d05245db93e4410322c80dae5a998de8f7632e5e91"
+    },
+    {
+      "path": "frontend/public/next-art/resident.11.closeup.webp",
+      "bytes": 87298,
+      "sha256": "af1d8beb4bbae36f335d5e5b636080e822681739c3b7316afa16b03eb4f80765"
+    },
+    {
+      "path": "frontend/public/next-art/resident.9.closeup.webp",
+      "bytes": 69602,
+      "sha256": "0cd6621e78858551803fa94051ecd87dcb5d87420d448d207209f4b0acf76040"
+    },
+    {
+      "path": "frontend/public/v5/player-female.png",
+      "bytes": 1656438,
+      "sha256": "fa3677177a9ac6f11625d1e84a5cc47485fa7f215652c361ecb7bf3498a22f9d"
+    },
+    {
+      "path": "frontend/public/v5/player-male.png",
+      "bytes": 1672834,
+      "sha256": "67dbf54badd75030bdd2dc1c5701f495affc8fdf9f96a5beba2a55a367ee439f"
+    },
+    {
+      "path": "frontend/tailwind.config.ts",
+      "bytes": 386,
+      "sha256": "76217c418c0e7aea81108d262a9a6c26d66322a454aae8be714a976603bce6ac"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "bytes": 736,
+      "sha256": "292b6ca9c362f3349c8113a072d49a06f126eafec352d7a50572543f55755c58"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 4432,
+      "sha256": "722e0483132bf5e05ae6ecb0ec4f527fde95b7badce2ff7e1cd4127d6c67471f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5886,
+      "sha256": "e5388d0c921f04aa06ddae75b58da1bdba1fa3100abb8a5180bf12c598215b2c"
+    },
+    {
+      "path": "RELEASE.json",
+      "bytes": 732,
+      "sha256": "410d24aa3861c55784fc9352e2314195545985fd9607424a8f1e4547b385ad45"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "bytes": 3562,
+      "sha256": "f5f208441fd280736034c45be9f277f1e3061b84bdbe3ae4b53c59aa03e59b44"
+    }
+  ]
+}

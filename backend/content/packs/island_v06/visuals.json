@@ -1,0 +1,429 @@
+{
+  "visual_version": "island-visuals-v0.6",
+  "visual_assets": [],
+  "visual_slots": [
+    {
+      "slot_id": "map.image",
+      "slot_type": "map_image",
+      "target_id": "mindscape_island",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "MindScape Island",
+        "zh-CN": "心境岛"
+      },
+      "fallback_description": {
+        "en": "Editable island map image",
+        "zh-CN": "可编辑的岛屿地图图像"
+      }
+    },
+    {
+      "slot_id": "actors.participant.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "participant",
+      "asset_key": null,
+      "fallback_palette_key": "sand_warm",
+      "fallback_title": {
+        "en": "Participant",
+        "zh-CN": "参与者"
+      },
+      "fallback_description": {
+        "en": "Participant map marker",
+        "zh-CN": "参与者地图图标"
+      }
+    },
+    {
+      "slot_id": "actors.participant.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "participant",
+      "asset_key": null,
+      "fallback_palette_key": "sand_warm",
+      "fallback_title": {
+        "en": "Participant",
+        "zh-CN": "参与者"
+      },
+      "fallback_description": {
+        "en": "Participant dialogue portrait",
+        "zh-CN": "参与者对话头像"
+      }
+    },
+    {
+      "slot_id": "actors.resident:1.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:1",
+      "asset_key": null,
+      "fallback_palette_key": "harbor_blue",
+      "fallback_title": {
+        "en": "Mira",
+        "zh-CN": "米拉"
+      },
+      "fallback_description": {
+        "en": "Mira map marker",
+        "zh-CN": "米拉的地图图标"
+      }
+    },
+    {
+      "slot_id": "actors.resident:1.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:1",
+      "asset_key": null,
+      "fallback_palette_key": "harbor_blue",
+      "fallback_title": {
+        "en": "Mira",
+        "zh-CN": "米拉"
+      },
+      "fallback_description": {
+        "en": "Mira dialogue portrait",
+        "zh-CN": "米拉的对话头像"
+      }
+    },
+    {
+      "slot_id": "actors.resident:2.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:2",
+      "asset_key": null,
+      "fallback_palette_key": "harbor_blue",
+      "fallback_title": {
+        "en": "Leo",
+        "zh-CN": "里奥"
+      },
+      "fallback_description": {
+        "en": "Leo map marker",
+        "zh-CN": "里奥的地图图标"
+      }
+    },
+    {
+      "slot_id": "actors.resident:2.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:2",
+      "asset_key": null,
+      "fallback_palette_key": "harbor_blue",
+      "fallback_title": {
+        "en": "Leo",
+        "zh-CN": "里奥"
+      },
+      "fallback_description": {
+        "en": "Leo dialogue portrait",
+        "zh-CN": "里奥的对话头像"
+      }
+    },
+    {
+      "slot_id": "actors.resident:3.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:3",
+      "asset_key": null,
+      "fallback_palette_key": "harbor_blue",
+      "fallback_title": {
+        "en": "Chen",
+        "zh-CN": "陈"
+      },
+      "fallback_description": {
+        "en": "Chen map marker",
+        "zh-CN": "陈的地图图标"
+      }
+    },
+    {
+      "slot_id": "actors.resident:3.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:3",
+      "asset_key": null,
+      "fallback_palette_key": "harbor_blue",
+      "fallback_title": {
+        "en": "Chen",
+        "zh-CN": "陈"
+      },
+      "fallback_description": {
+        "en": "Chen dialogue portrait",
+        "zh-CN": "陈的对话头像"
+      }
+    },
+    {
+      "slot_id": "actors.resident:4.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:4",
+      "asset_key": null,
+      "fallback_palette_key": "harbor_blue",
+      "fallback_title": {
+        "en": "Nova",
+        "zh-CN": "诺瓦"
+      },
+      "fallback_description": {
+        "en": "Nova map marker",
+        "zh-CN": "诺瓦的地图图标"
+      }
+    },
+    {
+      "slot_id": "actors.resident:4.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:4",
+      "asset_key": null,
+      "fallback_palette_key": "harbor_blue",
+      "fallback_title": {
+        "en": "Nova",
+        "zh-CN": "诺瓦"
+      },
+      "fallback_description": {
+        "en": "Nova dialogue portrait",
+        "zh-CN": "诺瓦的对话头像"
+      }
+    },
+    {
+      "slot_id": "actors.resident:5.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:5",
+      "asset_key": null,
+      "fallback_palette_key": "harbor_blue",
+      "fallback_title": {
+        "en": "Kai",
+        "zh-CN": "凯"
+      },
+      "fallback_description": {
+        "en": "Kai map marker",
+        "zh-CN": "凯的地图图标"
+      }
+    },
+    {
+      "slot_id": "actors.resident:5.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:5",
+      "asset_key": null,
+      "fallback_palette_key": "harbor_blue",
+      "fallback_title": {
+        "en": "Kai",
+        "zh-CN": "凯"
+      },
+      "fallback_description": {
+        "en": "Kai dialogue portrait",
+        "zh-CN": "凯的对话头像"
+      }
+    },
+    {
+      "slot_id": "actors.resident:6.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:6",
+      "asset_key": null,
+      "fallback_palette_key": "sunset_rose",
+      "fallback_title": {"en": "Anna", "zh-CN": "Anna"},
+      "fallback_description": {"en": "Anna map thumbnail", "zh-CN": "Anna 的地图缩略图"}
+    },
+    {
+      "slot_id": "actors.resident:6.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:6",
+      "asset_key": null,
+      "fallback_palette_key": "sunset_rose",
+      "fallback_title": {"en": "Anna", "zh-CN": "Anna"},
+      "fallback_description": {"en": "Anna dialogue portrait", "zh-CN": "Anna 的对话头像"}
+    },
+    {
+      "slot_id": "locations.participant_home.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "participant_home",
+      "asset_key": null,
+      "fallback_palette_key": "forest_green",
+      "fallback_title": {
+        "en": "Guest Cottage",
+        "zh-CN": "访客小屋"
+      },
+      "fallback_description": {
+        "en": "Guest Cottage map thumbnail",
+        "zh-CN": "访客小屋的地图缩略图"
+      }
+    },
+    {
+      "slot_id": "locations.participant_home.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "participant_home",
+      "asset_key": null,
+      "fallback_palette_key": "sunset_rose",
+      "fallback_title": {
+        "en": "Guest Cottage",
+        "zh-CN": "访客小屋"
+      },
+      "fallback_description": {
+        "en": "Guest Cottage scene background",
+        "zh-CN": "访客小屋的场景背景图"
+      }
+    },
+    {
+      "slot_id": "locations.residential_lane.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "residential_lane",
+      "asset_key": null,
+      "fallback_palette_key": "forest_green",
+      "fallback_title": {
+        "en": "Residential Lane",
+        "zh-CN": "住宅巷"
+      },
+      "fallback_description": {
+        "en": "Residential Lane map thumbnail",
+        "zh-CN": "住宅巷的地图缩略图"
+      }
+    },
+    {
+      "slot_id": "locations.residential_lane.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "residential_lane",
+      "asset_key": null,
+      "fallback_palette_key": "sunset_rose",
+      "fallback_title": {
+        "en": "Residential Lane",
+        "zh-CN": "住宅巷"
+      },
+      "fallback_description": {
+        "en": "Residential Lane scene background",
+        "zh-CN": "住宅巷的场景背景图"
+      }
+    },
+    {
+      "slot_id": "locations.square.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "square",
+      "asset_key": null,
+      "fallback_palette_key": "forest_green",
+      "fallback_title": {
+        "en": "Community Square",
+        "zh-CN": "社区广场"
+      },
+      "fallback_description": {
+        "en": "Community Square map thumbnail",
+        "zh-CN": "社区广场的地图缩略图"
+      }
+    },
+    {
+      "slot_id": "locations.square.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "square",
+      "asset_key": null,
+      "fallback_palette_key": "sunset_rose",
+      "fallback_title": {
+        "en": "Community Square",
+        "zh-CN": "社区广场"
+      },
+      "fallback_description": {
+        "en": "Community Square scene background",
+        "zh-CN": "社区广场的场景背景图"
+      }
+    },
+    {
+      "slot_id": "locations.harbor.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "harbor",
+      "asset_key": null,
+      "fallback_palette_key": "forest_green",
+      "fallback_title": {
+        "en": "Ferry Harbor",
+        "zh-CN": "渡船港"
+      },
+      "fallback_description": {
+        "en": "Ferry Harbor map thumbnail",
+        "zh-CN": "渡船港的地图缩略图"
+      }
+    },
+    {
+      "slot_id": "locations.harbor.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "harbor",
+      "asset_key": null,
+      "fallback_palette_key": "sunset_rose",
+      "fallback_title": {
+        "en": "Ferry Harbor",
+        "zh-CN": "渡船港"
+      },
+      "fallback_description": {
+        "en": "Ferry Harbor scene background",
+        "zh-CN": "渡船港的场景背景图"
+      }
+    },
+    {
+      "slot_id": "locations.restaurant.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "restaurant",
+      "asset_key": null,
+      "fallback_palette_key": "forest_green",
+      "fallback_title": {
+        "en": "Harborlight Restaurant",
+        "zh-CN": "港灯餐厅"
+      },
+      "fallback_description": {
+        "en": "Harborlight Restaurant map thumbnail",
+        "zh-CN": "港灯餐厅的地图缩略图"
+      }
+    },
+    {
+      "slot_id": "locations.restaurant.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "restaurant",
+      "asset_key": null,
+      "fallback_palette_key": "sunset_rose",
+      "fallback_title": {
+        "en": "Harborlight Restaurant",
+        "zh-CN": "港灯餐厅"
+      },
+      "fallback_description": {
+        "en": "Harborlight Restaurant scene background",
+        "zh-CN": "港灯餐厅的场景背景图"
+      }
+    },
+    {
+      "slot_id": "locations.shop.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "shop",
+      "asset_key": null,
+      "fallback_palette_key": "forest_green",
+      "fallback_title": {
+        "en": "Corner Shop",
+        "zh-CN": "街角商店"
+      },
+      "fallback_description": {
+        "en": "Corner Shop map thumbnail",
+        "zh-CN": "街角商店的地图缩略图"
+      }
+    },
+    {
+      "slot_id": "locations.shop.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "shop",
+      "asset_key": null,
+      "fallback_palette_key": "sunset_rose",
+      "fallback_title": {
+        "en": "Corner Shop",
+        "zh-CN": "街角商店"
+      },
+      "fallback_description": {
+        "en": "Corner Shop scene background",
+        "zh-CN": "街角商店的场景背景图"
+      }
+    },
+    {
+      "slot_id": "locations.beach_lighthouse.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "beach_lighthouse",
+      "asset_key": null,
+      "fallback_palette_key": "forest_green",
+      "fallback_title": {
+        "en": "Beach And Lighthouse",
+        "zh-CN": "海滩与灯塔"
+      },
+      "fallback_description": {
+        "en": "Beach And Lighthouse map thumbnail",
+        "zh-CN": "海滩与灯塔的地图缩略图"
+      }
+    },
+    {
+      "slot_id": "locations.beach_lighthouse.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "beach_lighthouse",
+      "asset_key": null,
+      "fallback_palette_key": "sunset_rose",
+      "fallback_title": {
+        "en": "Beach And Lighthouse",
+        "zh-CN": "海滩与灯塔"
+      },
+      "fallback_description": {
+        "en": "Beach And Lighthouse scene background",
+        "zh-CN": "海滩与灯塔的场景背景图"
+      }
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "events": [
+    {
+      "event_id": "community_note",
+      "event_type": "ambient_notice",
+      "version": "island-events-v0.6",
+      "title": {"en": "A handwritten note", "zh-CN": "一张手写便条"},
+      "stimulus": {"en": "A new note on the community board asks which island view should appear on the next postcard.", "zh-CN": "社区公告栏上多了一张便条，询问下一张明信片应该印哪处岛景。"},
+      "location_ids": ["square"],
+      "event_pool_ids": ["square_daily"],
+      "trigger": {"type": "on_location_enter", "time_window": {"start_minute": 540, "end_minute": 1200}},
+      "weight": 1.0,
+      "cooldown_minutes": 240,
+      "max_occurrences": 1,
+      "prerequisites": {"min_day": 2, "max_day": 2},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [
+        {"action_id": "suggest_view", "label": {"en": "Write a short suggestion", "zh-CN": "写下简短建议"}, "requires_text": true, "outcome_key": "schedule_follow_up", "follow_up_event_id": "postcard_display"},
+        {"action_id": "read_and_leave", "label": {"en": "Read it and continue", "zh-CN": "读完后继续行程"}, "requires_text": false, "outcome_key": "leave"}
+      ]
+    },
+    {
+      "event_id": "postcard_display",
+      "event_type": "ambient_follow_up",
+      "version": "island-events-v0.6",
+      "title": {"en": "A new postcard display", "zh-CN": "新的明信片陈列"},
+      "stimulus": {"en": "The shop has placed several new island-view postcards on a small display.", "zh-CN": "小店在展示架上摆出了几张新的岛景明信片。"},
+      "location_ids": ["shop"],
+      "event_pool_ids": ["shop_daily"],
+      "trigger": {"type": "on_time_window", "time_window": {"start_minute": 540, "end_minute": 1200}},
+      "weight": 0.0,
+      "cooldown_minutes": 360,
+      "max_occurrences": 1,
+      "prerequisites": {"min_day": 2, "max_day": 3},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [
+        {"action_id": "look_at_cards", "label": {"en": "Look at the cards", "zh-CN": "看看这些卡片"}, "requires_text": false, "outcome_key": "remember", "memory_owner_agent_id": 4, "memory_text": {"en": "The participant paused to look at the ordinary island postcard display.", "zh-CN": "参与者停下来查看了普通的岛屿明信片陈列。"}},
+        {"action_id": "continue_shopping", "label": {"en": "Continue through the shop", "zh-CN": "继续逛小店"}, "requires_text": false, "outcome_key": "complete"}
+      ]
+    },
+    {
+      "event_id": "harbor_tide_check",
+      "event_type": "ambient_observation",
+      "version": "island-events-v0.6",
+      "title": {"en": "The next ferry tide", "zh-CN": "下一班渡船的潮水"},
+      "stimulus": {"en": "A harbor worker has updated the public tide board with the next safe ferry window.", "zh-CN": "渡口工作人员更新了公共潮汐牌，写明了下一段适合渡船通行的时间。"},
+      "location_ids": ["harbor"],
+      "event_pool_ids": ["harbor_daily"],
+      "trigger": {"type": "on_location_enter", "time_window": {"start_minute": 660, "end_minute": 779}},
+      "weight": 1.0,
+      "cooldown_minutes": 240,
+      "max_occurrences": 1,
+      "prerequisites": {"required_resident_ids": [5], "min_day": 1, "max_day": 3},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [
+        {"action_id": "check_tide", "label": {"en": "Read the tide time", "zh-CN": "查看潮汐时间"}, "requires_text": false, "outcome_key": "complete"},
+        {"action_id": "thank_kai", "label": {"en": "Thank Kai for updating it", "zh-CN": "感谢 Kai 更新潮汐牌"}, "requires_text": false, "outcome_key": "relationship_delta", "relationship_effect": {"target_agent_id": 5, "familiarity_delta": 1, "warmth_delta": 1}},
+        {"action_id": "leave_board", "label": {"en": "Continue to the harbor", "zh-CN": "继续前往渡口"}, "requires_text": false, "outcome_key": "leave"}
+      ]
+    },
+    {
+      "event_id": "restaurant_seating_behavior",
+      "event_type": "restaurant_seating_behavior",
+      "version": "island-events-v0.6",
+      "title": {"en": "Lunch at Harborlight", "zh-CN": "在港灯餐厅吃午饭"},
+      "stimulus": {"en": "The lunch room is open. Choose where you would like to settle with your meal.", "zh-CN": "午餐时段已经开始。你可以看看餐厅，然后找个位置用餐。"},
+      "location_ids": ["restaurant"],
+      "event_pool_ids": ["restaurant_lunch"],
+      "trigger": {"type": "on_location_enter", "time_window": {"start_minute": 720, "end_minute": 779}},
+      "weight": 1.0,
+      "cooldown_minutes": 1440,
+      "max_occurrences": 1,
+      "prerequisites": {"required_resident_ids": [1, 2, 3, 6], "min_day": 1, "max_day": 3},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [],
+      "renderer_key": "behavioral_event",
+      "initial_stage_id": "choose_seat",
+      "logging_config": {
+        "raw_schema_version": "behavioral-action-v1",
+        "derived_feature_version": "restaurant-features-v1",
+        "research_domain": "social_approach_distance",
+        "store_diagnostic_labels": false
+      },
+      "llm_context": {
+        "current_event": "ordinary_restaurant_lunch",
+        "event_facts": ["Five dining areas are available", "The shared table conversation is light and ordinary", "The participant may reply, ignore, change seats, finish, or leave"],
+        "allowed_knowledge": ["Restaurant routine", "Public island life", "The visible meal and current conversation"],
+        "knowledge_boundary": ["Do not infer mental health", "Do not reveal behavioral observation", "Do not pressure personal disclosure"],
+        "response_style": "Short natural game dialogue consistent with the resident profile"
+      },
+      "stages": [
+        {
+          "stage_id": "choose_seat",
+          "title": {"en": "Find a place for lunch", "zh-CN": "找个地方吃午饭"},
+          "stimulus": {"en": "Several tables are available. You can look more closely before deciding, or take your food outside.", "zh-CN": "餐厅里有几处可以坐的位置。你可以先仔细看看，也可以把餐点带到外面。"},
+          "actions": [
+            {"action_id": "inspect_group_table", "label": {"en": "Look at the lively shared table", "zh-CN": "看看热闹的多人桌"}, "requires_text": false, "action_type": "inspect_object", "terminal": false, "next_stage_id": "choose_seat", "outcome_code": "seat_inspected", "action_minutes": 0, "target_type": "seat", "target_id": "group_table", "metadata": {"seat_type": "group_table", "social_density": "high", "distance_to_nearest_npc": 1.0}},
+            {"action_id": "inspect_single_npc_table", "label": {"en": "Look at Chen's quiet table", "zh-CN": "看看 Chen 的安静餐桌"}, "requires_text": false, "action_type": "inspect_object", "terminal": false, "next_stage_id": "choose_seat", "outcome_code": "seat_inspected", "action_minutes": 0, "target_type": "seat", "target_id": "single_npc_table", "target_agent_id": 3, "metadata": {"seat_type": "single_npc_table", "social_density": "low", "distance_to_nearest_npc": 1.5}},
+            {"action_id": "inspect_central_table", "label": {"en": "Look at the open central table", "zh-CN": "看看中央空桌"}, "requires_text": false, "action_type": "inspect_object", "terminal": false, "next_stage_id": "choose_seat", "outcome_code": "seat_inspected", "action_minutes": 0, "target_type": "seat", "target_id": "central_empty_table", "metadata": {"seat_type": "central_empty_table", "social_density": "ambient", "distance_to_nearest_npc": 3.0}},
+            {"action_id": "inspect_corner_table", "label": {"en": "Look at the window corner table", "zh-CN": "看看窗边角落桌"}, "requires_text": false, "action_type": "inspect_object", "terminal": false, "next_stage_id": "choose_seat", "outcome_code": "seat_inspected", "action_minutes": 0, "target_type": "seat", "target_id": "corner_table", "metadata": {"seat_type": "corner_table", "social_density": "low", "distance_to_nearest_npc": 6.0}},
+            {"action_id": "inspect_takeaway", "label": {"en": "Check the takeaway counter", "zh-CN": "看看外带柜台"}, "requires_text": false, "action_type": "inspect_object", "terminal": false, "next_stage_id": "choose_seat", "outcome_code": "seat_inspected", "action_minutes": 0, "target_type": "seat", "target_id": "takeaway_counter", "metadata": {"seat_type": "takeaway", "social_density": "none", "distance_to_nearest_npc": 9.0}},
+
+            {"action_id": "select_group_table", "label": {"en": "Join the shared table", "zh-CN": "坐到多人桌旁"}, "requires_text": false, "action_type": "select_seat", "terminal": false, "next_stage_id": "group_social", "outcome_code": "seat_selected", "action_minutes": 5, "target_type": "seat", "target_id": "group_table", "target_agent_id": 2, "state_updates": {"selected_seat_id": "group_table", "selected_seat_type": "group_table", "selected_seat_social_density": "high", "distance_to_nearest_npc": 1.0}, "metadata": {"seat_type": "group_table", "social_density": "high", "distance_to_nearest_npc": 1.0, "npc_initiated_conversation": true, "npc_ids": [1, 2, 6]}, "npc_response": {"provider": "static", "npc_id": 2, "intent": "friendly_opening", "text": {"en": "Leo makes room and smiles. ‘Good timing. Are you just getting to know the island?’", "zh-CN": "Leo 笑着腾出位置：“来得正好。你还在熟悉这座岛吗？”"}}},
+            {"action_id": "select_single_npc_table", "label": {"en": "Sit near Chen", "zh-CN": "坐到 Chen 附近"}, "requires_text": false, "action_type": "select_seat", "terminal": false, "next_stage_id": "single_social", "outcome_code": "seat_selected", "action_minutes": 5, "target_type": "seat", "target_id": "single_npc_table", "target_agent_id": 3, "state_updates": {"selected_seat_id": "single_npc_table", "selected_seat_type": "single_npc_table", "selected_seat_social_density": "low", "distance_to_nearest_npc": 1.5}, "metadata": {"seat_type": "single_npc_table", "social_density": "low", "distance_to_nearest_npc": 1.5, "npc_initiated_conversation": false, "npc_ids": [3]}},
+            {"action_id": "select_central_table", "label": {"en": "Use the open central table", "zh-CN": "坐到中央空桌"}, "requires_text": false, "action_type": "select_seat", "terminal": false, "next_stage_id": "quiet_meal", "outcome_code": "seat_selected", "action_minutes": 5, "target_type": "seat", "target_id": "central_empty_table", "state_updates": {"selected_seat_id": "central_empty_table", "selected_seat_type": "central_empty_table", "selected_seat_social_density": "ambient", "distance_to_nearest_npc": 3.0}, "metadata": {"seat_type": "central_empty_table", "social_density": "ambient", "distance_to_nearest_npc": 3.0}},
+            {"action_id": "select_corner_table", "label": {"en": "Use the window corner table", "zh-CN": "坐到窗边角落桌"}, "requires_text": false, "action_type": "select_seat", "terminal": false, "next_stage_id": "quiet_meal", "outcome_code": "seat_selected", "action_minutes": 5, "target_type": "seat", "target_id": "corner_table", "state_updates": {"selected_seat_id": "corner_table", "selected_seat_type": "corner_table", "selected_seat_social_density": "low", "distance_to_nearest_npc": 6.0}, "metadata": {"seat_type": "corner_table", "social_density": "low", "distance_to_nearest_npc": 6.0}},
+            {"action_id": "select_takeaway", "label": {"en": "Order the meal to take away", "zh-CN": "把餐点打包带走"}, "requires_text": false, "action_type": "select_seat", "terminal": false, "next_stage_id": "takeaway", "outcome_code": "seat_selected", "action_minutes": 5, "target_type": "seat", "target_id": "takeaway_counter", "state_updates": {"selected_seat_id": "takeaway_counter", "selected_seat_type": "takeaway", "selected_seat_social_density": "none", "distance_to_nearest_npc": 9.0}, "metadata": {"seat_type": "takeaway", "social_density": "none", "distance_to_nearest_npc": 9.0}},
+            {"action_id": "leave_without_lunch", "label": {"en": "Leave the restaurant for now", "zh-CN": "暂时离开餐厅"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "left_before_selection", "action_minutes": 0, "target_type": "location", "target_id": "square", "target_location_id": "square", "state_updates": {"early_exit": true}, "metadata": {"early_exit": true, "relocate_participant": true, "event_completed": false}}
+          ]
+        },
+        {
+          "stage_id": "group_social",
+          "title": {"en": "Lunch at the shared table", "zh-CN": "在多人桌吃午饭"},
+          "stimulus": {"en": "The conversation stays light. You can answer, keep listening, move, or finish your meal whenever you like.", "zh-CN": "桌边的聊天很轻松。你可以回应、继续听、换位置，或者随时吃完离开。"},
+          "actions": [
+            {"action_id": "reply_to_group", "label": {"en": "Reply in your own words", "zh-CN": "用自己的话回应"}, "requires_text": true, "action_type": "send_message", "terminal": false, "next_stage_id": "group_social", "outcome_code": "conversation_continued", "action_minutes": 5, "target_type": "npc", "target_id": "leo", "target_agent_id": 2, "metadata": {"conversation_turn": true, "player_message": true, "npc_initiated_conversation": true}, "npc_response": {"provider": "static", "npc_id": 2, "intent": "ordinary_reply", "text": {"en": "Leo nods and answers with an easy comment about the island day.", "zh-CN": "Leo 点点头，随意聊起今天岛上的安排。"}}},
+            {"action_id": "listen_to_group", "label": {"en": "Listen for a while", "zh-CN": "继续听一会儿"}, "requires_text": false, "action_type": "continue_conversation", "terminal": false, "next_stage_id": "group_social", "outcome_code": "conversation_continued", "action_minutes": 5, "target_type": "npc_group", "target_id": "group_table", "metadata": {"conversation_turn": true, "player_message": false}, "npc_response": {"provider": "static", "npc_id": 6, "intent": "light_group_chat", "text": {"en": "Anna adds a brief joke about the gulls trying to inspect everyone’s lunch.", "zh-CN": "Anna 笑着说，海鸥大概想检查每个人的午餐。"}}},
+            {"action_id": "ignore_group_greeting", "label": {"en": "Focus on the meal", "zh-CN": "先专心吃饭"}, "requires_text": false, "action_type": "ignore_conversation", "terminal": false, "next_stage_id": "quiet_meal", "outcome_code": "conversation_ignored", "action_minutes": 5, "target_type": "npc_group", "target_id": "group_table", "metadata": {"ignored_npc_opening": true}},
+            {"action_id": "change_from_group", "label": {"en": "Look for another place", "zh-CN": "换个位置看看"}, "requires_text": false, "action_type": "move_position", "terminal": false, "next_stage_id": "choose_seat", "outcome_code": "seat_change_started", "action_minutes": 2, "target_type": "seat", "target_id": "group_table", "state_updates": {"changed_seat_after_sitting": true}, "metadata": {"position_change": true, "changed_seat_after_sitting": true}},
+            {"action_id": "finish_group_meal", "label": {"en": "Finish lunch and get up", "zh-CN": "吃完午饭后起身"}, "requires_text": false, "action_type": "complete_event", "terminal": true, "outcome_code": "meal_completed", "action_minutes": 15, "target_type": "seat", "target_id": "group_table", "metadata": {"event_completed": true, "early_exit": false}},
+            {"action_id": "leave_group_early", "label": {"en": "Leave before finishing", "zh-CN": "提前离开餐厅"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "left_restaurant_early", "action_minutes": 0, "target_type": "location", "target_id": "square", "target_location_id": "square", "state_updates": {"early_exit": true}, "metadata": {"event_completed": false, "early_exit": true, "relocate_participant": true}}
+          ]
+        },
+        {
+          "stage_id": "single_social",
+          "title": {"en": "A quiet table near Chen", "zh-CN": "Chen 附近的安静餐桌"},
+          "stimulus": {"en": "Chen gives a small nod and continues eating. Conversation is possible, but not expected.", "zh-CN": "Chen 轻轻点头后继续吃饭。你可以交谈，也可以不说话。"},
+          "actions": [
+            {"action_id": "start_chat_with_chen", "label": {"en": "Say something to Chen", "zh-CN": "和 Chen 说句话"}, "requires_text": true, "action_type": "start_conversation", "terminal": false, "next_stage_id": "single_social", "outcome_code": "conversation_started", "action_minutes": 5, "target_type": "npc", "target_id": "chen", "target_agent_id": 3, "metadata": {"initiated_conversation": true, "conversation_turn": true, "player_message": true}, "npc_response": {"provider": "static", "npc_id": 3, "intent": "gentle_reply", "text": {"en": "Chen answers warmly and keeps the conversation unhurried.", "zh-CN": "Chen 温和地回应，没有催着把话题继续下去。"}}},
+            {"action_id": "eat_quietly_near_chen", "label": {"en": "Continue eating quietly", "zh-CN": "安静地继续吃饭"}, "requires_text": false, "action_type": "ignore_conversation", "terminal": false, "next_stage_id": "quiet_meal", "outcome_code": "quiet_meal_continued", "action_minutes": 5, "target_type": "seat", "target_id": "single_npc_table"},
+            {"action_id": "change_from_single", "label": {"en": "Look for another place", "zh-CN": "换个位置看看"}, "requires_text": false, "action_type": "move_position", "terminal": false, "next_stage_id": "choose_seat", "outcome_code": "seat_change_started", "action_minutes": 2, "target_type": "seat", "target_id": "single_npc_table", "state_updates": {"changed_seat_after_sitting": true}, "metadata": {"position_change": true, "changed_seat_after_sitting": true}},
+            {"action_id": "finish_single_meal", "label": {"en": "Finish lunch and get up", "zh-CN": "吃完午饭后起身"}, "requires_text": false, "action_type": "complete_event", "terminal": true, "outcome_code": "meal_completed", "action_minutes": 15, "target_type": "seat", "target_id": "single_npc_table", "metadata": {"event_completed": true, "early_exit": false}},
+            {"action_id": "leave_single_early", "label": {"en": "Leave before finishing", "zh-CN": "提前离开餐厅"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "left_restaurant_early", "action_minutes": 0, "target_type": "location", "target_id": "square", "target_location_id": "square", "state_updates": {"early_exit": true}, "metadata": {"event_completed": false, "early_exit": true, "relocate_participant": true}}
+          ]
+        },
+        {
+          "stage_id": "quiet_meal",
+          "title": {"en": "Continue lunch", "zh-CN": "继续吃午饭"},
+          "stimulus": {"en": "You have a place for the meal. The rest of the restaurant carries on around you.", "zh-CN": "你已经找到了用餐的位置，餐厅里的人们继续着各自的午餐。"},
+          "actions": [
+            {"action_id": "finish_quiet_meal", "label": {"en": "Finish lunch", "zh-CN": "吃完午饭"}, "requires_text": false, "action_type": "complete_event", "terminal": true, "outcome_code": "meal_completed", "action_minutes": 15, "target_type": "meal", "target_id": "lunch", "metadata": {"event_completed": true, "early_exit": false}},
+            {"action_id": "change_during_meal", "label": {"en": "Move to another place", "zh-CN": "换到别的位置"}, "requires_text": false, "action_type": "move_position", "terminal": false, "next_stage_id": "choose_seat", "outcome_code": "seat_change_started", "action_minutes": 2, "target_type": "seat", "target_id": "current_seat", "state_updates": {"changed_seat_after_sitting": true}, "metadata": {"position_change": true, "changed_seat_after_sitting": true}},
+            {"action_id": "leave_quiet_meal_early", "label": {"en": "Leave before finishing", "zh-CN": "提前离开餐厅"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "left_restaurant_early", "action_minutes": 0, "target_type": "location", "target_id": "square", "target_location_id": "square", "state_updates": {"early_exit": true}, "metadata": {"event_completed": false, "early_exit": true, "relocate_participant": true}}
+          ]
+        },
+        {
+          "stage_id": "takeaway",
+          "title": {"en": "Lunch packed to go", "zh-CN": "打包好的午饭"},
+          "stimulus": {"en": "The meal is packed. You can eat outside nearby or carry it with you.", "zh-CN": "餐点已经打包好。你可以在附近室外吃，也可以带着继续走。"},
+          "actions": [
+            {"action_id": "eat_outside", "label": {"en": "Eat on the outdoor bench", "zh-CN": "到室外长椅吃"}, "requires_text": false, "action_type": "complete_event", "terminal": true, "outcome_code": "takeaway_outside", "action_minutes": 15, "target_type": "activity", "target_id": "outdoor_bench_meal", "metadata": {"event_completed": true, "early_exit": false, "alternative_goal": "outdoor_meal"}},
+            {"action_id": "carry_food_away", "label": {"en": "Carry the meal with you", "zh-CN": "带着餐点离开"}, "requires_text": false, "action_type": "complete_event", "terminal": true, "outcome_code": "takeaway_departure", "action_minutes": 0, "target_type": "activity", "target_id": "takeaway_meal", "metadata": {"event_completed": true, "early_exit": false, "alternative_goal": "takeaway_meal"}},
+            {"action_id": "change_takeaway_choice", "label": {"en": "Choose a table instead", "zh-CN": "改为在餐厅找位置"}, "requires_text": false, "action_type": "move_position", "terminal": false, "next_stage_id": "choose_seat", "outcome_code": "seat_change_started", "action_minutes": 2, "target_type": "seat", "target_id": "takeaway_counter", "state_updates": {"changed_seat_after_sitting": true}, "metadata": {"position_change": true}}
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "anna_north_island_plan",
+      "event_type": "island_meeting_plan",
+      "version": "island-events-v0.6",
+      "title": {"en": "An afternoon invitation", "zh-CN": "一个下午的邀请"},
+      "stimulus": {"en": "Anna mentions that she will be near the North Island landing at 14:00 and invites you to meet her there.", "zh-CN": "Anna 说她 14:00 会在北岛码头附近，邀请你过去见面。"},
+      "location_ids": ["square"],
+      "event_pool_ids": ["square_daily"],
+      "trigger": {"type": "on_time_window", "time_window": {"start_minute": 600, "end_minute": 719}},
+      "weight": 1.0,
+      "cooldown_minutes": 1440,
+      "max_occurrences": 1,
+      "prerequisites": {"required_resident_ids": [6], "min_day": 1, "max_day": 1},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [],
+      "renderer_key": "behavioral_event",
+      "initial_stage_id": "invitation",
+      "logging_config": {"raw_schema_version": "behavioral-action-v1", "research_domain": "plan_formation", "store_diagnostic_labels": false},
+      "llm_context": {
+        "current_event": "ordinary_meeting_invitation",
+        "event_facts": ["The meeting is at 14:00", "The destination is North Island", "The participant would normally travel through Ferry Harbor"],
+        "allowed_knowledge": ["Anna's own plan", "Public ferry route", "Public island locations"],
+        "knowledge_boundary": ["Do not infer mental health", "Do not pressure acceptance"],
+        "response_style": "Brief friendly invitation"
+      },
+      "stages": [
+        {
+          "stage_id": "invitation",
+          "title": {"en": "Meet Anna this afternoon?", "zh-CN": "下午去见 Anna 吗？"},
+          "stimulus": {"en": "‘I’ll be by the North Island landing at two. If you’re free, come over and I’ll show you the north shore path.’", "zh-CN": "“我两点会在北岛码头。如果你有空就过来，我带你看看北岸的小路。”"},
+          "actions": [
+            {"action_id": "accept_meeting", "label": {"en": "Agree to meet at 14:00", "zh-CN": "答应 14:00 见面"}, "requires_text": false, "action_type": "accept_goal", "terminal": true, "outcome_code": "meeting_accepted", "action_minutes": 5, "target_type": "goal", "target_id": "north_island_meeting", "target_agent_id": 6, "target_location_id": "harbor", "metadata": {"original_goal": "14:00 North Island meeting with Anna", "goal_created": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "active", "title": {"en": "Meet Anna on North Island", "zh-CN": "去北岛见 Anna"}, "description": {"en": "Travel through Ferry Harbor and meet Anna near the North Island landing at 14:00.", "zh-CN": "经由渡船码头前往北岛，14:00 在北岛码头附近见 Anna。"}, "target_location_id": "harbor", "due_day": 1, "due_time_minutes": 840, "resolution": "pending"}},
+            {"action_id": "ask_meeting_details", "label": {"en": "Ask where to meet", "zh-CN": "问清楚在哪里见面"}, "requires_text": false, "action_type": "ask_information", "terminal": false, "next_stage_id": "invitation_details", "outcome_code": "meeting_details_requested", "action_minutes": 5, "target_type": "npc", "target_id": "anna", "target_agent_id": 6, "metadata": {"information_request": true}, "npc_response": {"provider": "static", "npc_id": 6, "intent": "meeting_details", "text": {"en": "‘Take the ferry from the harbor. I’ll wait by the North Island landing at two.’", "zh-CN": "“从渡船码头坐船过来。我两点会在北岛码头旁等你。”"}}},
+            {"action_id": "decline_meeting", "label": {"en": "Say you have other plans", "zh-CN": "说今天另有安排"}, "requires_text": false, "action_type": "decline_goal", "terminal": true, "outcome_code": "meeting_declined", "action_minutes": 5, "target_type": "goal", "target_id": "north_island_meeting", "target_agent_id": 6, "metadata": {"goal_created": false}}
+          ]
+        },
+        {
+          "stage_id": "invitation_details",
+          "title": {"en": "North Island meeting details", "zh-CN": "北岛见面安排"},
+          "stimulus": {"en": "The route goes through Ferry Harbor. Anna will wait near the North Island landing at 14:00.", "zh-CN": "路线需要经过渡船码头。Anna 会在 14:00 到北岛码头附近等你。"},
+          "actions": [
+            {"action_id": "accept_after_details", "label": {"en": "Add the meeting to today's plan", "zh-CN": "把见面加入今天的安排"}, "requires_text": false, "action_type": "accept_goal", "terminal": true, "outcome_code": "meeting_accepted", "action_minutes": 5, "target_type": "goal", "target_id": "north_island_meeting", "target_agent_id": 6, "target_location_id": "harbor", "metadata": {"original_goal": "14:00 North Island meeting with Anna", "goal_created": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "active", "title": {"en": "Meet Anna on North Island", "zh-CN": "去北岛见 Anna"}, "description": {"en": "Travel through Ferry Harbor and meet Anna near the North Island landing at 14:00.", "zh-CN": "经由渡船码头前往北岛，14:00 在北岛码头附近见 Anna。"}, "target_location_id": "harbor", "due_day": 1, "due_time_minutes": 840, "resolution": "pending"}},
+            {"action_id": "decline_after_details", "label": {"en": "Keep the afternoon open", "zh-CN": "下午不安排这次见面"}, "requires_text": false, "action_type": "decline_goal", "terminal": true, "outcome_code": "meeting_declined", "action_minutes": 5, "target_type": "goal", "target_id": "north_island_meeting", "target_agent_id": 6, "metadata": {"goal_created": false}}
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "ferry_cancellation_behavior",
+      "event_type": "ferry_cancellation_behavior",
+      "version": "island-events-v0.6",
+      "title": {"en": "The afternoon ferry", "zh-CN": "下午的渡船"},
+      "stimulus": {"en": "At the harbor, Kai points to a new notice: the afternoon ferry has been cancelled because of the weather.", "zh-CN": "到了渡船码头，Kai 指向一张新通知：由于天气原因，下午的渡船已经取消。"},
+      "location_ids": ["harbor"],
+      "event_pool_ids": ["harbor_daily"],
+      "trigger": {"type": "on_time_window", "time_window": {"start_minute": 780, "end_minute": 930}},
+      "weight": 1.0,
+      "cooldown_minutes": 1440,
+      "max_occurrences": 1,
+      "prerequisites": {"required_resident_ids": [5], "required_goals": [{"goal_id": "north_island_meeting", "statuses": ["active"]}], "min_day": 1, "max_day": 1},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [],
+      "renderer_key": "behavioral_event",
+      "initial_stage_id": "cancellation_notice",
+      "logging_config": {
+        "raw_schema_version": "behavioral-action-v1",
+        "derived_feature_version": "ferry-features-v1",
+        "research_domain": "plan_change_and_control",
+        "store_diagnostic_labels": false
+      },
+      "llm_context": {
+        "current_event": "afternoon_ferry_cancelled",
+        "event_facts": ["The afternoon ferry is cancelled because of weather", "The participant had a 14:00 meeting with Anna on North Island", "No single response is preferred", "A slower service route may be available after asking"],
+        "allowed_knowledge": ["Public ferry status", "Next scheduled ferry", "Service route facts", "Anna's agreed meeting"],
+        "knowledge_boundary": ["Do not infer mental health", "Do not reveal behavioral observation", "Do not rank coping choices"],
+        "response_style": "Practical, friendly, short game dialogue"
+      },
+      "stages": [
+        {
+          "stage_id": "cancellation_notice",
+          "title": {"en": "Ferry service cancelled", "zh-CN": "渡船停航"},
+          "stimulus": {"en": "‘The afternoon ferry is cancelled because of the weather,’ Kai says. The route to the North Island meeting is no longer available as planned.", "zh-CN": "Kai 说：“因为天气原因，下午的渡船停航了。”原本前往北岛见面的路线无法按计划继续。"},
+          "actions": [
+            {"action_id": "ask_sailor_alternative", "label": {"en": "Ask Kai about another route", "zh-CN": "问 Kai 有没有其他路线"}, "requires_text": false, "action_type": "ask_information", "terminal": false, "next_stage_id": "options_known", "outcome_code": "alternative_information_received", "action_minutes": 5, "target_type": "npc", "target_id": "sailor_kai", "target_agent_id": 5, "metadata": {"information_request": true, "asked_sailor": true, "searched_alternative_route": true}, "npc_response": {"provider": "static", "npc_id": 5, "intent": "route_facts", "text": {"en": "‘There is a slower maintenance launch later, but it takes the long way around. I can only confirm it if the weather holds.’", "zh-CN": "“晚些时候可能有一艘维修艇绕行，不过路程更久，也要看天气是否允许。”"}}},
+            {"action_id": "ask_sailor_next_ferry", "label": {"en": "Ask when the next ferry runs", "zh-CN": "询问下一班渡船"}, "requires_text": false, "action_type": "ask_information", "terminal": false, "next_stage_id": "options_known", "outcome_code": "schedule_information_received", "action_minutes": 5, "target_type": "npc", "target_id": "sailor_kai", "target_agent_id": 5, "metadata": {"information_request": true, "asked_sailor": true}, "npc_response": {"provider": "static", "npc_id": 5, "intent": "schedule_facts", "text": {"en": "‘The next regular ferry is tomorrow morning. Today’s afternoon service will not resume.’", "zh-CN": "“下一班正常渡船是明天早上。今天下午不会恢复班次。”"}}},
+            {"action_id": "contact_anna_now", "label": {"en": "Contact Anna", "zh-CN": "联系 Anna"}, "requires_text": false, "action_type": "contact_npc", "terminal": false, "next_stage_id": "anna_contact", "outcome_code": "anna_contacted", "action_minutes": 5, "target_type": "npc", "target_id": "anna", "target_agent_id": 6, "metadata": {"contacted_anna": true}, "npc_response": {"provider": "static", "npc_id": 6, "intent": "plan_change_reply", "text": {"en": "Anna replies: ‘I saw the weather notice. We can change the time or meet somewhere on the main island instead.’", "zh-CN": "Anna 回复：“我看到天气通知了。我们可以改时间，或者改在主岛见面。”"}}},
+            {"action_id": "check_harbor_map", "label": {"en": "Check the island map", "zh-CN": "查看岛屿地图"}, "requires_text": false, "action_type": "check_map", "terminal": false, "next_stage_id": "options_known", "outcome_code": "map_checked", "action_minutes": 2, "target_type": "object", "target_id": "harbor_route_map", "metadata": {"checked_map": true}},
+            {"action_id": "wait_at_harbor", "label": {"en": "Wait at the harbor for a while", "zh-CN": "在码头等一会儿"}, "requires_text": false, "action_type": "wait", "terminal": false, "next_stage_id": "after_wait", "outcome_code": "waited_at_harbor", "action_minutes": 15, "target_type": "location", "target_id": "harbor", "target_location_id": "harbor", "metadata": {"waited_at_harbor": true, "wait_duration": 15}},
+            {"action_id": "choose_other_activity", "label": {"en": "Choose another island activity", "zh-CN": "改去做岛上的其他事情"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "changed_activity", "action_minutes": 5, "target_type": "goal", "target_id": "island_activity", "state_updates": {"resolution_type": "changed_activity"}, "metadata": {"changed_plan": true, "alternative_goal": "open_island_activity", "resolution_type": "changed_activity", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "changed", "resolution": "changed_activity"}},
+            {"action_id": "return_home_now", "label": {"en": "Return to the guest cottage", "zh-CN": "返回访客小屋"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "returned_home", "action_minutes": 5, "target_type": "location", "target_id": "participant_home", "target_location_id": "participant_home", "state_updates": {"resolution_type": "returned_home"}, "metadata": {"changed_plan": true, "abandoned_original_goal": true, "returned_home": true, "relocate_participant": true, "resolution_type": "returned_home", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "abandoned", "target_location_id": "participant_home", "resolution": "returned_home"}},
+            {"action_id": "leave_unresolved", "label": {"en": "Leave the harbor without deciding", "zh-CN": "先离开码头，暂不决定"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "unresolved", "action_minutes": 0, "target_type": "location", "target_id": "square", "target_location_id": "square", "state_updates": {"resolution_type": "unresolved"}, "metadata": {"resolution_type": "unresolved", "relocate_participant": true, "event_completed": false}, "goal_effect": {"goal_id": "north_island_meeting", "status": "unresolved", "resolution": "unresolved"}}
+          ]
+        },
+        {
+          "stage_id": "options_known",
+          "title": {"en": "Other possibilities", "zh-CN": "其他可能的安排"},
+          "stimulus": {"en": "You have more information now. The original ferry remains cancelled, and several ordinary ways forward are available.", "zh-CN": "你已经获得了更多信息。原渡船仍然停航，但现在有几种可以继续安排当天行程的方式。"},
+          "actions": [
+            {"action_id": "take_alternative_route", "label": {"en": "Use the slower service route", "zh-CN": "选择较慢的绕行路线"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "alternative_route", "action_minutes": 10, "target_type": "goal", "target_id": "north_island_meeting", "state_updates": {"resolution_type": "alternative_route"}, "metadata": {"searched_alternative_route": true, "changed_plan": true, "alternative_goal": "service_launch_route", "resolution_type": "alternative_route", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "rerouted", "target_location_id": "harbor", "resolution": "alternative_route"}},
+            {"action_id": "contact_anna_after_info", "label": {"en": "Contact Anna", "zh-CN": "联系 Anna"}, "requires_text": false, "action_type": "contact_npc", "terminal": false, "next_stage_id": "anna_contact", "outcome_code": "anna_contacted", "action_minutes": 5, "target_type": "npc", "target_id": "anna", "target_agent_id": 6, "metadata": {"contacted_anna": true}, "npc_response": {"provider": "static", "npc_id": 6, "intent": "plan_change_reply", "text": {"en": "Anna replies: ‘No problem. We can move the meeting or leave it for tomorrow.’", "zh-CN": "Anna 回复：“没关系。我们可以换地方，或者改到明天。”"}}},
+            {"action_id": "check_map_again", "label": {"en": "Check the map again", "zh-CN": "再查看一次地图"}, "requires_text": false, "action_type": "check_map", "terminal": false, "next_stage_id": "options_known", "outcome_code": "map_checked", "action_minutes": 2, "target_type": "object", "target_id": "harbor_route_map", "metadata": {"checked_map": true}},
+            {"action_id": "wait_after_info", "label": {"en": "Wait at the harbor", "zh-CN": "继续在码头等待"}, "requires_text": false, "action_type": "wait", "terminal": false, "next_stage_id": "after_wait", "outcome_code": "waited_at_harbor", "action_minutes": 15, "target_type": "location", "target_id": "harbor", "target_location_id": "harbor", "metadata": {"waited_at_harbor": true, "wait_duration": 15}},
+            {"action_id": "change_activity_after_info", "label": {"en": "Choose another island activity", "zh-CN": "改去做岛上的其他事情"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "changed_activity", "action_minutes": 5, "target_type": "goal", "target_id": "island_activity", "state_updates": {"resolution_type": "changed_activity"}, "metadata": {"changed_plan": true, "alternative_goal": "open_island_activity", "resolution_type": "changed_activity", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "changed", "resolution": "changed_activity"}},
+            {"action_id": "return_home_after_info", "label": {"en": "Return to the guest cottage", "zh-CN": "返回访客小屋"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "returned_home", "action_minutes": 5, "target_type": "location", "target_id": "participant_home", "target_location_id": "participant_home", "state_updates": {"resolution_type": "returned_home"}, "metadata": {"changed_plan": true, "abandoned_original_goal": true, "returned_home": true, "relocate_participant": true, "resolution_type": "returned_home", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "abandoned", "target_location_id": "participant_home", "resolution": "returned_home"}},
+            {"action_id": "leave_options_unresolved", "label": {"en": "Leave this undecided for now", "zh-CN": "暂时不作决定"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "unresolved", "action_minutes": 0, "target_type": "location", "target_id": "square", "target_location_id": "square", "state_updates": {"resolution_type": "unresolved"}, "metadata": {"resolution_type": "unresolved", "relocate_participant": true, "event_completed": false}, "goal_effect": {"goal_id": "north_island_meeting", "status": "unresolved", "resolution": "unresolved"}}
+          ]
+        },
+        {
+          "stage_id": "anna_contact",
+          "title": {"en": "Message from Anna", "zh-CN": "Anna 的消息"},
+          "stimulus": {"en": "Anna understands that the ferry is cancelled. She is open to changing the time, changing the meeting place, or dropping today's meeting.", "zh-CN": "Anna 知道渡船停航了。她可以改时间、改见面地点，也可以取消今天的见面。"},
+          "actions": [
+            {"action_id": "reschedule_with_anna", "label": {"en": "Move the meeting to tomorrow", "zh-CN": "把见面改到明天"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "rescheduled", "action_minutes": 5, "target_type": "goal", "target_id": "north_island_meeting", "target_agent_id": 6, "state_updates": {"resolution_type": "rescheduled"}, "metadata": {"contacted_anna": true, "changed_plan": true, "resolution_type": "rescheduled", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "rescheduled", "due_day": 2, "due_time_minutes": 840, "resolution": "rescheduled"}},
+            {"action_id": "meet_anna_in_square", "label": {"en": "Meet in the Community Square instead", "zh-CN": "改在社区广场见面"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "changed_meeting_location", "action_minutes": 5, "target_type": "goal", "target_id": "north_island_meeting", "target_agent_id": 6, "target_location_id": "square", "state_updates": {"resolution_type": "changed_meeting_location"}, "metadata": {"contacted_anna": true, "changed_plan": true, "alternative_goal": "meet_anna_square", "resolution_type": "changed_meeting_location", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "relocated", "target_location_id": "square", "due_day": 1, "due_time_minutes": 900, "resolution": "changed_meeting_location"}},
+            {"action_id": "cancel_meeting_today", "label": {"en": "Cancel today's meeting", "zh-CN": "取消今天的见面"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "changed_activity", "action_minutes": 5, "target_type": "goal", "target_id": "north_island_meeting", "target_agent_id": 6, "state_updates": {"resolution_type": "changed_activity"}, "metadata": {"contacted_anna": true, "changed_plan": true, "abandoned_original_goal": true, "resolution_type": "changed_activity", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "cancelled", "resolution": "changed_activity"}},
+            {"action_id": "message_anna_freely", "label": {"en": "Write a short reply to Anna", "zh-CN": "给 Anna 写一条简短回复"}, "requires_text": true, "action_type": "send_message", "terminal": false, "next_stage_id": "anna_contact", "outcome_code": "conversation_continued", "action_minutes": 5, "target_type": "npc", "target_id": "anna", "target_agent_id": 6, "metadata": {"contacted_anna": true, "conversation_turn": true, "player_message": true}, "npc_response": {"provider": "static", "npc_id": 6, "intent": "ordinary_reply", "text": {"en": "Anna replies briefly and leaves the next step open to you.", "zh-CN": "Anna 简短地回复，并把接下来的安排留给你决定。"}}},
+            {"action_id": "back_to_harbor_options", "label": {"en": "Consider the harbor options first", "zh-CN": "先回头考虑码头的其他办法"}, "requires_text": false, "action_type": "switch_action", "terminal": false, "next_stage_id": "options_known", "outcome_code": "options_revisited", "action_minutes": 0, "target_type": "event_stage", "target_id": "options_known", "metadata": {"action_switch": true}}
+          ]
+        },
+        {
+          "stage_id": "after_wait",
+          "title": {"en": "Still at the harbor", "zh-CN": "仍在码头"},
+          "stimulus": {"en": "Some time passes. The regular ferry is still cancelled; you can keep waiting or make another arrangement.", "zh-CN": "过了一段时间。正常渡船仍未恢复，你可以继续等待，也可以作出其他安排。"},
+          "actions": [
+            {"action_id": "wait_again", "label": {"en": "Wait another fifteen minutes", "zh-CN": "再等十五分钟"}, "requires_text": false, "action_type": "wait", "terminal": false, "next_stage_id": "after_wait", "outcome_code": "waited_at_harbor", "action_minutes": 15, "target_type": "location", "target_id": "harbor", "target_location_id": "harbor", "metadata": {"waited_at_harbor": true, "wait_duration": 15}},
+            {"action_id": "take_route_after_wait", "label": {"en": "Ask to use the slower service route", "zh-CN": "询问并选择较慢的绕行路线"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "alternative_route", "action_minutes": 10, "target_type": "goal", "target_id": "north_island_meeting", "state_updates": {"resolution_type": "alternative_route"}, "metadata": {"information_request": true, "asked_sailor": true, "searched_alternative_route": true, "changed_plan": true, "alternative_goal": "service_launch_route", "resolution_type": "alternative_route", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "rerouted", "target_location_id": "harbor", "resolution": "alternative_route"}},
+            {"action_id": "contact_anna_after_wait", "label": {"en": "Contact Anna", "zh-CN": "联系 Anna"}, "requires_text": false, "action_type": "contact_npc", "terminal": false, "next_stage_id": "anna_contact", "outcome_code": "anna_contacted", "action_minutes": 5, "target_type": "npc", "target_id": "anna", "target_agent_id": 6, "metadata": {"contacted_anna": true}, "npc_response": {"provider": "static", "npc_id": 6, "intent": "plan_change_reply", "text": {"en": "Anna replies: ‘We can change the plan whenever you’re ready.’", "zh-CN": "Anna 回复：“等你决定好，我们随时可以改安排。”"}}},
+            {"action_id": "change_activity_after_wait", "label": {"en": "Choose another island activity", "zh-CN": "改去做岛上的其他事情"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "changed_activity", "action_minutes": 5, "target_type": "goal", "target_id": "island_activity", "state_updates": {"resolution_type": "changed_activity"}, "metadata": {"changed_plan": true, "alternative_goal": "open_island_activity", "resolution_type": "changed_activity", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "changed", "resolution": "changed_activity"}},
+            {"action_id": "return_home_after_wait", "label": {"en": "Return to the guest cottage", "zh-CN": "返回访客小屋"}, "requires_text": false, "action_type": "change_goal", "terminal": true, "outcome_code": "returned_home", "action_minutes": 5, "target_type": "location", "target_id": "participant_home", "target_location_id": "participant_home", "state_updates": {"resolution_type": "returned_home"}, "metadata": {"changed_plan": true, "abandoned_original_goal": true, "returned_home": true, "relocate_participant": true, "resolution_type": "returned_home", "event_completed": true}, "goal_effect": {"goal_id": "north_island_meeting", "status": "abandoned", "target_location_id": "participant_home", "resolution": "returned_home"}},
+            {"action_id": "leave_after_wait_unresolved", "label": {"en": "Leave this undecided", "zh-CN": "暂时不作决定"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "unresolved", "action_minutes": 0, "target_type": "location", "target_id": "square", "target_location_id": "square", "state_updates": {"resolution_type": "unresolved"}, "metadata": {"resolution_type": "unresolved", "relocate_participant": true, "event_completed": false}, "goal_effect": {"goal_id": "north_island_meeting", "status": "unresolved", "resolution": "unresolved"}}
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "beach_volleyball_invitation",
+      "event_type": "island_activity_invitation",
+      "version": "island-events-v0.6",
+      "title": {"en": "A four-player beach game", "zh-CN": "一场四人海滩比赛"},
+      "stimulus": {"en": "Chen is arranging a small beach volleyball game for later today and asks whether you would like the fourth place.", "zh-CN": "Chen 正在安排今天稍晚的一场小型海滩排球赛，问你是否愿意成为第四名参与者。"},
+      "location_ids": ["square"],
+      "event_pool_ids": ["square_daily"],
+      "trigger": {"type": "on_time_window", "time_window": {"start_minute": 600, "end_minute": 719}},
+      "weight": 1.0,
+      "cooldown_minutes": 1440,
+      "max_occurrences": 1,
+      "prerequisites": {"required_resident_ids": [3], "min_day": 2, "max_day": 2},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [],
+      "renderer_key": "behavioral_event",
+      "initial_stage_id": "volleyball_invitation",
+      "logging_config": {"raw_schema_version": "behavioral-action-v1", "research_domain": "activity_invitation", "store_diagnostic_labels": false},
+      "llm_context": {
+        "current_event": "four_person_beach_volleyball_invitation",
+        "event_facts": ["The game is at the beach at 16:00 on day two", "Chen, Nova, and Kai have three places", "The game starts only if the participant becomes the fourth player and arrives while all three residents are present"],
+        "allowed_knowledge": ["Chen's invitation", "The public beach location", "The named participants and agreed time"],
+        "knowledge_boundary": ["Do not pressure participation", "Do not infer mental health", "Do not claim the game can start with fewer than four people"],
+        "response_style": "Brief, practical, friendly invitation"
+      },
+      "stages": [
+        {
+          "stage_id": "volleyball_invitation",
+          "title": {"en": "Join beach volleyball at 16:00?", "zh-CN": "16:00 一起打海滩排球吗？"},
+          "stimulus": {"en": "‘Nova, Kai, and I have three people for beach volleyball. We need exactly one more to start. Would you like to meet us by the lighthouse beach at four?’", "zh-CN": "“Nova、Kai 和我已经有三个人了。海滩排球还差一人才能开始。下午四点来灯塔下的海滩吗？”"},
+          "actions": [
+            {"action_id": "accept_volleyball_invitation", "label": {"en": "Agree to be the fourth player", "zh-CN": "答应成为第四名参与者"}, "requires_text": false, "action_type": "accept_goal", "terminal": true, "outcome_code": "volleyball_accepted", "action_minutes": 5, "target_type": "goal", "target_id": "beach_volleyball_match", "target_agent_id": 3, "target_location_id": "beach_lighthouse", "metadata": {"goal_created": true, "required_total_participants": 4, "fixed_resident_ids": [3, 4, 5]}, "goal_effect": {"goal_id": "beach_volleyball_match", "status": "active", "title": {"en": "Four-player beach volleyball", "zh-CN": "四人海滩排球"}, "description": {"en": "Meet Chen, Nova, and Kai at the lighthouse beach at 16:00. The game starts only when all four people are present.", "zh-CN": "16:00 到灯塔下的海滩与 Chen、Nova 和 Kai 会合。四人全部到齐后比赛才开始。"}, "target_location_id": "beach_lighthouse", "due_day": 2, "due_time_minutes": 960, "resolution": "pending"}},
+            {"action_id": "ask_volleyball_details", "label": {"en": "Ask who is playing and when", "zh-CN": "询问参加者和时间"}, "requires_text": false, "action_type": "ask_information", "terminal": false, "next_stage_id": "volleyball_details", "outcome_code": "volleyball_details_requested", "action_minutes": 5, "target_type": "npc", "target_id": "chen", "target_agent_id": 3, "metadata": {"information_request": true}, "npc_response": {"provider": "static", "npc_id": 3, "intent": "activity_details", "text": {"en": "‘Nova and Kai will be there with me. With you, that makes four. We will wait from four until just before six.’", "zh-CN": "“Nova 和 Kai 会和我一起过去。算上你正好四人。我们从四点等到将近六点。”"}}},
+            {"action_id": "decline_volleyball_invitation", "label": {"en": "Keep the afternoon unplanned", "zh-CN": "下午不安排这场活动"}, "requires_text": false, "action_type": "decline_goal", "terminal": true, "outcome_code": "volleyball_declined", "action_minutes": 5, "target_type": "goal", "target_id": "beach_volleyball_match", "target_agent_id": 3, "metadata": {"goal_created": false}}
+          ]
+        },
+        {
+          "stage_id": "volleyball_details",
+          "title": {"en": "Beach volleyball details", "zh-CN": "海滩排球安排"},
+          "stimulus": {"en": "Chen, Nova, and Kai will be at the lighthouse beach from 16:00. The match needs the participant as its fourth player.", "zh-CN": "Chen、Nova 和 Kai 将在 16:00 到灯塔下的海滩。比赛需要玩家作为第四名参与者。"},
+          "actions": [
+            {"action_id": "accept_volleyball_after_details", "label": {"en": "Add the game to today's plan", "zh-CN": "把比赛加入今天的安排"}, "requires_text": false, "action_type": "accept_goal", "terminal": true, "outcome_code": "volleyball_accepted", "action_minutes": 5, "target_type": "goal", "target_id": "beach_volleyball_match", "target_agent_id": 3, "target_location_id": "beach_lighthouse", "metadata": {"goal_created": true, "required_total_participants": 4, "fixed_resident_ids": [3, 4, 5]}, "goal_effect": {"goal_id": "beach_volleyball_match", "status": "active", "title": {"en": "Four-player beach volleyball", "zh-CN": "四人海滩排球"}, "description": {"en": "Meet Chen, Nova, and Kai at the lighthouse beach at 16:00. The game starts only when all four people are present.", "zh-CN": "16:00 到灯塔下的海滩与 Chen、Nova 和 Kai 会合。四人全部到齐后比赛才开始。"}, "target_location_id": "beach_lighthouse", "due_day": 2, "due_time_minutes": 960, "resolution": "pending"}},
+            {"action_id": "decline_volleyball_after_details", "label": {"en": "Do something else this afternoon", "zh-CN": "下午做其他事情"}, "requires_text": false, "action_type": "decline_goal", "terminal": true, "outcome_code": "volleyball_declined", "action_minutes": 5, "target_type": "goal", "target_id": "beach_volleyball_match", "target_agent_id": 3, "metadata": {"goal_created": false}}
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "beach_volleyball_match",
+      "event_type": "beach_volleyball_activity",
+      "version": "island-events-v0.6",
+      "title": {"en": "Four players at the beach", "zh-CN": "海滩上的四名参与者"},
+      "stimulus": {"en": "Chen, Nova, and Kai are beside the volleyball net. With you here, all four places are filled and the game can begin.", "zh-CN": "Chen、Nova 和 Kai 已经站在排球网旁。你到场后四人全部到齐，比赛可以开始了。"},
+      "location_ids": ["beach_lighthouse"],
+      "event_pool_ids": ["beach_activity"],
+      "trigger": {"type": "on_location_enter", "time_window": {"start_minute": 960, "end_minute": 1079}},
+      "weight": 1.0,
+      "cooldown_minutes": 1440,
+      "max_occurrences": 1,
+      "prerequisites": {"required_resident_ids": [3, 4, 5], "required_goals": [{"goal_id": "beach_volleyball_match", "statuses": ["active"]}], "min_day": 2, "max_day": 2},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [],
+      "renderer_key": "behavioral_event",
+      "initial_stage_id": "match_ready",
+      "logging_config": {"raw_schema_version": "behavioral-action-v1", "research_domain": "group_activity_participation", "store_diagnostic_labels": false},
+      "llm_context": {
+        "current_event": "four_person_beach_volleyball_ready",
+        "event_facts": ["The participant, Chen, Nova, and Kai are present", "There are exactly four available players", "The participant may play, watch the warm-up, or leave"],
+        "allowed_knowledge": ["Visible people at the beach", "The accepted volleyball plan", "Shared volleyball equipment"],
+        "knowledge_boundary": ["Do not pressure the participant", "Do not infer mental health", "Do not invent absent participants"],
+        "response_style": "Light, ordinary activity dialogue"
+      },
+      "stages": [
+        {
+          "stage_id": "match_ready",
+          "title": {"en": "Everyone is here", "zh-CN": "人已经到齐"},
+          "stimulus": {"en": "Kai checks the net one last time. Chen asks whether you want to start now, watch a short warm-up, or leave the others to change their plan.", "zh-CN": "Kai 最后检查了一遍球网。Chen 问你是现在开始、先看看热身，还是离开让大家另作安排。"},
+          "actions": [
+            {"action_id": "play_volleyball_match", "label": {"en": "Play the match", "zh-CN": "参加比赛"}, "requires_text": false, "action_type": "complete_event", "terminal": true, "outcome_code": "volleyball_played", "action_minutes": 45, "target_type": "goal", "target_id": "beach_volleyball_match", "target_agent_id": 3, "metadata": {"activity_started": true, "participant_count": 4, "event_completed": true}, "goal_effect": {"goal_id": "beach_volleyball_match", "status": "completed", "resolution": "played_with_four"}},
+            {"action_id": "watch_volleyball_warmup", "label": {"en": "Watch the warm-up first", "zh-CN": "先看看热身"}, "requires_text": false, "action_type": "inspect_object", "terminal": false, "next_stage_id": "after_warmup", "outcome_code": "warmup_observed", "action_minutes": 10, "target_type": "object", "target_id": "volleyball_net", "metadata": {"observed_before_deciding": true}, "npc_response": {"provider": "static", "npc_id": 4, "intent": "activity_warmup", "text": {"en": "Nova serves the ball gently across the net while the group waits for your decision.", "zh-CN": "Nova 轻轻把球发过球网，大家等着你作决定。"}}},
+            {"action_id": "leave_volleyball_before_start", "label": {"en": "Leave before the match starts", "zh-CN": "在比赛开始前离开"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "volleyball_left_before_start", "action_minutes": 0, "target_type": "location", "target_id": "residential_lane", "target_location_id": "residential_lane", "metadata": {"activity_started": false, "event_completed": true, "relocate_participant": true}, "goal_effect": {"goal_id": "beach_volleyball_match", "status": "cancelled", "resolution": "participant_left_before_start"}}
+          ]
+        },
+        {
+          "stage_id": "after_warmup",
+          "title": {"en": "Ready after the warm-up", "zh-CN": "热身结束"},
+          "stimulus": {"en": "The warm-up is over. All four people are still present, so the match can begin whenever you choose.", "zh-CN": "热身结束了。四个人仍然都在场，你决定后比赛就可以开始。"},
+          "actions": [
+            {"action_id": "play_after_warmup", "label": {"en": "Join the match now", "zh-CN": "现在参加比赛"}, "requires_text": false, "action_type": "complete_event", "terminal": true, "outcome_code": "volleyball_played_after_warmup", "action_minutes": 45, "target_type": "goal", "target_id": "beach_volleyball_match", "target_agent_id": 3, "metadata": {"activity_started": true, "participant_count": 4, "observed_before_deciding": true, "event_completed": true}, "goal_effect": {"goal_id": "beach_volleyball_match", "status": "completed", "resolution": "played_with_four_after_warmup"}},
+            {"action_id": "leave_after_volleyball_warmup", "label": {"en": "Leave after watching", "zh-CN": "看完热身后离开"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "volleyball_observed_then_left", "action_minutes": 0, "target_type": "location", "target_id": "residential_lane", "target_location_id": "residential_lane", "metadata": {"activity_started": false, "observed_before_deciding": true, "event_completed": true, "relocate_participant": true}, "goal_effect": {"goal_id": "beach_volleyball_match", "status": "cancelled", "resolution": "observed_then_left"}}
+          ]
+        }
+      ],
+      "social_publications": [
+        {
+          "publication_id": "volleyball_match_recap",
+          "trigger_outcomes": ["volleyball_played", "volleyball_played_after_warmup"],
+          "eligible_author_ids": [3, 4, 5],
+          "witness_agent_ids": [3, 4, 5],
+          "visibility": "island_public",
+          "post_type": "activity",
+          "max_posts": 1,
+          "cooldown_minutes": 1440,
+          "allow_comments": true,
+          "generation_mode": "llm_with_fallback",
+          "facts": {
+            "activity": "four_person_beach_volleyball",
+            "participant_count": 4,
+            "location_id": "beach_lighthouse",
+            "resident_witness_ids": [3, 4, 5]
+          },
+          "templates": [
+            {"author_agent_id": 3, "content": {"en": "Four players made it to the lighthouse beach, so we finally got the volleyball match going. Good game.", "zh-CN": "灯塔海滩正好凑齐四个人，排球赛顺利开场了。打得很开心。"}},
+            {"author_agent_id": 4, "content": {"en": "The markers, net, and all four players lined up at the beach today. The match was worth the setup.", "zh-CN": "今天海滩上的标记、球网和四名球员都到齐了。这场比赛值得前面的准备。"}},
+            {"author_agent_id": 5, "content": {"en": "We checked the net and played a complete four-person match below the lighthouse today.", "zh-CN": "今天我们检查好球网，在灯塔下打完了一场完整的四人排球赛。"}}
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "restaurant_party_invitation",
+      "event_type": "restaurant_party_invitation",
+      "version": "island-events-v0.6",
+      "title": {"en": "An evening at Harborlight", "zh-CN": "港灯餐厅的夜晚"},
+      "stimulus": {"en": "Anna says Leo is keeping Harborlight open for a small final-evening party and asks whether you would like to stop by.", "zh-CN": "Anna 说 Leo 会让港灯餐厅晚些关门，办一场小型的最后一晚派对，并问你是否愿意过去坐坐。"},
+      "location_ids": ["square"],
+      "event_pool_ids": ["square_daily"],
+      "trigger": {"type": "on_time_window", "time_window": {"start_minute": 780, "end_minute": 899}},
+      "weight": 1.0,
+      "cooldown_minutes": 1440,
+      "max_occurrences": 1,
+      "prerequisites": {"required_resident_ids": [6], "min_day": 3, "max_day": 3},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [],
+      "renderer_key": "behavioral_event",
+      "initial_stage_id": "party_invitation",
+      "logging_config": {"raw_schema_version": "behavioral-action-v1", "research_domain": "activity_invitation", "store_diagnostic_labels": false},
+      "llm_context": {
+        "current_event": "harborlight_evening_party_invitation",
+        "event_facts": ["The gathering begins at Harborlight Restaurant at 18:00 on day three", "Leo is hosting", "Mira and Anna plan to attend", "The participant may accept, ask for details, or decline"],
+        "allowed_knowledge": ["Anna's invitation", "The public restaurant location", "The named hosts and time"],
+        "knowledge_boundary": ["Do not pressure participation", "Do not infer mental health", "Do not promise activities outside the authored event"],
+        "response_style": "Warm, concise, optional invitation"
+      },
+      "stages": [
+        {
+          "stage_id": "party_invitation",
+          "title": {"en": "Visit Harborlight at 18:00?", "zh-CN": "18:00 去港灯餐厅吗？"},
+          "stimulus": {"en": "‘Leo is putting out tea and a few shared plates at six. Mira and I will be there. Come by if that sounds pleasant; it is fine to keep your evening open too.’", "zh-CN": "“Leo 六点会准备茶和几盘可以分享的食物。Mira 和我也会去。你想来就过来，不安排这场聚会也完全没关系。”"},
+          "actions": [
+            {"action_id": "accept_restaurant_party", "label": {"en": "Plan to visit the party", "zh-CN": "把派对加入计划"}, "requires_text": false, "action_type": "accept_goal", "terminal": true, "outcome_code": "restaurant_party_accepted", "action_minutes": 5, "target_type": "goal", "target_id": "restaurant_evening_party", "target_agent_id": 6, "target_location_id": "restaurant", "metadata": {"goal_created": true, "host_agent_id": 2, "attendee_agent_ids": [1, 2, 6]}, "goal_effect": {"goal_id": "restaurant_evening_party", "status": "active", "title": {"en": "Harborlight evening party", "zh-CN": "港灯餐厅晚间派对"}, "description": {"en": "Visit Harborlight Restaurant at 18:00. Leo is hosting, and Mira and Anna plan to attend.", "zh-CN": "18:00 前往港灯餐厅。Leo 负责主持，Mira 和 Anna 计划参加。"}, "target_location_id": "restaurant", "due_day": 3, "due_time_minutes": 1080, "resolution": "pending"}},
+            {"action_id": "ask_restaurant_party_details", "label": {"en": "Ask what the evening will be like", "zh-CN": "询问晚上的安排"}, "requires_text": false, "action_type": "ask_information", "terminal": false, "next_stage_id": "party_details", "outcome_code": "restaurant_party_details_requested", "action_minutes": 5, "target_type": "npc", "target_id": "anna", "target_agent_id": 6, "metadata": {"information_request": true}, "npc_response": {"provider": "static", "npc_id": 6, "intent": "party_details", "text": {"en": "‘Nothing formal—tea, shared food, and room to talk or leave whenever you like. Leo will start setting up at six.’", "zh-CN": "“没有正式流程，就是喝茶、分享食物，想聊天或随时离开都可以。Leo 六点开始准备。”"}}},
+            {"action_id": "decline_restaurant_party", "label": {"en": "Keep the evening for yourself", "zh-CN": "把晚上留给自己"}, "requires_text": false, "action_type": "decline_goal", "terminal": true, "outcome_code": "restaurant_party_declined", "action_minutes": 5, "target_type": "goal", "target_id": "restaurant_evening_party", "target_agent_id": 6, "metadata": {"goal_created": false}}
+          ]
+        },
+        {
+          "stage_id": "party_details",
+          "title": {"en": "Harborlight party details", "zh-CN": "港灯餐厅派对安排"},
+          "stimulus": {"en": "The gathering begins at 18:00. Leo will host, with Mira and Anna attending. There is no fixed program and you may leave whenever you choose.", "zh-CN": "聚会 18:00 开始。Leo 主持，Mira 和 Anna 会参加。没有固定流程，你可以随时离开。"},
+          "actions": [
+            {"action_id": "accept_party_after_details", "label": {"en": "Add the party to the evening plan", "zh-CN": "把派对加入晚间计划"}, "requires_text": false, "action_type": "accept_goal", "terminal": true, "outcome_code": "restaurant_party_accepted", "action_minutes": 5, "target_type": "goal", "target_id": "restaurant_evening_party", "target_agent_id": 6, "target_location_id": "restaurant", "metadata": {"goal_created": true, "host_agent_id": 2, "attendee_agent_ids": [1, 2, 6]}, "goal_effect": {"goal_id": "restaurant_evening_party", "status": "active", "title": {"en": "Harborlight evening party", "zh-CN": "港灯餐厅晚间派对"}, "description": {"en": "Visit Harborlight Restaurant at 18:00. Leo is hosting, and Mira and Anna plan to attend.", "zh-CN": "18:00 前往港灯餐厅。Leo 负责主持，Mira 和 Anna 计划参加。"}, "target_location_id": "restaurant", "due_day": 3, "due_time_minutes": 1080, "resolution": "pending"}},
+            {"action_id": "decline_party_after_details", "label": {"en": "Leave the evening open", "zh-CN": "不安排今晚的聚会"}, "requires_text": false, "action_type": "decline_goal", "terminal": true, "outcome_code": "restaurant_party_declined", "action_minutes": 5, "target_type": "goal", "target_id": "restaurant_evening_party", "target_agent_id": 6, "metadata": {"goal_created": false}}
+          ]
+        }
+      ]
+    },
+    {
+      "event_id": "restaurant_evening_party",
+      "event_type": "restaurant_party_activity",
+      "version": "island-events-v0.6",
+      "title": {"en": "Harborlight evening party", "zh-CN": "港灯餐厅晚间派对"},
+      "stimulus": {"en": "Leo has set out tea and shared plates. Mira and Anna are already here, and the evening remains informal.", "zh-CN": "Leo 已经摆好茶和分享餐盘。Mira 和 Anna 也已经到了，今晚没有正式流程。"},
+      "location_ids": ["restaurant"],
+      "event_pool_ids": ["restaurant_social"],
+      "trigger": {"type": "on_location_enter", "time_window": {"start_minute": 1080, "end_minute": 1139}},
+      "weight": 1.0,
+      "cooldown_minutes": 1440,
+      "max_occurrences": 1,
+      "prerequisites": {"required_resident_ids": [1, 2, 6], "required_goals": [{"goal_id": "restaurant_evening_party", "statuses": ["active"]}], "min_day": 3, "max_day": 3},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [],
+      "renderer_key": "behavioral_event",
+      "initial_stage_id": "party_arrival",
+      "logging_config": {"raw_schema_version": "behavioral-action-v1", "research_domain": "group_activity_participation", "store_diagnostic_labels": false},
+      "llm_context": {
+        "current_event": "harborlight_evening_party",
+        "event_facts": ["Leo is hosting", "Mira and Anna are present", "The participant may help, talk, stay briefly, or leave"],
+        "allowed_knowledge": ["Visible party preparations", "The accepted invitation", "Ordinary public island life"],
+        "knowledge_boundary": ["Do not pressure disclosure", "Do not infer mental health", "Respect an immediate decision to leave"],
+        "response_style": "Short, relaxed group conversation"
+      },
+      "stages": [
+        {
+          "stage_id": "party_arrival",
+          "title": {"en": "The party is getting started", "zh-CN": "派对正要开始"},
+          "stimulus": {"en": "Leo waves from the shared table. You can help with the last preparations, sit down to talk, stay only a short while, or leave.", "zh-CN": "Leo 在多人桌旁向你挥手。你可以帮忙做最后准备、坐下聊天、只短暂停留，或者离开。"},
+          "actions": [
+            {"action_id": "help_prepare_party", "label": {"en": "Help with the last preparations", "zh-CN": "帮忙做最后准备"}, "requires_text": false, "action_type": "accept_goal", "terminal": false, "next_stage_id": "party_underway", "outcome_code": "party_preparation_helped", "action_minutes": 10, "target_type": "goal", "target_id": "restaurant_evening_party", "target_agent_id": 2, "metadata": {"helped_prepare": true}, "npc_response": {"provider": "static", "npc_id": 2, "intent": "party_preparation", "text": {"en": "‘Thanks. Put those cups anywhere along the shared table,’ Leo says, leaving you room to join at your own pace.", "zh-CN": "Leo 说：“谢谢，把杯子放在多人桌上就好。”他让你按自己的节奏加入。"}}},
+            {"action_id": "sit_and_talk_at_party", "label": {"en": "Sit down and join the conversation", "zh-CN": "坐下加入聊天"}, "requires_text": false, "action_type": "start_conversation", "terminal": false, "next_stage_id": "party_underway", "outcome_code": "party_conversation_joined", "action_minutes": 10, "target_type": "npc", "target_id": "leo", "target_agent_id": 2, "metadata": {"joined_conversation": true}, "npc_response": {"provider": "static", "npc_id": 2, "intent": "friendly_opening", "text": {"en": "Leo makes room at the table. ‘We were comparing favorite places to watch the harbor lights.’", "zh-CN": "Leo 在桌旁让出位置：“我们正在聊从哪里看港口的灯最好。”"}}},
+            {"action_id": "stay_briefly_at_party", "label": {"en": "Stay for tea, then continue your evening", "zh-CN": "喝杯茶后继续自己的安排"}, "requires_text": false, "action_type": "complete_event", "terminal": true, "outcome_code": "party_brief_visit", "action_minutes": 20, "target_type": "goal", "target_id": "restaurant_evening_party", "metadata": {"brief_visit": true, "event_completed": true}, "goal_effect": {"goal_id": "restaurant_evening_party", "status": "completed", "resolution": "brief_visit"}},
+            {"action_id": "leave_party_on_arrival", "label": {"en": "Leave and keep the evening open", "zh-CN": "离开并保留自己的晚间安排"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "party_left_on_arrival", "action_minutes": 0, "target_type": "location", "target_id": "square", "target_location_id": "square", "metadata": {"event_completed": true, "relocate_participant": true}, "goal_effect": {"goal_id": "restaurant_evening_party", "status": "cancelled", "resolution": "left_on_arrival"}}
+          ]
+        },
+        {
+          "stage_id": "party_underway",
+          "title": {"en": "An unhurried evening", "zh-CN": "轻松的夜晚"},
+          "stimulus": {"en": "The preparations are finished and conversation moves easily around the shared table. You can stay with the group or leave whenever you like.", "zh-CN": "准备工作已经完成，多人桌旁的聊天轻松地继续着。你可以留下，也可以随时离开。"},
+          "actions": [
+            {"action_id": "stay_for_restaurant_party", "label": {"en": "Stay with the group for a while", "zh-CN": "和大家再待一会儿"}, "requires_text": false, "action_type": "complete_event", "terminal": true, "outcome_code": "party_shared_evening", "action_minutes": 30, "target_type": "goal", "target_id": "restaurant_evening_party", "metadata": {"event_completed": true, "shared_evening": true}, "goal_effect": {"goal_id": "restaurant_evening_party", "status": "completed", "resolution": "shared_evening"}},
+            {"action_id": "leave_party_after_joining", "label": {"en": "Thank everyone and leave", "zh-CN": "向大家道别后离开"}, "requires_text": false, "action_type": "leave_location", "terminal": true, "outcome_code": "party_joined_then_left", "action_minutes": 5, "target_type": "location", "target_id": "square", "target_location_id": "square", "metadata": {"event_completed": true, "relocate_participant": true}, "goal_effect": {"goal_id": "restaurant_evening_party", "status": "completed", "resolution": "joined_then_left"}}
+          ]
+        }
+      ],
+      "social_publications": [
+        {
+          "publication_id": "harborlight_party_recap",
+          "trigger_outcomes": ["party_brief_visit", "party_shared_evening", "party_joined_then_left"],
+          "eligible_author_ids": [1, 2, 6],
+          "witness_agent_ids": [1, 2, 6],
+          "visibility": "island_public",
+          "post_type": "activity",
+          "max_posts": 1,
+          "cooldown_minutes": 1440,
+          "allow_comments": true,
+          "generation_mode": "llm_with_fallback",
+          "facts": {
+            "activity": "harborlight_evening_party",
+            "location_id": "restaurant",
+            "host_agent_id": 2,
+            "resident_witness_ids": [1, 2, 6]
+          },
+          "templates": [
+            {"author_agent_id": 1, "content": {"en": "A relaxed evening at Harborlight: tea, shared plates, and an easy conversation around the table.", "zh-CN": "在港灯餐厅度过了轻松的一晚：有茶、分享餐盘，还有围桌的随意聊天。"}},
+            {"author_agent_id": 2, "content": {"en": "Harborlight's small evening party went well. Thanks to everyone who shared the table and helped keep it easygoing.", "zh-CN": "港灯餐厅的小型晚间派对很顺利。谢谢一起围桌、让气氛保持轻松的大家。"}},
+            {"author_agent_id": 6, "content": {"en": "Tea and shared food turned into a pleasantly unhurried evening at Harborlight.", "zh-CN": "茶和分享食物，让港灯餐厅的夜晚变得轻松而从容。"}}
+          ]
+        }
+      ]
+    }
+  ]
+}

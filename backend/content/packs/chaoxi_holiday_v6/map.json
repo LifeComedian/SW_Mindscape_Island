@@ -1,0 +1,783 @@
+{
+  "map_id": "chaoxi_map",
+  "version": "chaoxi-holiday-v6-map",
+  "width": 1000,
+  "height": 700,
+  "background": {
+    "style_key": "island_day",
+    "sea_color_key": "sea_blue",
+    "land_color_key": "land_green"
+  },
+  "land_polygon": [
+    [
+      110,
+      150
+    ],
+    [
+      250,
+      70
+    ],
+    [
+      500,
+      55
+    ],
+    [
+      760,
+      100
+    ],
+    [
+      900,
+      250
+    ],
+    [
+      870,
+      470
+    ],
+    [
+      690,
+      620
+    ],
+    [
+      410,
+      650
+    ],
+    [
+      160,
+      560
+    ],
+    [
+      75,
+      350
+    ]
+  ],
+  "paths": [
+    {
+      "path_id": "loc_01_path",
+      "from_location_id": "loc_01",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          727,
+          173
+        ],
+        [
+          497,
+          232
+        ]
+      ]
+    },
+    {
+      "path_id": "loc_02_path",
+      "from_location_id": "loc_02",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          284,
+          188
+        ],
+        [
+          497,
+          232
+        ]
+      ]
+    },
+    {
+      "path_id": "loc_03_path",
+      "from_location_id": "loc_03",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          238,
+          323
+        ],
+        [
+          497,
+          232
+        ]
+      ]
+    },
+    {
+      "path_id": "loc_04_path",
+      "from_location_id": "loc_04",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          710,
+          311
+        ],
+        [
+          497,
+          232
+        ]
+      ]
+    },
+    {
+      "path_id": "loc_06_path",
+      "from_location_id": "loc_06",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          496,
+          435
+        ],
+        [
+          497,
+          232
+        ]
+      ]
+    },
+    {
+      "path_id": "guest_room_path",
+      "from_location_id": "guest_room",
+      "to_location_id": "loc_02",
+      "points": [
+        [
+          155,
+          91
+        ],
+        [
+          284,
+          188
+        ]
+      ]
+    },
+    {
+      "path_id": "residential_path",
+      "from_location_id": "residential",
+      "to_location_id": "loc_05",
+      "points": [
+        [
+          794,
+          474
+        ],
+        [
+          497,
+          232
+        ]
+      ]
+    }
+  ],
+  "location_nodes": [
+    {
+      "location_id": "loc_01",
+      "x": 727,
+      "y": 173,
+      "click_radius": 22,
+      "icon_key": "harbor",
+      "label_offset": [
+        0,
+        41
+      ]
+    },
+    {
+      "location_id": "loc_02",
+      "x": 284,
+      "y": 188,
+      "click_radius": 22,
+      "icon_key": "homes",
+      "label_offset": [
+        0,
+        41
+      ]
+    },
+    {
+      "location_id": "loc_03",
+      "x": 238,
+      "y": 323,
+      "click_radius": 22,
+      "icon_key": "shop",
+      "label_offset": [
+        0,
+        41
+      ]
+    },
+    {
+      "location_id": "loc_04",
+      "x": 710,
+      "y": 311,
+      "click_radius": 22,
+      "icon_key": "restaurant",
+      "label_offset": [
+        0,
+        41
+      ]
+    },
+    {
+      "location_id": "loc_05",
+      "x": 497,
+      "y": 232,
+      "click_radius": 22,
+      "icon_key": "square",
+      "label_offset": [
+        0,
+        41
+      ]
+    },
+    {
+      "location_id": "loc_06",
+      "x": 496,
+      "y": 435,
+      "click_radius": 22,
+      "icon_key": "restaurant",
+      "label_offset": [
+        0,
+        41
+      ]
+    },
+    {
+      "location_id": "guest_room",
+      "x": 155,
+      "y": 91,
+      "click_radius": 22,
+      "icon_key": "homes",
+      "label_offset": [
+        0,
+        41
+      ]
+    },
+    {
+      "location_id": "residential",
+      "x": 794,
+      "y": 474,
+      "click_radius": 22,
+      "icon_key": "homes",
+      "label_offset": [
+        0,
+        41
+      ]
+    }
+  ],
+  "scene_layouts": [
+    {
+      "location_id": "loc_01",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        78,
+        414
+      ],
+      "resident_slots": [
+        [
+          200,
+          340
+        ],
+        [
+          270,
+          354
+        ],
+        [
+          340,
+          374
+        ],
+        [
+          410,
+          365
+        ],
+        [
+          480,
+          389
+        ],
+        [
+          540,
+          410
+        ],
+        [
+          160,
+          390
+        ],
+        [
+          340,
+          430
+        ],
+        [
+          610,
+          425
+        ],
+        [
+          680,
+          405
+        ],
+        [
+          735,
+          430
+        ]
+      ],
+      "interaction_point_positions": {
+        "sketch": [
+          404,
+          239
+        ],
+        "bench": [
+          644,
+          322
+        ],
+        "beach": [
+          700,
+          217
+        ]
+      }
+    },
+    {
+      "location_id": "loc_02",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        78,
+        414
+      ],
+      "resident_slots": [
+        [
+          270,
+          301
+        ],
+        [
+          332,
+          321
+        ],
+        [
+          403,
+          323
+        ],
+        [
+          469,
+          338
+        ],
+        [
+          530,
+          360
+        ],
+        [
+          257,
+          386
+        ],
+        [
+          390,
+          396
+        ],
+        [
+          497,
+          417
+        ],
+        [
+          610,
+          425
+        ],
+        [
+          680,
+          405
+        ],
+        [
+          735,
+          430
+        ]
+      ],
+      "interaction_point_positions": {
+        "plants": [
+          95,
+          245
+        ],
+        "flowers": [
+          493,
+          191
+        ],
+        "wood_display": [
+          738,
+          159
+        ],
+        "wood_work": [
+          711,
+          276
+        ]
+      }
+    },
+    {
+      "location_id": "loc_03",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        78,
+        414
+      ],
+      "resident_slots": [
+        [
+          242,
+          314
+        ],
+        [
+          315,
+          330
+        ],
+        [
+          380,
+          350
+        ],
+        [
+          450,
+          371
+        ],
+        [
+          510,
+          400
+        ],
+        [
+          216,
+          404
+        ],
+        [
+          316,
+          416
+        ],
+        [
+          422,
+          427
+        ],
+        [
+          610,
+          425
+        ],
+        [
+          680,
+          405
+        ],
+        [
+          735,
+          430
+        ]
+      ],
+      "interaction_point_positions": {
+        "shelf": [
+          480,
+          229
+        ],
+        "photos": [
+          608,
+          111
+        ]
+      }
+    },
+    {
+      "location_id": "loc_04",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        78,
+        414
+      ],
+      "resident_slots": [
+        [
+          470,
+          288
+        ],
+        [
+          524,
+          312
+        ],
+        [
+          569,
+          340
+        ],
+        [
+          603,
+          386
+        ],
+        [
+          526,
+          407
+        ],
+        [
+          455,
+          377
+        ],
+        [
+          414,
+          310
+        ],
+        [
+          625,
+          303
+        ],
+        [
+          610,
+          425
+        ],
+        [
+          680,
+          405
+        ],
+        [
+          735,
+          430
+        ]
+      ],
+      "interaction_point_positions": {
+        "restaurant_menu": [
+          280,
+          103
+        ],
+        "restaurant_table": [
+          366,
+          211
+        ]
+      }
+    },
+    {
+      "location_id": "loc_05",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        78,
+        414
+      ],
+      "resident_slots": [
+        [
+          245,
+          290
+        ],
+        [
+          310,
+          310
+        ],
+        [
+          377,
+          295
+        ],
+        [
+          441,
+          322
+        ],
+        [
+          510,
+          304
+        ],
+        [
+          570,
+          331
+        ],
+        [
+          335,
+          382
+        ],
+        [
+          472,
+          394
+        ],
+        [
+          610,
+          425
+        ],
+        [
+          680,
+          405
+        ],
+        [
+          735,
+          430
+        ]
+      ],
+      "interaction_point_positions": {
+        "games": [
+          315,
+          184
+        ],
+        "volleyball": [
+          492,
+          174
+        ],
+        "common_room": [
+          691,
+          188
+        ]
+      }
+    },
+    {
+      "location_id": "loc_06",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        78,
+        414
+      ],
+      "resident_slots": [
+        [
+          276,
+          305
+        ],
+        [
+          340,
+          319
+        ],
+        [
+          409,
+          333
+        ],
+        [
+          472,
+          351
+        ],
+        [
+          535,
+          365
+        ],
+        [
+          267,
+          390
+        ],
+        [
+          383,
+          405
+        ],
+        [
+          512,
+          420
+        ],
+        [
+          610,
+          425
+        ],
+        [
+          680,
+          405
+        ],
+        [
+          735,
+          430
+        ]
+      ],
+      "interaction_point_positions": {
+        "cafe_menu": [
+          705,
+          119
+        ],
+        "books": [
+          500,
+          173
+        ],
+        "postcards": [
+          577,
+          151
+        ],
+        "cafe_table": [
+          385,
+          227
+        ]
+      }
+    },
+    {
+      "location_id": "guest_room",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        78,
+        414
+      ],
+      "resident_slots": [
+        [
+          245,
+          355
+        ],
+        [
+          300,
+          370
+        ],
+        [
+          354,
+          399
+        ],
+        [
+          207,
+          411
+        ],
+        [
+          284,
+          425
+        ],
+        [
+          140,
+          373
+        ],
+        [
+          123,
+          309
+        ],
+        [
+          192,
+          291
+        ],
+        [
+          610,
+          425
+        ],
+        [
+          680,
+          405
+        ],
+        [
+          735,
+          430
+        ]
+      ],
+      "interaction_point_positions": {
+        "guidebook": [
+          729,
+          270
+        ]
+      }
+    },
+    {
+      "location_id": "residential",
+      "width": 800,
+      "height": 450,
+      "participant_spawn": [
+        336,
+        416
+      ],
+      "resident_slots": [
+        [
+          433,
+          299
+        ],
+        [
+          477,
+          329
+        ],
+        [
+          400,
+          340
+        ],
+        [
+          441,
+          376
+        ],
+        [
+          486,
+          408
+        ],
+        [
+          390,
+          420
+        ],
+        [
+          539,
+          353
+        ],
+        [
+          566,
+          405
+        ],
+        [
+          610,
+          425
+        ],
+        [
+          680,
+          405
+        ],
+        [
+          735,
+          430
+        ]
+      ],
+      "interaction_point_positions": {}
+    }
+  ]
+}

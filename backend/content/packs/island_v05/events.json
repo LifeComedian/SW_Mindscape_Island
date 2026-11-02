@@ -1,0 +1,62 @@
+{
+  "events": [
+    {
+      "event_id": "community_note",
+      "event_type": "ambient_notice",
+      "version": "island-events-v0.5",
+      "title": {"en": "A handwritten note", "zh-CN": "一张手写便条"},
+      "stimulus": {"en": "A new note on the community board asks which island view should appear on the next postcard.", "zh-CN": "社区公告栏上多了一张便条，询问下一张明信片应该印哪处岛景。"},
+      "location_ids": ["square"],
+      "event_pool_ids": ["square_daily"],
+      "trigger": {"type": "on_location_enter", "time_window": {"start_minute": 540, "end_minute": 1200}},
+      "weight": 1.0,
+      "cooldown_minutes": 240,
+      "max_occurrences": 1,
+      "prerequisites": {"min_day": 1, "max_day": 2},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [
+        {"action_id": "suggest_view", "label": {"en": "Write a short suggestion", "zh-CN": "写下简短建议"}, "requires_text": true, "outcome_key": "schedule_follow_up", "follow_up_event_id": "postcard_display"},
+        {"action_id": "read_and_leave", "label": {"en": "Read it and continue", "zh-CN": "读完后继续行程"}, "requires_text": false, "outcome_key": "leave"}
+      ]
+    },
+    {
+      "event_id": "postcard_display",
+      "event_type": "ambient_follow_up",
+      "version": "island-events-v0.5",
+      "title": {"en": "A new postcard display", "zh-CN": "新的明信片陈列"},
+      "stimulus": {"en": "The shop has placed several new island-view postcards on a small display.", "zh-CN": "小店在展示架上摆出了几张新的岛景明信片。"},
+      "location_ids": ["shop"],
+      "event_pool_ids": ["shop_daily"],
+      "trigger": {"type": "on_time_window", "time_window": {"start_minute": 540, "end_minute": 1200}},
+      "weight": 0.0,
+      "cooldown_minutes": 360,
+      "max_occurrences": 1,
+      "prerequisites": {"min_day": 2, "max_day": 3},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [
+        {"action_id": "look_at_cards", "label": {"en": "Look at the cards", "zh-CN": "看看这些卡片"}, "requires_text": false, "outcome_key": "remember", "memory_owner_agent_id": 4, "memory_text": {"en": "The participant paused to look at the ordinary island postcard display.", "zh-CN": "参与者停下来查看了普通的岛屿明信片陈列。"}},
+        {"action_id": "continue_shopping", "label": {"en": "Continue through the shop", "zh-CN": "继续逛小店"}, "requires_text": false, "outcome_key": "complete"}
+      ]
+    },
+    {
+      "event_id": "harbor_tide_check",
+      "event_type": "ambient_observation",
+      "version": "island-events-v0.5",
+      "title": {"en": "The next ferry tide", "zh-CN": "下一班渡船的潮水"},
+      "stimulus": {"en": "A harbor worker has updated the public tide board with the next safe ferry window.", "zh-CN": "渡口工作人员更新了公共潮汐牌，写明了下一段适合渡船通行的时间。"},
+      "location_ids": ["harbor"],
+      "event_pool_ids": ["harbor_daily"],
+      "trigger": {"type": "on_location_enter", "time_window": {"start_minute": 660, "end_minute": 899}},
+      "weight": 1.0,
+      "cooldown_minutes": 240,
+      "max_occurrences": 1,
+      "prerequisites": {"required_resident_ids": [5], "min_day": 1, "max_day": 3},
+      "exclusion_flags": {"active_scenario": true, "active_event": true},
+      "actions": [
+        {"action_id": "check_tide", "label": {"en": "Read the tide time", "zh-CN": "查看潮汐时间"}, "requires_text": false, "outcome_key": "complete"},
+        {"action_id": "thank_kai", "label": {"en": "Thank Kai for updating it", "zh-CN": "感谢 Kai 更新潮汐牌"}, "requires_text": false, "outcome_key": "relationship_delta", "relationship_effect": {"target_agent_id": 5, "familiarity_delta": 1, "warmth_delta": 1}},
+        {"action_id": "leave_board", "label": {"en": "Continue to the harbor", "zh-CN": "继续前往渡口"}, "requires_text": false, "outcome_key": "leave"}
+      ]
+    }
+  ]
+}

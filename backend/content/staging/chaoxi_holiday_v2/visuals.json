@@ -1,0 +1,531 @@
+{
+  "visual_version": "chaoxi-holiday-v2-visuals",
+  "visual_assets": [],
+  "visual_slots": [
+    {
+      "slot_id": "map.image",
+      "slot_type": "map_image",
+      "target_id": "chaoxi_map",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.participant.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "participant",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.participant.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "participant",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:1.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:1",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:1.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:1",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:2.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:2",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:2.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:2",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:3.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:3",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:3.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:3",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:4.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:4",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:4.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:4",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:5.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:5",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:5.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:5",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:6.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:6",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:6.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:6",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:7.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:7",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:7.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:7",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:8.map_thumbnail",
+      "slot_type": "actor_map_thumbnail",
+      "target_id": "resident:8",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "actors.resident:8.dialogue_portrait",
+      "slot_type": "actor_dialogue_portrait",
+      "target_id": "resident:8",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_01.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "loc_01",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_01.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "loc_01",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_02.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "loc_02",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_02.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "loc_02",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_03.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "loc_03",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_03.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "loc_03",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_04.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "loc_04",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_04.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "loc_04",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_05.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "loc_05",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_05.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "loc_05",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_06.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "loc_06",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.loc_06.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "loc_06",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.guest_room.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "guest_room",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.guest_room.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "guest_room",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.residential.map_thumbnail",
+      "slot_type": "location_map_thumbnail",
+      "target_id": "residential",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    },
+    {
+      "slot_id": "locations.residential.scene_image",
+      "slot_type": "location_scene_image",
+      "target_id": "residential",
+      "asset_key": null,
+      "fallback_palette_key": "ocean_teal",
+      "fallback_title": {
+        "en": "潮栖岛",
+        "zh-CN": "潮栖岛"
+      },
+      "fallback_description": {
+        "en": "七日假期",
+        "zh-CN": "七日假期"
+      }
+    }
+  ]
+}

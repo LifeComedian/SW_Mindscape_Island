@@ -1,0 +1,19 @@
+{
+  "holiday_version": "v6",
+  "experience_version": "island-life-20261026-v1",
+  "built_at": "2026-10-26T09:59:12.338412+00:00",
+  "required_environment": {
+    "ISLAND_EXPERIENCE_VERSION": "island-life-20261026-v1"
+  },
+  "publication": {
+    "changes": [
+      "contact redactions",
+      "comment and documentation edits"
+    ],
+    "production_assessment_sha256": "9506330188157de48e573dd9135330a7cfb71f8e46230807224b484348d88679",
+    "public_assessment_sha256": "48bdfdfeac3b9e94c5aff62e85a48e94b6af89d918b01d1a50f1d4520e3effa7"
+  },
+  "reviewer_release": "20261102-v1",
+  "reviewer_source": "isolated reviewer entry and saved-visit management",
+  "reviewer_url": "https://review.mychaoxidao.com/review"
+}

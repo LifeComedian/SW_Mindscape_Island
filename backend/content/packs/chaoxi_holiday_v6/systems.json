@@ -1,0 +1,3809 @@
+{
+  "action_definitions": [
+    {
+      "action_id": "v4_sketch__draw",
+      "label": {
+        "zh-CN": "画一张速写",
+        "en": "画一张速写"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 180000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "画一张速写"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_sketch__album",
+      "label": {
+        "zh-CN": "翻看速写册",
+        "en": "翻看速写册"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "翻看速写册"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_bench__sit",
+      "label": {
+        "zh-CN": "坐下观海",
+        "en": "坐下观海"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "坐下观海"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_beach__shell",
+      "label": {
+        "zh-CN": "潮间带寻物",
+        "en": "潮间带寻物"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "寻找贝壳"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_beach__sand",
+      "label": {
+        "zh-CN": "在沙上画画或写字",
+        "en": "在沙上画画或写字"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "在沙上画画或写字"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_plants__browse",
+      "label": {
+        "zh-CN": "浏览花草盆景",
+        "en": "浏览花草盆景"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "浏览花草盆景"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_flowers__tools",
+      "label": {
+        "zh-CN": "查看花材与工具",
+        "en": "查看花材与工具"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "查看花材与工具"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_flowers__make",
+      "label": {
+        "zh-CN": "制作插花",
+        "en": "制作插花"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "制作插花"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_wood_display__browse",
+      "label": {
+        "zh-CN": "浏览木作作品",
+        "en": "浏览木作作品"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "浏览木作作品"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_wood_work__tools",
+      "label": {
+        "zh-CN": "查看材料与工具",
+        "en": "查看材料与工具"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "查看材料与工具"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_wood_work__make",
+      "label": {
+        "zh-CN": "拼装木船",
+        "en": "拼装木船"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "拼装小木作"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_shelf__browse",
+      "label": {
+        "zh-CN": "浏览商品",
+        "en": "浏览商品"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "浏览商品"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_photos__browse",
+      "label": {
+        "zh-CN": "浏览摄影作品",
+        "en": "浏览摄影作品"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "浏览摄影作品"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_restaurant_menu__order",
+      "label": {
+        "zh-CN": "浏览并点餐",
+        "en": "浏览并点餐"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "浏览并点餐"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_restaurant_table__sit",
+      "label": {
+        "zh-CN": "选择座位",
+        "en": "选择座位"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "入座"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_restaurant_table__eat",
+      "label": {
+        "zh-CN": "用餐",
+        "en": "用餐"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "用餐"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_restaurant_table__leave",
+      "label": {
+        "zh-CN": "离座",
+        "en": "离座"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "离座"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_games__browse",
+      "label": {
+        "zh-CN": "浏览桌游与玩法",
+        "en": "浏览桌游与玩法"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "浏览桌游与玩法"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_games__play",
+      "label": {
+        "zh-CN": "游玩华容道",
+        "en": "游玩华容道"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "开始单人数字拼图"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_volleyball__rules",
+      "label": {
+        "zh-CN": "查看场地与规则",
+        "en": "查看场地与规则"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "查看场地与规则"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_volleyball__bump",
+      "label": {
+        "zh-CN": "垫球练习",
+        "en": "垫球练习"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "垫球练习"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_common_room__schedule",
+      "label": {
+        "zh-CN": "查看活动安排",
+        "en": "查看活动安排"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "查看活动安排"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_common_room__rest",
+      "label": {
+        "zh-CN": "坐下休息",
+        "en": "坐下休息"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "坐下休息"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_cafe_menu__order",
+      "label": {
+        "zh-CN": "浏览并点单",
+        "en": "浏览并点单"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "浏览并点单"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_books__read",
+      "label": {
+        "zh-CN": "选书阅读",
+        "en": "选书阅读"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "阅读"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_postcards__browse",
+      "label": {
+        "zh-CN": "浏览明信片",
+        "en": "浏览明信片"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "浏览明信片"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_postcards__write",
+      "label": {
+        "zh-CN": "写一张明信片",
+        "en": "写一张明信片"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "写一张明信片"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_cafe_table__sit",
+      "label": {
+        "zh-CN": "选择座位",
+        "en": "选择座位"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "入座"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_cafe_table__drink",
+      "label": {
+        "zh-CN": "享用饮品",
+        "en": "享用饮品"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "享用饮品"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_cafe_table__leave",
+      "label": {
+        "zh-CN": "离座",
+        "en": "离座"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "离座"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_guidebook__map",
+      "label": {
+        "zh-CN": "翻开度假册",
+        "en": "翻开度假册"
+      },
+      "actor_types": [
+        "participant"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "翻开度假册"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_flowers__browse",
+      "label": {
+        "zh-CN": "看看完成的插花",
+        "en": "看看完成的插花"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "查看绳结示范"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    },
+    {
+      "action_id": "v4_wood_work__free",
+      "label": {
+        "zh-CN": "自由拼搭木作",
+        "en": "自由拼搭木作"
+      },
+      "actor_types": [
+        "participant",
+        "resident"
+      ],
+      "target_types": [
+        "object"
+      ],
+      "location_scope": "co_located",
+      "execution_mode": "execute",
+      "min_participants": 1,
+      "max_participants": 20,
+      "duration_minutes": 0,
+      "inputs": [
+        {
+          "input_id": "payload",
+          "value_type": "object_command",
+          "required": false,
+          "max_length": 2000
+        }
+      ],
+      "preconditions": {},
+      "consequences": [
+        {
+          "effect_type": "set_object_state",
+          "state_key": "result",
+          "value": "查看绳结示范"
+        }
+      ],
+      "effect_allowlist": [
+        "set_object_state"
+      ],
+      "permission_keys": [],
+      "capability_keys": [],
+      "interruptible": true,
+      "failure_reason_codes": []
+    }
+  ],
+  "affordances": [
+    {
+      "affordance_id": "v4_sketch__draw_here",
+      "action_id": "v4_sketch__draw",
+      "location_ids": [
+        "loc_01"
+      ],
+      "object_ids": [
+        "sketch"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_sketch__album_here",
+      "action_id": "v4_sketch__album",
+      "location_ids": [
+        "loc_01"
+      ],
+      "object_ids": [
+        "sketch"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_bench__sit_here",
+      "action_id": "v4_bench__sit",
+      "location_ids": [
+        "loc_01"
+      ],
+      "object_ids": [
+        "bench"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_beach__shell_here",
+      "action_id": "v4_beach__shell",
+      "location_ids": [
+        "loc_01"
+      ],
+      "object_ids": [
+        "beach"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_beach__sand_here",
+      "action_id": "v4_beach__sand",
+      "location_ids": [
+        "loc_01"
+      ],
+      "object_ids": [
+        "beach"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_plants__browse_here",
+      "action_id": "v4_plants__browse",
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "plants"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_flowers__tools_here",
+      "action_id": "v4_flowers__tools",
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "flowers"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_flowers__make_here",
+      "action_id": "v4_flowers__make",
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "flowers"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_wood_display__browse_here",
+      "action_id": "v4_wood_display__browse",
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "wood_display"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_wood_work__tools_here",
+      "action_id": "v4_wood_work__tools",
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "wood_work"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_wood_work__make_here",
+      "action_id": "v4_wood_work__make",
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "wood_work"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_shelf__browse_here",
+      "action_id": "v4_shelf__browse",
+      "location_ids": [
+        "loc_03"
+      ],
+      "object_ids": [
+        "shelf"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_photos__browse_here",
+      "action_id": "v4_photos__browse",
+      "location_ids": [
+        "loc_03"
+      ],
+      "object_ids": [
+        "photos"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_restaurant_menu__order_here",
+      "action_id": "v4_restaurant_menu__order",
+      "location_ids": [
+        "loc_04"
+      ],
+      "object_ids": [
+        "restaurant_menu"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_restaurant_table__sit_here",
+      "action_id": "v4_restaurant_table__sit",
+      "location_ids": [
+        "loc_04"
+      ],
+      "object_ids": [
+        "restaurant_table"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_restaurant_table__eat_here",
+      "action_id": "v4_restaurant_table__eat",
+      "location_ids": [
+        "loc_04"
+      ],
+      "object_ids": [
+        "restaurant_table"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_restaurant_table__leave_here",
+      "action_id": "v4_restaurant_table__leave",
+      "location_ids": [
+        "loc_04"
+      ],
+      "object_ids": [
+        "restaurant_table"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_games__browse_here",
+      "action_id": "v4_games__browse",
+      "location_ids": [
+        "loc_05"
+      ],
+      "object_ids": [
+        "games"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_games__play_here",
+      "action_id": "v4_games__play",
+      "location_ids": [
+        "loc_05"
+      ],
+      "object_ids": [
+        "games"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_volleyball__rules_here",
+      "action_id": "v4_volleyball__rules",
+      "location_ids": [
+        "loc_05"
+      ],
+      "object_ids": [
+        "volleyball"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_volleyball__bump_here",
+      "action_id": "v4_volleyball__bump",
+      "location_ids": [
+        "loc_05"
+      ],
+      "object_ids": [
+        "volleyball"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_common_room__schedule_here",
+      "action_id": "v4_common_room__schedule",
+      "location_ids": [
+        "loc_05"
+      ],
+      "object_ids": [
+        "common_room"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_common_room__rest_here",
+      "action_id": "v4_common_room__rest",
+      "location_ids": [
+        "loc_05"
+      ],
+      "object_ids": [
+        "common_room"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_cafe_menu__order_here",
+      "action_id": "v4_cafe_menu__order",
+      "location_ids": [
+        "loc_06"
+      ],
+      "object_ids": [
+        "cafe_menu"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_books__read_here",
+      "action_id": "v4_books__read",
+      "location_ids": [
+        "loc_06"
+      ],
+      "object_ids": [
+        "books"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_postcards__browse_here",
+      "action_id": "v4_postcards__browse",
+      "location_ids": [
+        "loc_06"
+      ],
+      "object_ids": [
+        "postcards"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_postcards__write_here",
+      "action_id": "v4_postcards__write",
+      "location_ids": [
+        "loc_06"
+      ],
+      "object_ids": [
+        "postcards"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_cafe_table__sit_here",
+      "action_id": "v4_cafe_table__sit",
+      "location_ids": [
+        "loc_06"
+      ],
+      "object_ids": [
+        "cafe_table"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_cafe_table__drink_here",
+      "action_id": "v4_cafe_table__drink",
+      "location_ids": [
+        "loc_06"
+      ],
+      "object_ids": [
+        "cafe_table"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_cafe_table__leave_here",
+      "action_id": "v4_cafe_table__leave",
+      "location_ids": [
+        "loc_06"
+      ],
+      "object_ids": [
+        "cafe_table"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_guidebook__map_here",
+      "action_id": "v4_guidebook__map",
+      "location_ids": [
+        "guest_room"
+      ],
+      "object_ids": [
+        "guidebook"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_flowers__browse_here",
+      "action_id": "v4_flowers__browse",
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "flowers"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    },
+    {
+      "affordance_id": "v4_wood_work__free_here",
+      "action_id": "v4_wood_work__free",
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "wood_work"
+      ],
+      "enabled": true,
+      "conditions": {},
+      "permission_keys": [],
+      "capability_keys": []
+    }
+  ],
+  "activity_recipes": [
+    {
+      "recipe_id": "seaside",
+      "label": {
+        "zh-CN": "一起观海",
+        "en": "一起观海"
+      },
+      "location_ids": [
+        "loc_01"
+      ],
+      "object_ids": [
+        "bench"
+      ],
+      "action_ids": [
+        "v4_bench__sit"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "seaside_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "beach_search",
+      "label": {
+        "zh-CN": "一起在海滩寻物",
+        "en": "一起在海滩寻物"
+      },
+      "location_ids": [
+        "loc_01"
+      ],
+      "object_ids": [
+        "beach"
+      ],
+      "action_ids": [
+        "v4_beach__shell",
+        "v4_beach__sand"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "beach_walk_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "harbor_sketch",
+      "label": {
+        "zh-CN": "一起画港口",
+        "en": "一起画港口"
+      },
+      "location_ids": [
+        "loc_01"
+      ],
+      "object_ids": [
+        "sketch"
+      ],
+      "action_ids": [
+        "v4_sketch__draw",
+        "v4_sketch__album"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "harbor_sketch_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "flower_arranging",
+      "label": {
+        "zh-CN": "做一份桌花",
+        "en": "做一份桌花"
+      },
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "flowers"
+      ],
+      "action_ids": [
+        "v4_flowers__tools",
+        "v4_flowers__make"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "flower_arranging_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "woodcraft",
+      "label": {
+        "zh-CN": "拼一件木作",
+        "en": "拼一件木作"
+      },
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "wood_work"
+      ],
+      "action_ids": [
+        "v4_wood_work__tools",
+        "v4_wood_work__make",
+        "v4_wood_work__free"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "woodcraft_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "browse_plants",
+      "label": {
+        "zh-CN": "看看花草与木作",
+        "en": "看看花草与木作"
+      },
+      "location_ids": [
+        "loc_02"
+      ],
+      "object_ids": [
+        "plants"
+      ],
+      "action_ids": [
+        "v4_plants__browse"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "browse_plants_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "shop_visit",
+      "label": {
+        "zh-CN": "一起逛便利店",
+        "en": "一起逛便利店"
+      },
+      "location_ids": [
+        "loc_03"
+      ],
+      "object_ids": [
+        "shelf"
+      ],
+      "action_ids": [
+        "v4_shelf__browse"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "shop_visit_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "photo_visit",
+      "label": {
+        "zh-CN": "看看摄影作品",
+        "en": "看看摄影作品"
+      },
+      "location_ids": [
+        "loc_03"
+      ],
+      "object_ids": [
+        "photos"
+      ],
+      "action_ids": [
+        "v4_photos__browse"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "photo_visit_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "meal",
+      "label": {
+        "zh-CN": "一起吃顿饭",
+        "en": "一起吃顿饭"
+      },
+      "location_ids": [
+        "loc_04"
+      ],
+      "object_ids": [
+        "restaurant_menu"
+      ],
+      "action_ids": [
+        "v4_restaurant_menu__order"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "meal_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "table_game",
+      "label": {
+        "zh-CN": "一起玩UNO",
+        "en": "一起玩UNO"
+      },
+      "location_ids": [
+        "loc_05"
+      ],
+      "object_ids": [
+        "games"
+      ],
+      "action_ids": [
+        "v4_games__browse",
+        "v4_games__play"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "table_game_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "volley_pass",
+      "label": {
+        "zh-CN": "多人垫球练习",
+        "en": "多人垫球练习"
+      },
+      "location_ids": [
+        "loc_05"
+      ],
+      "object_ids": [
+        "volleyball"
+      ],
+      "action_ids": [
+        "v4_volleyball__rules",
+        "v4_volleyball__bump"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "volley_pass_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "common_chat",
+      "label": {
+        "zh-CN": "活动室小聚",
+        "en": "活动室小聚"
+      },
+      "location_ids": [
+        "loc_05"
+      ],
+      "object_ids": [
+        "common_room"
+      ],
+      "action_ids": [
+        "v4_common_room__schedule",
+        "v4_common_room__rest"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "common_chat_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "coffee",
+      "label": {
+        "zh-CN": "一起喝杯咖啡",
+        "en": "一起喝杯咖啡"
+      },
+      "location_ids": [
+        "loc_06"
+      ],
+      "object_ids": [
+        "cafe_menu"
+      ],
+      "action_ids": [
+        "v4_cafe_menu__order"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "coffee_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "reading",
+      "label": {
+        "zh-CN": "一起读一会儿书",
+        "en": "一起读一会儿书"
+      },
+      "location_ids": [
+        "loc_06"
+      ],
+      "object_ids": [
+        "books"
+      ],
+      "action_ids": [
+        "v4_books__read"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "reading_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    },
+    {
+      "recipe_id": "postcard",
+      "label": {
+        "zh-CN": "一起写明信片",
+        "en": "一起写明信片"
+      },
+      "location_ids": [
+        "loc_06"
+      ],
+      "object_ids": [
+        "postcards"
+      ],
+      "action_ids": [
+        "v4_postcards__browse",
+        "v4_postcards__write"
+      ],
+      "role_slots": [
+        "organizer",
+        "guest"
+      ],
+      "variant_recipe_ids": [],
+      "min_participants": 2,
+      "max_participants": 4,
+      "duration_minutes": 30,
+      "complexity": "coordinated",
+      "player_facing": true,
+      "conditions": {
+        "participant_mode": "required",
+        "organizer_agent_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "required_resident_ids": [],
+        "invitee_role_ids": [
+          "guest"
+        ],
+        "participant_stage_control": true,
+        "auto_emergence": true,
+        "emergence_enabled": true,
+        "experience_scene": true,
+        "fixed_stage_timeline": false,
+        "stage_recipe_id": "postcard_stages",
+        "start_delay_minutes": 15,
+        "expires_after_minutes": 30,
+        "arrival_grace_minutes": 30
+      }
+    }
+  ],
+  "emergence_policy": {
+    "policy_id": "bounded-emergence-v1",
+    "policy_version": "v1",
+    "max_agent_actions_per_tick": 1,
+    "max_invitations_per_tick": 1,
+    "max_activity_creations_per_tick": 1,
+    "max_event_chain_depth": 3,
+    "max_new_player_facing_events_per_day": 3,
+    "max_new_major_events_per_day": 1,
+    "max_concurrent_player_facing_events": 2,
+    "max_direct_agent_invitations_to_player_per_day": 2,
+    "max_open_commitments_per_actor": 3,
+    "same_recipe_daily_limit": 1,
+    "declined_pair_cooldown_minutes": 120
+  },
+  "contract_version": "modular-emergence-authoring-v1",
+  "stage_recipes": [
+    {
+      "stage_recipe_id": "seaside_stages",
+      "label": {
+        "zh-CN": "一起观海",
+        "en": "一起观海"
+      },
+      "allowed_action_ids": [
+        "v4_bench__sit"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "一起观海",
+            "en": "一起观海"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "sit",
+              "label": {
+                "zh-CN": "坐下观海",
+                "en": "坐下观海"
+              },
+              "action_id": "v4_bench__sit",
+              "object_id": "bench",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "beach_walk_stages",
+      "label": {
+        "zh-CN": "沿沙滩走走",
+        "en": "沿沙滩走走"
+      },
+      "allowed_action_ids": [
+        "v4_beach__shell",
+        "v4_beach__sand"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "沿沙滩走走",
+            "en": "沿沙滩走走"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "shell",
+              "label": {
+                "zh-CN": "寻找贝壳",
+                "en": "寻找贝壳"
+              },
+              "action_id": "v4_beach__shell",
+              "object_id": "beach",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            },
+            {
+              "choice_id": "sand",
+              "label": {
+                "zh-CN": "在沙上画画或写字",
+                "en": "在沙上画画或写字"
+              },
+              "action_id": "v4_beach__sand",
+              "object_id": "beach",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "harbor_sketch_stages",
+      "label": {
+        "zh-CN": "一起画港口",
+        "en": "一起画港口"
+      },
+      "allowed_action_ids": [
+        "v4_sketch__draw",
+        "v4_sketch__album"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "一起画港口",
+            "en": "一起画港口"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "draw",
+              "label": {
+                "zh-CN": "画一张速写",
+                "en": "画一张速写"
+              },
+              "action_id": "v4_sketch__draw",
+              "object_id": "sketch",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            },
+            {
+              "choice_id": "album",
+              "label": {
+                "zh-CN": "翻看速写册",
+                "en": "翻看速写册"
+              },
+              "action_id": "v4_sketch__album",
+              "object_id": "sketch",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "flower_arranging_stages",
+      "label": {
+        "zh-CN": "做一份桌花",
+        "en": "做一份桌花"
+      },
+      "allowed_action_ids": [
+        "v4_flowers__tools",
+        "v4_flowers__make"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "做一份桌花",
+            "en": "做一份桌花"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "tools",
+              "label": {
+                "zh-CN": "查看花材与工具",
+                "en": "查看花材与工具"
+              },
+              "action_id": "v4_flowers__tools",
+              "object_id": "flowers",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            },
+            {
+              "choice_id": "make",
+              "label": {
+                "zh-CN": "制作插花",
+                "en": "制作插花"
+              },
+              "action_id": "v4_flowers__make",
+              "object_id": "flowers",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "woodcraft_stages",
+      "label": {
+        "zh-CN": "拼一件木作",
+        "en": "拼一件木作"
+      },
+      "allowed_action_ids": [
+        "v4_wood_work__tools",
+        "v4_wood_work__make"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "拼一件木作",
+            "en": "拼一件木作"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "tools",
+              "label": {
+                "zh-CN": "查看材料与工具",
+                "en": "查看材料与工具"
+              },
+              "action_id": "v4_wood_work__tools",
+              "object_id": "wood_work",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            },
+            {
+              "choice_id": "make",
+              "label": {
+                "zh-CN": "拼装小木作",
+                "en": "拼装小木作"
+              },
+              "action_id": "v4_wood_work__make",
+              "object_id": "wood_work",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "browse_plants_stages",
+      "label": {
+        "zh-CN": "看看花草与木作",
+        "en": "看看花草与木作"
+      },
+      "allowed_action_ids": [
+        "v4_plants__browse"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "看看花草与木作",
+            "en": "看看花草与木作"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "browse",
+              "label": {
+                "zh-CN": "浏览花草盆景",
+                "en": "浏览花草盆景"
+              },
+              "action_id": "v4_plants__browse",
+              "object_id": "plants",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "shop_visit_stages",
+      "label": {
+        "zh-CN": "一起逛便利店",
+        "en": "一起逛便利店"
+      },
+      "allowed_action_ids": [
+        "v4_shelf__browse"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "一起逛便利店",
+            "en": "一起逛便利店"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "browse",
+              "label": {
+                "zh-CN": "浏览商品",
+                "en": "浏览商品"
+              },
+              "action_id": "v4_shelf__browse",
+              "object_id": "shelf",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "photo_visit_stages",
+      "label": {
+        "zh-CN": "看看摄影作品",
+        "en": "看看摄影作品"
+      },
+      "allowed_action_ids": [
+        "v4_photos__browse"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "看看摄影作品",
+            "en": "看看摄影作品"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "browse",
+              "label": {
+                "zh-CN": "浏览摄影作品",
+                "en": "浏览摄影作品"
+              },
+              "action_id": "v4_photos__browse",
+              "object_id": "photos",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "meal_stages",
+      "label": {
+        "zh-CN": "一起吃顿饭",
+        "en": "一起吃顿饭"
+      },
+      "allowed_action_ids": [
+        "v4_restaurant_menu__order"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "一起吃顿饭",
+            "en": "一起吃顿饭"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "order",
+              "label": {
+                "zh-CN": "浏览并点餐",
+                "en": "浏览并点餐"
+              },
+              "action_id": "v4_restaurant_menu__order",
+              "object_id": "restaurant_menu",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "table_game_stages",
+      "label": {
+        "zh-CN": "一起玩颜色接龙",
+        "en": "一起玩颜色接龙"
+      },
+      "allowed_action_ids": [
+        "v4_games__browse",
+        "v4_games__play"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "一起玩颜色接龙",
+            "en": "一起玩颜色接龙"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "browse",
+              "label": {
+                "zh-CN": "浏览桌游与玩法",
+                "en": "浏览桌游与玩法"
+              },
+              "action_id": "v4_games__browse",
+              "object_id": "games",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            },
+            {
+              "choice_id": "play",
+              "label": {
+                "zh-CN": "开始单人数字拼图",
+                "en": "开始单人数字拼图"
+              },
+              "action_id": "v4_games__play",
+              "object_id": "games",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "volley_pass_stages",
+      "label": {
+        "zh-CN": "一起传接排球",
+        "en": "一起传接排球"
+      },
+      "allowed_action_ids": [
+        "v4_volleyball__rules",
+        "v4_volleyball__bump"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "一起传接排球",
+            "en": "一起传接排球"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "rules",
+              "label": {
+                "zh-CN": "查看场地与规则",
+                "en": "查看场地与规则"
+              },
+              "action_id": "v4_volleyball__rules",
+              "object_id": "volleyball",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            },
+            {
+              "choice_id": "bump",
+              "label": {
+                "zh-CN": "垫球练习",
+                "en": "垫球练习"
+              },
+              "action_id": "v4_volleyball__bump",
+              "object_id": "volleyball",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "common_chat_stages",
+      "label": {
+        "zh-CN": "活动室小聚",
+        "en": "活动室小聚"
+      },
+      "allowed_action_ids": [
+        "v4_common_room__schedule",
+        "v4_common_room__rest"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "活动室小聚",
+            "en": "活动室小聚"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "schedule",
+              "label": {
+                "zh-CN": "查看活动安排",
+                "en": "查看活动安排"
+              },
+              "action_id": "v4_common_room__schedule",
+              "object_id": "common_room",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            },
+            {
+              "choice_id": "rest",
+              "label": {
+                "zh-CN": "坐下休息",
+                "en": "坐下休息"
+              },
+              "action_id": "v4_common_room__rest",
+              "object_id": "common_room",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "coffee_stages",
+      "label": {
+        "zh-CN": "一起喝杯咖啡",
+        "en": "一起喝杯咖啡"
+      },
+      "allowed_action_ids": [
+        "v4_cafe_menu__order"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "一起喝杯咖啡",
+            "en": "一起喝杯咖啡"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "order",
+              "label": {
+                "zh-CN": "浏览并点单",
+                "en": "浏览并点单"
+              },
+              "action_id": "v4_cafe_menu__order",
+              "object_id": "cafe_menu",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "reading_stages",
+      "label": {
+        "zh-CN": "一起读一会儿书",
+        "en": "一起读一会儿书"
+      },
+      "allowed_action_ids": [
+        "v4_books__read"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "一起读一会儿书",
+            "en": "一起读一会儿书"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "read",
+              "label": {
+                "zh-CN": "阅读",
+                "en": "阅读"
+              },
+              "action_id": "v4_books__read",
+              "object_id": "books",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_recipe_id": "postcard_stages",
+      "label": {
+        "zh-CN": "一起写明信片",
+        "en": "一起写明信片"
+      },
+      "allowed_action_ids": [
+        "v4_postcards__browse",
+        "v4_postcards__write"
+      ],
+      "terminal_outcomes": [
+        "completed",
+        "partial",
+        "timed_out",
+        "not_completed"
+      ],
+      "max_stages": 1,
+      "max_player_choices_per_stage": 3,
+      "initial_stage_id": "scene",
+      "stages": [
+        {
+          "stage_id": "scene",
+          "label": {
+            "zh-CN": "一起写明信片",
+            "en": "一起写明信片"
+          },
+          "kind": "action",
+          "confirm_in_place": true,
+          "role_goals": {
+            "organizer": "商量接下来做什么",
+            "guest": "选择自己的参与方式"
+          },
+          "authority_roles": [
+            "organizer",
+            "guest"
+          ],
+          "authority_actor_types": [
+            "participant"
+          ],
+          "duration_minutes": 30,
+          "timeout_outcome": "timed_out",
+          "absence_outcome": "not_completed",
+          "enter_conditions": {},
+          "choices": [
+            {
+              "choice_id": "browse",
+              "label": {
+                "zh-CN": "浏览明信片",
+                "en": "浏览明信片"
+              },
+              "action_id": "v4_postcards__browse",
+              "object_id": "postcards",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            },
+            {
+              "choice_id": "write",
+              "label": {
+                "zh-CN": "写一张明信片",
+                "en": "写一张明信片"
+              },
+              "action_id": "v4_postcards__write",
+              "object_id": "postcards",
+              "inputs": {},
+              "next_stage_id": null,
+              "outcome": "completed"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "plan_policy": {
+    "policy_id": "modular-plans-v1",
+    "policy_version": "v1",
+    "states": [
+      "proposed",
+      "accepted",
+      "rejected",
+      "cancelled",
+      "expired",
+      "in_progress",
+      "completed",
+      "failed"
+    ],
+    "actor_availability_checks": [
+      "schedule",
+      "location_open",
+      "route_reachable",
+      "actor_state",
+      "active_conversation",
+      "commitment"
+    ],
+    "conflict_checks": [
+      "actor_overlap",
+      "location_capacity",
+      "object_reservation",
+      "travel_time"
+    ],
+    "travel_time_required": true,
+    "explicit_change_required": true,
+    "release_reservation_on_terminal": true
+  },
+  "knowledge_policy": {
+    "policy_id": "modular-knowledge-v1",
+    "policy_version": "v1",
+    "allowed_source_types": [
+      "experienced",
+      "public_post",
+      "direct_message",
+      "explicitly_told",
+      "system_public_fact"
+    ],
+    "visibility_levels": [
+      "private",
+      "targeted",
+      "island_public"
+    ],
+    "require_provenance": true,
+    "prevent_omniscient_propagation": true
+  },
+  "candidate_policy": {
+    "policy_id": "modular-candidates-v1",
+    "policy_version": "v1",
+    "allowed_source_types": [
+      "actor_goal",
+      "memory",
+      "relationship",
+      "public_knowledge",
+      "affordance",
+      "commitment",
+      "plan_conflict",
+      "activity_recipe",
+      "world_outcome"
+    ],
+    "allowed_complexities": [
+      "ordinary",
+      "coordinated",
+      "major"
+    ],
+    "llm_candidate_only": true,
+    "fail_closed_unknown_ids": true,
+    "max_candidates_per_evaluation": 8
+  },
+  "llm_policy": {
+    "policy_version": "modular-llm-policy-v1",
+    "enabled": true,
+    "decision_types": [
+      "atomic_action",
+      "stage_action",
+      "invitation_response",
+      "reschedule",
+      "event_preference",
+      "dialogue",
+      "invitation_expression",
+      "record_expression"
+    ],
+    "timeout_ms": 20000,
+    "max_retries": 1,
+    "max_calls_per_day": 64,
+    "max_calls_per_session": 448,
+    "max_units_per_day": 524288,
+    "max_units_per_session": 3670016,
+    "max_prompt_units": 16384,
+    "max_output_units": 1024
+  },
+  "interaction_policy": {
+    "policy_version": "session-interaction-v1",
+    "enabled": true,
+    "ambient_enabled": false,
+    "conversation_minutes": 10,
+    "short_conversation_minutes": 5,
+    "focus_lease_seconds": 300,
+    "max_contacts_per_day": 2,
+    "contact_cooldown_minutes": 60,
+    "max_pending_contacts": 1
+  },
+  "autonomy_policy": {
+    "policy_version": "shared-clock-autonomy-v1",
+    "enabled": true,
+    "max_pending": 2,
+    "dispatch_per_pulse": 2,
+    "cooldown_minutes": 15,
+    "read_posts_per_step": 2
+  }
+}

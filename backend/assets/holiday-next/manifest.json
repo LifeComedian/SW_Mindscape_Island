@@ -1,0 +1,158 @@
+{
+  "assets": {
+    "next.food.tomato_egg": {
+      "asset_key": "next.food.tomato_egg",
+      "url": "/next-art/next.food.tomato_egg.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.tomato_egg",
+      "mime_type": "image/webp",
+      "sha256": "4755dfb8d43f110e9673ae5758172783f5a038f9e8a89d48572e91089fcd05ea",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "next.food.mushroom_noodles": {
+      "asset_key": "next.food.mushroom_noodles",
+      "url": "/next-art/next.food.mushroom_noodles.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.mushroom_noodles",
+      "mime_type": "image/webp",
+      "sha256": "a22cf92ffde000f22d613c72abc7b89a6dfa76374bc7124210409d78aa0755bc",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "next.food.pumpkin_rice": {
+      "asset_key": "next.food.pumpkin_rice",
+      "url": "/next-art/next.food.pumpkin_rice.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.pumpkin_rice",
+      "mime_type": "image/webp",
+      "sha256": "a399f70e4e228c736814ac1cd97bc4e2927ad426440d7323cae6928335cc6b8a",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "next.food.orange_coffee": {
+      "asset_key": "next.food.orange_coffee",
+      "url": "/next-art/next.food.orange_coffee.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.orange_coffee",
+      "mime_type": "image/webp",
+      "sha256": "9bece7eb876a1c33723bf68830aae2e63dfa8721ba9c3a0885e870b37de05186",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "next.food.oat_latte": {
+      "asset_key": "next.food.oat_latte",
+      "url": "/next-art/next.food.oat_latte.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.oat_latte",
+      "mime_type": "image/webp",
+      "sha256": "b253410223f5e1c0421c8afa6134c43e6d8e11dc902b1336db73a41fd58c6d94",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "next.food.cocoa": {
+      "asset_key": "next.food.cocoa",
+      "url": "/next-art/next.food.cocoa.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.cocoa",
+      "mime_type": "image/webp",
+      "sha256": "ecbb96c0bcb48bf4868e7a14269c27e1fc596aa881735a53d36e0f12a076279a",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "resident.9.closeup": {
+      "asset_key": "resident.9.closeup",
+      "url": "/next-art/resident.9.closeup.webp",
+      "width": 768,
+      "height": 768,
+      "title": "resident.9.closeup",
+      "mime_type": "image/webp",
+      "sha256": "0cd6621e78858551803fa94051ecd87dcb5d87420d448d207209f4b0acf76040",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "resident.10.closeup": {
+      "asset_key": "resident.10.closeup",
+      "url": "/next-art/resident.10.closeup.webp",
+      "width": 768,
+      "height": 768,
+      "title": "resident.10.closeup",
+      "mime_type": "image/webp",
+      "sha256": "687d197695634c4c01b4c6d05245db93e4410322c80dae5a998de8f7632e5e91",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "resident.11.closeup": {
+      "asset_key": "resident.11.closeup",
+      "url": "/next-art/resident.11.closeup.webp",
+      "width": 768,
+      "height": 768,
+      "title": "resident.11.closeup",
+      "mime_type": "image/webp",
+      "sha256": "af1d8beb4bbae36f335d5e5b636080e822681739c3b7316afa16b03eb4f80765",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "next.food.rice": {
+      "asset_key": "next.food.rice",
+      "url": "/next-art/next.food.rice.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.rice",
+      "mime_type": "image/webp",
+      "sha256": "852d7627a8b3671deab0531d7571073da166e94244cfb90cf6feb793971962e7",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "next.food.noodles": {
+      "asset_key": "next.food.noodles",
+      "url": "/next-art/next.food.noodles.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.noodles",
+      "mime_type": "image/webp",
+      "sha256": "87f15b0e2a5117ec26160ba8e1817bff064d364b82cf772c793b73077f9d66a0",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "next.food.soup": {
+      "asset_key": "next.food.soup",
+      "url": "/next-art/next.food.soup.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.soup",
+      "mime_type": "image/webp",
+      "sha256": "517dca051a41d4f5068bfcd109b49c24650bbffaa2b6a68d8db05bf6d2e1cede",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "next.food.coffee": {
+      "asset_key": "next.food.coffee",
+      "url": "/next-art/next.food.coffee.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.coffee",
+      "mime_type": "image/webp",
+      "sha256": "571c426747783993d83fc6f536df3365d5bb3b5d3396591319b38582662974a3",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    },
+    "next.food.tea": {
+      "asset_key": "next.food.tea",
+      "url": "/next-art/next.food.tea.webp",
+      "width": 768,
+      "height": 768,
+      "title": "next.food.tea",
+      "mime_type": "image/webp",
+      "sha256": "6b69d6fb2f6fdd7825e13c230676af8c0e90e9d37cd812c8772ded5f3c2f6367",
+      "source": "builtin-imagegen",
+      "license": "project_generated"
+    }
+  }
+}

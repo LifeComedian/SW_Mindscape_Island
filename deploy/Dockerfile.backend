@@ -1,0 +1,12 @@
+FROM python:3.13-slim@sha256:57b29a7c050c4e679e4bea572e14b3965cf4b5839de2da49d55e49ffc4024f39
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+WORKDIR /app/backend
+COPY backend/requirements.lock ./requirements.lock
+RUN pip install --no-cache-dir --require-hashes -r requirements.lock
+COPY backend/ ./
+COPY frontend/public/next-art/ /app/frontend/public/next-art/
+RUN python -c "from study.island_recap import build_recap; assert 'words' in build_recap({})"
+RUN useradd --create-home app && mkdir /data /research-private && chown app:app /data /research-private && chmod 700 /research-private
+USER app
+EXPOSE 8000
+CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]

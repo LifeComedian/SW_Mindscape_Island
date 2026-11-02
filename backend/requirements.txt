@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+openai
+python-dotenv
+httpx
+cryptography>=50,<51
+
+# Local annual-recap tokenizer, frozen vocabulary
+jieba==0.42.1

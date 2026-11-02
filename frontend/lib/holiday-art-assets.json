@@ -1,0 +1,272 @@
+{
+  "map.island": {
+    "url": "/holiday-art/map.island.webp",
+    "width": 1499,
+    "height": 1049,
+    "title": "全岛俯视底图"
+  },
+  "location.loc_01": {
+    "url": "/holiday-art/location.loc_01.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "潮汐港口与海边主场景"
+  },
+  "location.loc_02": {
+    "url": "/holiday-art/location.loc_02.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "花坊主场景"
+  },
+  "location.loc_03": {
+    "url": "/holiday-art/location.loc_03.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "岛角便利店主场景"
+  },
+  "location.loc_04": {
+    "url": "/holiday-art/location.loc_04.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "岸边餐馆主场景"
+  },
+  "location.loc_05": {
+    "url": "/holiday-art/location.loc_05.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "公共广场与活动室主场景"
+  },
+  "location.loc_06": {
+    "url": "/holiday-art/location.loc_06.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "临海咖啡馆主场景"
+  },
+  "location.guest_room": {
+    "url": "/holiday-art/location.guest_room.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "民宿客房主场景"
+  },
+  "location.residential": {
+    "url": "/holiday-art/location.residential.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "岛民住宅区主场景"
+  },
+  "resident.1.closeup": {
+    "url": "/holiday-art/resident.1.closeup.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "周树成对话半身立绘"
+  },
+  "resident.2.closeup": {
+    "url": "/holiday-art/resident.2.closeup.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "许玉兰对话半身立绘"
+  },
+  "resident.3.closeup": {
+    "url": "/holiday-art/resident.3.closeup.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "陈惠芳对话半身立绘"
+  },
+  "resident.4.closeup": {
+    "url": "/holiday-art/resident.4.closeup.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "梁健成对话半身立绘"
+  },
+  "resident.5.closeup": {
+    "url": "/holiday-art/resident.5.closeup.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "林予安对话半身立绘"
+  },
+  "resident.6.closeup": {
+    "url": "/holiday-art/resident.6.closeup.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "沈知夏对话半身立绘"
+  },
+  "resident.7.closeup": {
+    "url": "/holiday-art/resident.7.closeup.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "陆明远对话半身立绘"
+  },
+  "resident.8.closeup": {
+    "url": "/holiday-art/resident.8.closeup.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "何雨舟对话半身立绘"
+  },
+  "object.rope": {
+    "url": "/holiday-art/object.rope.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "绳结练习台"
+  },
+  "object.sketch": {
+    "url": "/holiday-art/object.sketch.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "港边速写桌"
+  },
+  "object.bench": {
+    "url": "/holiday-art/object.bench.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "观海长凳"
+  },
+  "object.beach": {
+    "url": "/holiday-art/object.beach.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "沙滩"
+  },
+  "object.bonfire_table": {
+    "url": "/holiday-art/object.bonfire_table.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "篝火晚会专用桌"
+  },
+  "object.plants": {
+    "url": "/holiday-art/object.plants.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "花草盆景展示架"
+  },
+  "object.flowers": {
+    "url": "/holiday-art/object.flowers.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "插花工作桌"
+  },
+  "object.wood_display": {
+    "url": "/holiday-art/object.wood_display.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "木作展示架"
+  },
+  "object.wood_work": {
+    "url": "/holiday-art/object.wood_work.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "木作工作桌"
+  },
+  "object.shelf": {
+    "url": "/holiday-art/object.shelf.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "货架"
+  },
+  "object.photos": {
+    "url": "/holiday-art/object.photos.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "摄影作品展示墙"
+  },
+  "object.restaurant_menu": {
+    "url": "/holiday-art/object.restaurant_menu.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "菜单墙"
+  },
+  "object.restaurant_table": {
+    "url": "/holiday-art/object.restaurant_table.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "餐桌"
+  },
+  "object.games": {
+    "url": "/holiday-art/object.games.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "桌游室"
+  },
+  "object.volleyball": {
+    "url": "/holiday-art/object.volleyball.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "排球室"
+  },
+  "object.common_room": {
+    "url": "/holiday-art/object.common_room.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "公共活动室"
+  },
+  "object.welcome_table": {
+    "url": "/holiday-art/object.welcome_table.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "欢迎派对专用桌"
+  },
+  "object.cafe_menu": {
+    "url": "/holiday-art/object.cafe_menu.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "饮品菜单"
+  },
+  "object.books": {
+    "url": "/holiday-art/object.books.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "读书角"
+  },
+  "object.postcards": {
+    "url": "/holiday-art/object.postcards.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "明信片墙"
+  },
+  "object.cafe_table": {
+    "url": "/holiday-art/object.cafe_table.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "桌位"
+  },
+  "object.guidebook": {
+    "url": "/holiday-art/object.guidebook.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "客房床头度假册"
+  },
+  "activity.welcome-wide": {
+    "url": "/holiday-art/activity.welcome-wide.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "欢迎派对全景"
+  },
+  "activity.welcome-speech": {
+    "url": "/holiday-art/activity.welcome-speech.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "欢迎致辞镜头"
+  },
+  "activity.welcome-chat": {
+    "url": "/holiday-art/activity.welcome-chat.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "欢迎派对围坐镜头"
+  },
+  "activity.bonfire-wide": {
+    "url": "/holiday-art/activity.bonfire-wide.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "篝火晚会全景"
+  },
+  "activity.bonfire-chat": {
+    "url": "/holiday-art/activity.bonfire-chat.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "篝火围坐镜头"
+  },
+  "activity.bonfire-goodbye": {
+    "url": "/holiday-art/activity.bonfire-goodbye.webp",
+    "width": 1672,
+    "height": 941,
+    "title": "告别收束镜头"
+  }
+}
