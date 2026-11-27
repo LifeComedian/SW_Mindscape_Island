@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "algorithm": "sha256",
-  "listed_files": 750,
-  "total_release_files": 751,
+  "listed_files": 754,
+  "total_release_files": 755,
   "self_excluded": "FILE_MANIFEST.json",
   "files": [
     {
@@ -3742,8 +3742,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5886,
-      "sha256": "e5388d0c921f04aa06ddae75b58da1bdba1fa3100abb8a5180bf12c598215b2c"
+      "bytes": 14374,
+      "sha256": "286c40934a79c722580d3c73b9c576d453cda832900bdb34ae4a72d16d6c260b"
     },
     {
       "path": "RELEASE.json",
@@ -3754,6 +3754,26 @@
       "path": "scripts/verify_release.py",
       "bytes": 3562,
       "sha256": "f5f208441fd280736034c45be9f277f1e3061b84bdbe3ae4b53c59aa03e59b44"
+    },
+    {
+      "path": "docs/images/island_map.jpg",
+      "bytes": 454438,
+      "sha256": "49c209d34d1637b92680d21ec3c6e67cebb191cedb96d7a60abc1f8390d89bea"
+    },
+    {
+      "path": "docs/images/gameplay_cafe.jpg",
+      "bytes": 178611,
+      "sha256": "f75fa0b155821369c21248a509add32a227ea0c6b55eccc3417471572f3409d8"
+    },
+    {
+      "path": "docs/images/study_procedure.png",
+      "bytes": 71706,
+      "sha256": "e0cb9ad5262fc7968c01112588a0aec7f6a5506eae88e941e30ee99d34260652"
+    },
+    {
+      "path": "docs/images/participant_comparisons.png",
+      "bytes": 232229,
+      "sha256": "9c3ff3cfeffd0687b4abc11f39560b67ffd54d926211e12ea44e8bd83754877b"
     }
   ]
 }
