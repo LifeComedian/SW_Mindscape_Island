@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "algorithm": "sha256",
-  "listed_files": 754,
-  "total_release_files": 755,
+  "listed_files": 757,
+  "total_release_files": 758,
   "self_excluded": "FILE_MANIFEST.json",
   "files": [
     {
@@ -3742,8 +3742,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 14374,
-      "sha256": "286c40934a79c722580d3c73b9c576d453cda832900bdb34ae4a72d16d6c260b"
+      "bytes": 14837,
+      "sha256": "7e31440ab7e0038f48e1ff0f62ed19b0fcd9db21049536cdf7361142a982e70e"
     },
     {
       "path": "RELEASE.json",
@@ -3774,6 +3774,21 @@
       "path": "docs/images/participant_comparisons.png",
       "bytes": 232229,
       "sha256": "9c3ff3cfeffd0687b4abc11f39560b67ffd54d926211e12ea44e8bd83754877b"
+    },
+    {
+      "path": "docs/images/poster.jpg",
+      "bytes": 1241065,
+      "sha256": "0dc03ca97c19c9dc848abc085ffee9f047336a1c239cd1ba0cd499d4e642a929"
+    },
+    {
+      "path": "docs/paper.pdf",
+      "bytes": 17226597,
+      "sha256": "81c661dc316cbb4d3b27a4a6bcb885ea85a12ea9b64a67ad57c44ece436173ea"
+    },
+    {
+      "path": "docs/poster.pdf",
+      "bytes": 37529927,
+      "sha256": "e88ba06d1708a1588abf0bf33358be191fa44b6ce8560d1444927cc36dda4c58"
     }
   ]
 }

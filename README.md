@@ -6,7 +6,7 @@ Players spend **seven virtual days** on a browser-based island: they talk to LLM
 
 *Signature Work · Weitian Xue · Data Science, Duke Kunshan University · Mentor: Prof. Yucheng Jin*
 
-[**▶ Play the reviewer demo**](https://review.mychaoxidao.com/review) · [What it is](#what-it-is) · [System design](#system-design) · [Study & results](#study--results) · [Run it yourself](#run) · [Rights & sources](#rights-and-sources)
+[**▶ Play the reviewer demo**](https://review.mychaoxidao.com/review) · [What it is](#what-it-is) · [System design](#system-design) · [Study & results](#study--results) · [Paper & poster](#paper--poster) · [Run it yourself](#run) · [Rights & sources](#rights-and-sources)
 
 ![Island map](docs/images/island_map.jpg)
 
@@ -85,6 +85,17 @@ A **controlled fallback report** assembled from verified facts guarantees a deli
 
 > All results are exploratory and describe this cohort only (small sample, fixed task order, differing report formats). No claim of personality-measurement validity is made.
 
+## Paper & poster
+
+Both documents are included in this repository:
+
+- [**Paper (PDF)**](docs/paper.pdf) — the full write-up: research questions, system design, study procedure, results, and limitations.
+- [**Poster (PDF)**](docs/poster.pdf) — a one-page visual summary of the project.
+
+Click the preview to open the full-resolution poster:
+
+[![Poster preview](docs/images/poster.jpg)](docs/poster.pdf)
+
 ## Try the reviewer demo
 
 Visit the [reviewer demo](https://review.mychaoxidao.com/review) and enter the shared access code `MindScape-GFWWTXZUGUF5`. Choose a nickname, accept the experience notice, and start playing. The code can be reused, and each browser keeps separate saves. You can resume a previous visit or start a new one without deleting earlier progress or reports. Save your personal recovery code to restore your records on another device or after clearing browser data. Reviewer records are stored separately and excluded from the research dataset.
@@ -111,7 +122,8 @@ frontend/
   public/      Static resources
 deploy/        Container recipes and example configuration
 scripts/       File integrity check
-docs/images/   README figures (from the thesis and defense slides)
+docs/          Paper and poster (PDF)
+  images/      README figures and poster preview
 ```
 
 ## Source version
